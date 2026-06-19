@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "The educational dashboard profile of a Moroccan student registered in the application.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The unique Firebase Authentication user ID." },
+        "email": { "type": "string", "description": "User email address." },
+        "displayName": { "type": "string", "description": "Students given name or alias." },
+        "level": { "type": "string", "enum": ["1AC", "2AC", "3AC"], "description": "Selected academic year (1ere, 2eme, or 3eme Année Collégiale)." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp." },
+        "currentStreak": { "type": "integer", "description": "Number of consecutive daily practice days." },
+        "totalCorrect": { "type": "integer", "description": "Total number of correctly answered grammar, lexicon, and comprehension exercises." },
+        "unlockedBadges": { "type": "array", "description": "List of unlocked reward and honor badges." },
+        "solvedCount": { "type": "object", "description": "Map tracking number of exercises solved for each specific topic ID." }
+      },
+      "required": ["uid", "email", "level"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Primary user profiles holding educational state, level preferences, and study analytics."
+    }
+  }
+}

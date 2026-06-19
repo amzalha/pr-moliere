@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: pr-moliere
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: AI_PROVIDER
+        value: openrouter
+      - key: OPENROUTER_GENERATION_MODEL
+        value: z-ai/glm-4.5-air
+      - key: OPENROUTER_EVAL_MODEL
+        value: deepseek/deepseek-chat-v3.1
+      - key: OPENROUTER_JUDGE_MODEL
+        value: qwen/qwen3-235b-a22b-2507
+      - key: OPENROUTER_CHAT_MODEL
+        value: z-ai/glm-4.5-air
+      - key: OPENROUTER_API_KEY
+        sync: false

@@ -1,0 +1,6 @@
+{
+  "name": "Pr. MOLIÈRE",
+  "description": "Tuteur intelligent et engagé pour accompagner les collégiens marocains dans la révision du programme de français (1AC, 2AC, 3AC).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
