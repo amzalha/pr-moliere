@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# PR_Molière
 
-# Run and deploy your AI Studio app
+Application pédagogique pour le français au collège.
 
-This contains everything you need to run your app locally.
+## Stack
 
-View your app in AI Studio: https://ai.studio/apps/364a0105-9dcd-49da-9a96-487840f5ff17
+- React / Vite
+- Node.js / Express
+- OpenRouter côté serveur
+- Déploiement Render
 
-## Run Locally
+## Lancement local
 
-**Prerequisites:**  Node.js
+npm ci
+npm run build
+npm run dev
 
+Adresse locale :
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+http://localhost:3000
+
+## Variables nécessaires
+
+AI_PROVIDER="openrouter"
+OPENROUTER_API_KEY="..."
+OPENROUTER_GENERATION_MODEL="z-ai/glm-4.5-air"
+OPENROUTER_EVAL_MODEL="deepseek/deepseek-chat-v3.1"
+OPENROUTER_JUDGE_MODEL="qwen/qwen3-235b-a22b-2507"
+OPENROUTER_CHAT_MODEL="z-ai/glm-4.5-air"
+
+Les clés API ne doivent jamais être publiées dans GitHub.
