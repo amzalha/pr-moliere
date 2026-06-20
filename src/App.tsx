@@ -39,6 +39,7 @@ import {
   setDoc,
   FirebaseUser
 } from "./lib/firebase";
+import { saveStudentAnswer } from "./services/studentHistory";
 
 interface ProgressStats {
   solvedCount: Record<string, number>;
@@ -457,13 +458,35 @@ export default function App() {
       }
 
       const data = await res.json();
+      const correctionStatus = data.statut || "[CORRECTION_FAUSSE]";
+      const correctionContent =
+        data.contenu_pedagogique || "Désolé, essaie encore d'analyser la règle linguistique !";
+
       setFeedback({
-        statut: data.statut || "[CORRECTION_FAUSSE]",
-        contenu: data.contenu_pedagogique || "Désolé, essaie encore d'analyser la règle linguistique !"
+        statut: correctionStatus,
+        contenu: correctionContent
       });
       setIsOfflineFallbackMode(!!data.offlineFallback);
 
-      if (data.statut === "[CORRECTION_JUSTE]") {
+      if (currentUser) {
+        const savedHistory = await saveStudentAnswer({
+          user_id: currentUser.uid,
+          user_email: currentUser.email,
+          niveau: selectedTopic.level,
+          theme: selectedTopic.title,
+          exercice_consigne: exerciseText,
+          reponse_eleve: studentAnswer,
+          statut: correctionStatus,
+          contenu_pedagogique: correctionContent,
+          rappel_cours: data.rappel_cours || reminderText
+        });
+
+        if (!savedHistory.ok) {
+          console.info("Historique Supabase non enregistré:", savedHistory.error);
+        }
+      }
+
+      if (correctionStatus === "[CORRECTION_JUSTE]") {
         updateSuccessStats();
       } else {
         setExerciseSessionStreak(0);
