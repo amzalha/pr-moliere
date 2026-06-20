@@ -37,7 +37,8 @@ googleProvider.setCustomParameters({
 });
 
 // Use custom firestore database ID from configuration
-const db = getFirestore(app, config.firestoreDatabaseId);
+const firestoreDatabaseId = (config as typeof config & { firestoreDatabaseId?: string }).firestoreDatabaseId;
+const db = firestoreDatabaseId ? getFirestore(app, firestoreDatabaseId) : getFirestore(app);
 
 /**
  * Validate connection to Firestore
