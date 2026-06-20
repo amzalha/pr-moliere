@@ -258,3 +258,84 @@ samp,
   font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
   color: #111111 !important;
 }
+
+/* =========================================================
+   PR_MOLIERE_TABLET_LIGHT_MODE_HOTFIX
+   Objectif : supprimer fond noir tablette/mobile
+   ========================================================= */
+
+:root {
+  color-scheme: light !important;
+  background-color: #f8f5ef !important;
+}
+
+html,
+body,
+#root {
+  color-scheme: light !important;
+  background-color: #f8f5ef !important;
+  color: #111111 !important;
+  min-height: 100% !important;
+}
+
+body {
+  margin: 0 !important;
+  overflow-x: hidden !important;
+}
+
+#root {
+  min-height: 100vh !important;
+  min-height: 100svh !important;
+}
+
+/* Empêche Safari / Chrome tablette de transformer l’interface en mode sombre */
+@media (prefers-color-scheme: dark) {
+  :root,
+  html,
+  body,
+  #root {
+    color-scheme: light !important;
+    background-color: #f8f5ef !important;
+    color: #111111 !important;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    color-scheme: light !important;
+  }
+}
+
+/* Fonds principaux toujours clairs */
+main,
+section,
+article,
+aside,
+header,
+footer {
+  color-scheme: light !important;
+}
+
+/* Champs toujours lisibles sur tablette */
+input,
+textarea,
+select {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border-color: #d8d0c4 !important;
+}
+
+/* Sécurité contre tout bloc noir hérité */
+.bg-black,
+.bg-neutral-950,
+.bg-neutral-900,
+.bg-zinc-950,
+.bg-zinc-900,
+.bg-slate-950,
+.bg-slate-900,
+.bg-gray-950,
+.bg-gray-900 {
+  background-color: #f8f5ef !important;
+  color: #111111 !important;
+}
