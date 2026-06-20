@@ -19,7 +19,8 @@ import {
   Volume2,
   VolumeX,
   Star,
-  Bookmark
+  Bookmark,
+  Clock
 } from "lucide-react";
 import { LESSONS, LessonTopic } from "./data/lessons";
 import { renderMarkdown } from "./utils/markdown";
@@ -27,6 +28,7 @@ import LessonCard from "./components/LessonCard";
 import ProgressPanel from "./components/ProgressPanel";
 import SuccessLexicon from "./components/SuccessLexicon";
 import BrevetTracker from "./components/BrevetTracker";
+import StudentHistoryPanel from "./components/StudentHistoryPanel";
 import { 
   auth, 
   googleProvider, 
@@ -39,6 +41,7 @@ import {
   setDoc,
   FirebaseUser
 } from "./lib/firebase";
+import { saveStudentAnswer } from "./services/studentHistory";
 
 interface ProgressStats {
   solvedCount: Record<string, number>;
@@ -208,7 +211,7 @@ export default function App() {
     }
   ]);
   const [userQuery, setUserQuery] = useState<string>("");
-  const [activeRightTab, setActiveRightTab] = useState<"BADGES" | "LEXICON" | "BREVET">("BADGES");
+  const [activeRightTab, setActiveRightTab] = useState<"BADGES" | "HISTORY" | "LEXICON" | "BREVET">("BADGES");
   const [showCelebration, setShowCelebration] = useState<boolean>(false);
   const [celebrationPraise, setCelebrationPraise] = useState<string>("Excellent travail ! 🎉");
 
@@ -457,13 +460,35 @@ export default function App() {
       }
 
       const data = await res.json();
+      const correctionStatus = data.statut || "[CORRECTION_FAUSSE]";
+      const correctionContent =
+        data.contenu_pedagogique || "Désolé, essaie encore d'analyser la règle linguistique !";
+
       setFeedback({
-        statut: data.statut || "[CORRECTION_FAUSSE]",
-        contenu: data.contenu_pedagogique || "Désolé, essaie encore d'analyser la règle linguistique !"
+        statut: correctionStatus,
+        contenu: correctionContent
       });
       setIsOfflineFallbackMode(!!data.offlineFallback);
 
-      if (data.statut === "[CORRECTION_JUSTE]") {
+      if (currentUser) {
+        const savedHistory = await saveStudentAnswer({
+          user_id: currentUser.uid,
+          user_email: currentUser.email,
+          niveau: selectedTopic.level,
+          theme: selectedTopic.title,
+          exercice_consigne: exerciseText,
+          reponse_eleve: studentAnswer,
+          statut: correctionStatus,
+          contenu_pedagogique: correctionContent,
+          rappel_cours: data.rappel_cours || reminderText
+        });
+
+        if (!savedHistory.ok) {
+          console.info("Historique Supabase non enregistré:", savedHistory.error);
+        }
+      }
+
+      if (correctionStatus === "[CORRECTION_JUSTE]") {
         updateSuccessStats();
       } else {
         setExerciseSessionStreak(0);
@@ -1099,6 +1124,17 @@ export default function App() {
                 <span>🏆 Palmarès</span>
               </button>
               <button
+                onClick={() => setActiveRightTab("HISTORY")}
+                className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
+                  activeRightTab === "HISTORY"
+                    ? "bg-[#006233] text-white shadow-md"
+                    : "text-[#4A453C] hover:bg-white/40 hover:text-[#006233]"
+                }`}
+              >
+                <Clock className="w-3 h-3" />
+                <span>Historique</span>
+              </button>
+              <button
                 onClick={() => setActiveRightTab("LEXICON")}
                 className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
                   activeRightTab === "LEXICON"
@@ -1122,6 +1158,8 @@ export default function App() {
 
             {activeRightTab === "BADGES" ? (
               <ProgressPanel stats={stats} onResetStats={handleResetStats} />
+            ) : activeRightTab === "HISTORY" ? (
+              <StudentHistoryPanel userId={currentUser?.uid} />
             ) : activeRightTab === "LEXICON" ? (
               <SuccessLexicon 
                 bookmarkedWordIds={bookmarkedWordIds}
