@@ -2,59 +2,59 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --animate-sparkle: sparkle 1.5s ease-in-out infinite;
-  --animate-fade-in: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-bounce-subtle: bounceSubtle 2s infinite;
+ --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+ --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+ --font-mono: "JetBrains Mono", ui-monospace, monospace;
+ --animate-sparkle: sparkle 1.5s ease-in-out infinite;
+ --animate-fade-in: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+ --animate-bounce-subtle: bounceSubtle 2s infinite;
 }
 
 @keyframes sparkle {
-  0%, 100% { transform: scale(0.9) rotate(0deg); opacity: 0.6; }
-  50% { transform: scale(1.2) rotate(15deg); opacity: 1; }
+ 0%, 100% { transform: scale(0.9) rotate(0deg); opacity: 0.6; }
+ 50% { transform: scale(1.2) rotate(15deg); opacity: 1; }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+ from { opacity: 0; transform: translateY(8px); }
+ to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes bounceSubtle {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+ 0%, 100% { transform: translateY(0); }
+ 50% { transform: translateY(-4px); }
 }
 
 /* Custom Moroccan Pattern utilities */
 .moroccan-grid-subtle {
-  background-image: radial-gradient(#006233 0.5px, transparent 0.5px), radial-gradient(#006233 0.5px, #ffffff 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
-  opacity: 0.05;
+ background-image: radial-gradient(#006233 0.5px, transparent 0.5px), radial-gradient(#006233 0.5px, #ffffff 0.5px);
+ background-size: 20px 20px;
+ background-position: 0 0, 10px 10px;
+ opacity: 0.05;
 }
 
 /* =========================================================
-   PR_MOLIERE_READABILITY_HOTFIX
-   Objectif : texte visible, régulier, monospace, très lisible
-   ========================================================= */
+  PR_MOLIERE_READABILITY_HOTFIX
+  Objectif : texte visible, régulier, monospace, très lisible
+  ========================================================= */
 
 html,
 body,
 #root,
 * {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-  font-weight: 400 !important;
-  letter-spacing: 0 !important;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+ font-weight: 400 !important;
+ letter-spacing: 0 !important;
+ text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  color: #111111 !important;
-  background: #f8f5ef !important;
-  font-size: 16px !important;
-  line-height: 1.65 !important;
+ color: #111111 !important;
+ background: #f8f5ef !important;
+ font-size: 16px !important;
+ line-height: 1.65 !important;
 }
 
 p,
@@ -66,7 +66,7 @@ textarea,
 button,
 a,
 div {
-  line-height: 1.6 !important;
+ line-height: 1.6 !important;
 }
 
 h1,
@@ -75,9 +75,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400 !important;
-  color: #111111 !important;
-  line-height: 1.35 !important;
+ font-weight: 400 !important;
+ color: #111111 !important;
+ line-height: 1.35 !important;
 }
 
 p,
@@ -86,32 +86,32 @@ label,
 input,
 textarea,
 button {
-  font-size: 15px !important;
+ font-size: 15px !important;
 }
 
 .text-\[9px\],
 .text-\[10px\],
 .text-\[11px\],
 .text-xs {
-  font-size: 13px !important;
+ font-size: 13px !important;
 }
 
 .text-sm {
-  font-size: 15px !important;
+ font-size: 15px !important;
 }
 
 .text-base {
-  font-size: 16px !important;
+ font-size: 16px !important;
 }
 
 input,
 textarea {
-  color: #111111 !important;
-  background-color: #ffffff !important;
+ color: #111111 !important;
+ background-color: #ffffff !important;
 }
 
 button {
-  min-height: 42px !important;
+ min-height: 42px !important;
 }
 
 .font-serif,
@@ -121,46 +121,46 @@ button {
 .font-extrabold,
 .font-black,
 .italic {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
+ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+ font-weight: 400 !important;
+ font-style: normal !important;
 }
 
 .text-\[\#A39E93\],
 .text-\[\#7A7468\],
 .text-\[\#4A453C\] {
-  color: #222222 !important;
+ color: #222222 !important;
 }
 
 .prose,
 .prose * {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-  font-weight: 400 !important;
-  color: #111111 !important;
+ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+ font-weight: 400 !important;
+ color: #111111 !important;
 }
 
 /* =========================================================
-   PR_MOLIERE_ATKINSON_HYPERLEGIBLE_TEST
-   Objectif : lisibilité maximale avec Atkinson Hyperlegible
-   ========================================================= */
+  PR_MOLIERE_ATKINSON_HYPERLEGIBLE_TEST
+  Objectif : lisibilité maximale avec Atkinson Hyperlegible
+  ========================================================= */
 
 html,
 body,
 #root,
 * {
-  font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
-  font-weight: 400 !important;
-  letter-spacing: 0 !important;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
+ font-weight: 400 !important;
+ letter-spacing: 0 !important;
+ text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  color: #111111 !important;
-  background: #f8f5ef !important;
-  font-size: 16px !important;
-  line-height: 1.65 !important;
+ color: #111111 !important;
+ background: #f8f5ef !important;
+ font-size: 16px !important;
+ line-height: 1.65 !important;
 }
 
 p,
@@ -172,7 +172,7 @@ textarea,
 button,
 a,
 div {
-  line-height: 1.6 !important;
+ line-height: 1.6 !important;
 }
 
 h1,
@@ -181,10 +181,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
-  font-weight: 700 !important;
-  color: #111111 !important;
-  line-height: 1.35 !important;
+ font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
+ font-weight: 700 !important;
+ color: #111111 !important;
+ line-height: 1.35 !important;
 }
 
 p,
@@ -193,32 +193,32 @@ label,
 input,
 textarea,
 button {
-  font-size: 15px !important;
+ font-size: 15px !important;
 }
 
 .text-\[9px\],
 .text-\[10px\],
 .text-\[11px\],
 .text-xs {
-  font-size: 13px !important;
+ font-size: 13px !important;
 }
 
 .text-sm {
-  font-size: 15px !important;
+ font-size: 15px !important;
 }
 
 .text-base {
-  font-size: 16px !important;
+ font-size: 16px !important;
 }
 
 input,
 textarea {
-  color: #111111 !important;
-  background-color: #ffffff !important;
+ color: #111111 !important;
+ background-color: #ffffff !important;
 }
 
 button {
-  min-height: 42px !important;
+ min-height: 42px !important;
 }
 
 .font-serif,
@@ -227,14 +227,14 @@ button {
 .font-extrabold,
 .font-black,
 .italic {
-  font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
-  font-style: normal !important;
+ font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
+ font-style: normal !important;
 }
 
 .font-bold,
 .font-extrabold,
 .font-black {
-  font-weight: 700 !important;
+ font-weight: 700 !important;
 }
 
 .font-mono,
@@ -244,67 +244,67 @@ kbd,
 samp,
 .text-\[10px\],
 .text-\[11px\] {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
 
 .text-\[\#A39E93\],
 .text-\[\#7A7468\],
 .text-\[\#4A453C\] {
-  color: #222222 !important;
+ color: #222222 !important;
 }
 
 .prose,
 .prose * {
-  font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
-  color: #111111 !important;
+ font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif !important;
+ color: #111111 !important;
 }
 
 /* =========================================================
-   PR_MOLIERE_TABLET_LIGHT_MODE_HOTFIX
-   Objectif : supprimer fond noir tablette/mobile
-   ========================================================= */
+  PR_MOLIERE_TABLET_LIGHT_MODE_HOTFIX
+  Objectif : supprimer fond noir tablette/mobile
+  ========================================================= */
 
 :root {
-  color-scheme: light !important;
-  background-color: #f8f5ef !important;
+ color-scheme: light !important;
+ background-color: #f8f5ef !important;
 }
 
 html,
 body,
 #root {
-  color-scheme: light !important;
-  background-color: #f8f5ef !important;
-  color: #111111 !important;
-  min-height: 100% !important;
+ color-scheme: light !important;
+ background-color: #f8f5ef !important;
+ color: #111111 !important;
+ min-height: 100% !important;
 }
 
 body {
-  margin: 0 !important;
-  overflow-x: hidden !important;
+ margin: 0 !important;
+ overflow-x: hidden !important;
 }
 
 #root {
-  min-height: 100vh !important;
-  min-height: 100svh !important;
+ min-height: 100vh !important;
+ min-height: 100svh !important;
 }
 
 /* Empêche Safari / Chrome tablette de transformer l’interface en mode sombre */
 @media (prefers-color-scheme: dark) {
-  :root,
-  html,
-  body,
-  #root {
-    color-scheme: light !important;
-    background-color: #f8f5ef !important;
-    color: #111111 !important;
-  }
+ :root,
+ html,
+ body,
+ #root {
+  color-scheme: light !important;
+  background-color: #f8f5ef !important;
+  color: #111111 !important;
+ }
 
-  input,
-  textarea,
-  select,
-  button {
-    color-scheme: light !important;
-  }
+ input,
+ textarea,
+ select,
+ button {
+  color-scheme: light !important;
+ }
 }
 
 /* Fonds principaux toujours clairs */
@@ -314,16 +314,16 @@ article,
 aside,
 header,
 footer {
-  color-scheme: light !important;
+ color-scheme: light !important;
 }
 
 /* Champs toujours lisibles sur tablette */
 input,
 textarea,
 select {
-  background-color: #ffffff !important;
-  color: #111111 !important;
-  border-color: #d8d0c4 !important;
+ background-color: #ffffff !important;
+ color: #111111 !important;
+ border-color: #d8d0c4 !important;
 }
 
 /* Sécurité contre tout bloc noir hérité */
@@ -336,6 +336,6 @@ select {
 .bg-slate-900,
 .bg-gray-950,
 .bg-gray-900 {
-  background-color: #f8f5ef !important;
-  color: #111111 !important;
+ background-color: #f8f5ef !important;
+ color: #111111 !important;
 }
