@@ -19,7 +19,8 @@ import {
   Volume2,
   VolumeX,
   Star,
-  Bookmark
+  Bookmark,
+  Clock
 } from "lucide-react";
 import { LESSONS, LessonTopic } from "./data/lessons";
 import { renderMarkdown } from "./utils/markdown";
@@ -27,6 +28,7 @@ import LessonCard from "./components/LessonCard";
 import ProgressPanel from "./components/ProgressPanel";
 import SuccessLexicon from "./components/SuccessLexicon";
 import BrevetTracker from "./components/BrevetTracker";
+import StudentHistoryPanel from "./components/StudentHistoryPanel";
 import { 
   auth, 
   googleProvider, 
@@ -209,7 +211,7 @@ export default function App() {
     }
   ]);
   const [userQuery, setUserQuery] = useState<string>("");
-  const [activeRightTab, setActiveRightTab] = useState<"BADGES" | "LEXICON" | "BREVET">("BADGES");
+  const [activeRightTab, setActiveRightTab] = useState<"BADGES" | "HISTORY" | "LEXICON" | "BREVET">("BADGES");
   const [showCelebration, setShowCelebration] = useState<boolean>(false);
   const [celebrationPraise, setCelebrationPraise] = useState<string>("Excellent travail ! 🎉");
 
@@ -1122,6 +1124,17 @@ export default function App() {
                 <span>🏆 Palmarès</span>
               </button>
               <button
+                onClick={() => setActiveRightTab("HISTORY")}
+                className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
+                  activeRightTab === "HISTORY"
+                    ? "bg-[#006233] text-white shadow-md"
+                    : "text-[#4A453C] hover:bg-white/40 hover:text-[#006233]"
+                }`}
+              >
+                <Clock className="w-3 h-3" />
+                <span>Historique</span>
+              </button>
+              <button
                 onClick={() => setActiveRightTab("LEXICON")}
                 className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
                   activeRightTab === "LEXICON"
@@ -1145,6 +1158,8 @@ export default function App() {
 
             {activeRightTab === "BADGES" ? (
               <ProgressPanel stats={stats} onResetStats={handleResetStats} />
+            ) : activeRightTab === "HISTORY" ? (
+              <StudentHistoryPanel userId={currentUser?.uid} />
             ) : activeRightTab === "LEXICON" ? (
               <SuccessLexicon 
                 bookmarkedWordIds={bookmarkedWordIds}
