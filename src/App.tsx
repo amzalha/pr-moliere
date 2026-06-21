@@ -30,6 +30,7 @@ import SuccessLexicon from "./components/SuccessLexicon";
 import BrevetTracker from "./components/BrevetTracker";
 import StudentHistoryPanel from "./components/StudentHistoryPanel";
 import ExamCorpusPanel from "./components/ExamCorpusPanel";
+import type { ExamCorpusItem } from "./data/examCorpus";
 import { 
  auth, 
  googleProvider, 
@@ -437,7 +438,55 @@ export default function App() {
   }
  };
 
- const submitAnswer = async () => {
+ 
+const handleExamTraining = (item: ExamCorpusItem) => {
+  const examTopic: LessonTopic = {
+    id: item.id,
+    title: item.titre,
+    level: item.niveau,
+    category:
+      item.competence === "production_ecrite"
+        ? "Écrit/Correspondance"
+        : item.competence === "langue"
+          ? "Langue"
+          : "Lecture/Genre",
+    description: item.theme,
+    defaultPrompt: item.consigne,
+    keyRule: item.objectifsPedagogiques[0] || item.theme
+  };
+
+  const questionsMarkdown = item.questions
+    .map((question, index) => {
+      const criteres = question.criteresCorrection
+        .map((critere) => `- ${critere}`)
+        .join("\n");
+
+      return `### Question ${index + 1} — ${question.bareme} points\n\n${question.enonce}\n\n**Critères de correction :**\n${criteres}`;
+    })
+    .join("\n\n---\n\n");
+
+  const texteSupport = item.texteSupport
+    ? `\n\n## Texte support\n\n${item.texteSupport}\n`
+    : "";
+
+  setSelectedTopic(examTopic);
+  setStudentAnswer("");
+  setFeedback(null);
+  setIsOfflineFallbackMode(false);
+  setExerciseSessionStreak(0);
+
+  setExerciseText(
+    `# ${item.titre}\n\n**Niveau :** ${item.niveau}\n\n**Type :** ${item.typeEvaluation.replaceAll("_", " ")}\n\n**Thème :** ${item.theme}\n\n**Barème total :** ${item.baremeTotal} points\n${texteSupport}\n\n## Consigne\n\n${item.consigne}\n\n${questionsMarkdown}\n\n## Réponse attendue\n\nRédige ta réponse dans la zone de réponse, puis clique sur **Valider ma réponse**.`
+  );
+
+  setReminderText(
+    `Mode examen : lis attentivement le sujet, réponds avec des phrases complètes et respecte le barème de ${item.baremeTotal} points.`
+  );
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+const submitAnswer = async () => {
   if (!studentAnswer.trim()) return;
   setSubmitting(true);
   setFeedback(null);
@@ -1173,7 +1222,7 @@ export default function App() {
       ) : activeRightTab === "HISTORY" ? (
        <StudentHistoryPanel userId={currentUser?.uid} />
       ) : activeRightTab === "EXAMS" ? (
-       <ExamCorpusPanel />
+       <ExamCorpusPanel onStartTraining={handleExamTraining} />
       ) : activeRightTab === "LEXICON" ? (
        <SuccessLexicon 
         bookmarkedWordIds={bookmarkedWordIds}

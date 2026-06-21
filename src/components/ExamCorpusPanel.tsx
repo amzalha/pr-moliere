@@ -1,20 +1,27 @@
 import { useMemo, useState } from "react";
 import {
+  ArrowRight,
   BookOpen,
   ClipboardCheck,
   Filter,
   GraduationCap,
   MapPin,
+  Play,
   Timer
 } from "lucide-react";
 import {
   examCorpus,
+  ExamCorpusItem,
   ExamEvaluationType,
   ExamLevel
 } from "../data/examCorpus";
 
 type LevelFilter = "TOUS" | ExamLevel;
 type TypeFilter = "TOUS" | ExamEvaluationType;
+
+type ExamCorpusPanelProps = {
+  onStartTraining: (item: ExamCorpusItem) => void;
+};
 
 const levelLabels: Record<LevelFilter, string> = {
   TOUS: "Tous",
@@ -30,7 +37,7 @@ const typeLabels: Record<TypeFilter, string> = {
   examen_regional: "Régional"
 };
 
-export default function ExamCorpusPanel() {
+export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProps) {
   const [levelFilter, setLevelFilter] = useState<LevelFilter>("TOUS");
   const [typeFilter, setTypeFilter] = useState<TypeFilter>("TOUS");
 
@@ -179,10 +186,19 @@ export default function ExamCorpusPanel() {
               ) : null}
             </div>
 
-            <div className="mt-3 pt-3 border-t border-[#E5E1D8]">
+            <div className="mt-3 pt-3 border-t border-[#E5E1D8] space-y-3">
               <p className="text-xs text-[#333333]">
                 Questions : {item.questions.length} · Source : {item.sourceNom}
               </p>
+
+              <button
+                onClick={() => onStartTraining(item)}
+                className="w-full bg-[#006233] hover:bg-[#004D28] text-white rounded-2xl px-4 py-3 text-sm font-bold flex items-center justify-center gap-2 transition"
+              >
+                <Play className="w-4 h-4" />
+                <span>S’entraîner</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
             </div>
           </div>
         ))}
