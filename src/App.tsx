@@ -29,6 +29,7 @@ import ProgressPanel from "./components/ProgressPanel";
 import SuccessLexicon from "./components/SuccessLexicon";
 import BrevetTracker from "./components/BrevetTracker";
 import StudentHistoryPanel from "./components/StudentHistoryPanel";
+import ExamCorpusPanel from "./components/ExamCorpusPanel";
 import { 
  auth, 
  googleProvider, 
@@ -211,7 +212,7 @@ export default function App() {
   }
  ]);
  const [userQuery, setUserQuery] = useState<string>("");
- const [activeRightTab, setActiveRightTab] = useState<"BADGES" | "HISTORY" | "LEXICON" | "BREVET">("BADGES");
+ const [activeRightTab, setActiveRightTab] = useState<"BADGES" | "HISTORY" | "EXAMS" | "LEXICON" | "BREVET">("BADGES");
  const [showCelebration, setShowCelebration] = useState<boolean>(false);
  const [celebrationPraise, setCelebrationPraise] = useState<string>("Excellent travail ! 🎉");
 
@@ -1135,6 +1136,17 @@ export default function App() {
         <span>Historique</span>
        </button>
        <button
+        onClick={() => setActiveRightTab("EXAMS")}
+        className={`flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-xs transition ${
+         activeRightTab === "EXAMS"
+          ? "bg-[#006233] text-white"
+          : "bg-[#F2EDE4] text-[#111111] hover:bg-[#E5E1D8]"
+        }`}
+       >
+        <BookOpen className="w-4 h-4" />
+        <span>Examens</span>
+       </button>
+       <button
         onClick={() => setActiveRightTab("LEXICON")}
         className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
          activeRightTab === "LEXICON"
@@ -1160,6 +1172,8 @@ export default function App() {
        <ProgressPanel stats={stats} onResetStats={handleResetStats} />
       ) : activeRightTab === "HISTORY" ? (
        <StudentHistoryPanel userId={currentUser?.uid} />
+      ) : activeRightTab === "EXAMS" ? (
+       <ExamCorpusPanel />
       ) : activeRightTab === "LEXICON" ? (
        <SuccessLexicon 
         bookmarkedWordIds={bookmarkedWordIds}
