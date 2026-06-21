@@ -191,7 +191,7 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
 
             <div className="mt-3 pt-3 border-t border-[#E5E1D8] space-y-3">
               <p className="text-xs text-[#333333]">
-                Questions : {item.questions.length} · Source : {item.sourceNom}
+                Questions : {item.questions.length} · {item.sourceType === "modele_original" ? "Sujet modèle original PR_Molière" : "Source web à structurer"} · Source : {item.sourceNom}
               </p>
 
               <button
