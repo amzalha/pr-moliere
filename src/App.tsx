@@ -174,6 +174,7 @@ export default function App() {
  // Exercise states
  const [exerciseText, setExerciseText] = useState<string>("");
  const [reminderText, setReminderText] = useState<string>("");
+ const [correctionContextText, setCorrectionContextText] = useState<string>("");
  const [exerciseLoading, setExerciseLoading] = useState<boolean>(false);
  const [studentAnswer, setStudentAnswer] = useState<string>("");
  const [submitting, setSubmitting] = useState<boolean>(false);
@@ -465,15 +466,27 @@ const handleExamTraining = (item: ExamCorpusItem) => {
     })
     .join("\n\n---\n\n");
 
+  const correctionReference = item.questions
+    .map((question, index) => {
+      const criteres = question.criteresCorrection
+        .map((critere) => `- ${critere}`)
+        .join("\\n");
+
+      return `Question ${index + 1} — ${question.bareme} points\\nRéponse modèle : ${question.reponseModele}\\nCritères :\\n${criteres}`;
+    })
+    .join("\\n\\n");
+
   const texteSupport = item.texteSupport
     ? `\n\n## Texte support\n\n${item.texteSupport}\n`
     : "";
 
   setSelectedTopic(examTopic);
   setStudentAnswer("");
+  setCorrectionContextText("");
   setFeedback(null);
   setIsOfflineFallbackMode(false);
   setExerciseSessionStreak(0);
+  setCorrectionContextText(correctionReference);
 
   setExerciseText(
     `# ${item.titre}\n\n**Niveau :** ${item.niveau}\n\n**Type :** ${item.typeEvaluation.replaceAll("_", " ")}\n\n**Thème :** ${item.theme}\n\n**Barème total :** ${item.baremeTotal} points\n${texteSupport}\n\n## Consigne\n\n${item.consigne}\n\n${questionsMarkdown}\n\n## Réponse attendue\n\nRédige ta réponse dans la zone de réponse, puis clique sur **Valider ma réponse**.`
@@ -488,6 +501,10 @@ const handleExamTraining = (item: ExamCorpusItem) => {
 
 const submitAnswer = async () => {
   if (!studentAnswer.trim()) return;
+
+  const exerciseForCorrection = correctionContextText
+    ? `${exerciseText}\n\n## Référence interne de correction\n${correctionContextText}`
+    : exerciseText;
   setSubmitting(true);
   setFeedback(null);
 
@@ -500,7 +517,7 @@ const submitAnswer = async () => {
     body: JSON.stringify({
      niveau: selectedTopic.level,
      theme: selectedTopic.title,
-     exercice_consigne: exerciseText,
+     exercice_consigne: exerciseForCorrection,
      reponse_eleve: studentAnswer
     })
    });
