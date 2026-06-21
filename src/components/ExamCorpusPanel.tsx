@@ -9,6 +9,7 @@ import {
   Play,
   Timer
 } from "lucide-react";
+import ExamSourceCatalogPanel from "./ExamSourceCatalogPanel";
 import {
   examCorpus,
   ExamCorpusItem,
@@ -134,6 +135,8 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
           </div>
         </div>
       </div>
+
+      <ExamSourceCatalogPanel />
 
       <div className="space-y-3">
         {filteredCorpus.map((item) => (
