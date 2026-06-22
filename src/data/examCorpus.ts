@@ -409,6 +409,128 @@ export const examCorpus: ExamCorpusItem[] = [
       'Produire un article de sensibilisation.'
     ],
     tags: ['3AC', 'examen-local', 'environnement', 'production-ecrite']
+  },
+  {
+    id: 'modele-1ac-controle-s2-lettre-amicale',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 1AC — La lettre amicale',
+    theme: 'lettre personnelle',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lis la situation puis réponds aux questions.',
+    texteSupport:
+      'Ton ami a changé de collège. Tu veux lui écrire une lettre pour lui raconter ta nouvelle classe et lui demander de ses nouvelles.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'À qui la lettre doit-elle être adressée ?',
+        bareme: 4,
+        reponseModele: 'La lettre doit être adressée à un ami.',
+        criteresCorrection: [
+          'Identifier correctement le destinataire.',
+          'Répondre clairement.'
+        ]
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Donne deux formules qu’on peut utiliser dans une lettre amicale.',
+        bareme: 6,
+        reponseModele: 'On peut utiliser : Cher ami, Salut, À bientôt, Ton ami.',
+        criteresCorrection: [
+          'Proposer des formules adaptées.',
+          'Respecter le registre amical.'
+        ]
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédige une lettre amicale de huit lignes.',
+        bareme: 10,
+        reponseModele:
+          'La lettre doit contenir une formule d’ouverture, des nouvelles, une question à l’ami et une formule de clôture.',
+        criteresCorrection: [
+          'Respecter la forme de la lettre.',
+          'Organiser les idées.',
+          'Employer un ton amical.',
+          'Soigner la langue.'
+        ]
+      }
+    ],
+    objectifsPedagogiques: [
+      'Identifier les éléments d’une lettre amicale.',
+      'Employer des formules adaptées.',
+      'Rédiger une lettre courte.'
+    ],
+    tags: ['1AC', 'lettre', 'production-ecrite', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-regional-argumentation-lecture',
+    niveau: '3AC',
+    typeEvaluation: 'examen_regional',
+    competence: 'lecture',
+    titre: 'Examen régional 3AC — Lecture argumentative',
+    theme: 'solidarité',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lis le texte puis réponds aux questions.',
+    texteSupport:
+      'Dans un collège, des élèves décident d’aider un camarade malade en organisant une collecte de livres et de cahiers. Cette initiative montre que la solidarité rend la vie scolaire plus humaine.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quelle action les élèves organisent-ils ?',
+        bareme: 4,
+        reponseModele: 'Les élèves organisent une collecte de livres et de cahiers.',
+        criteresCorrection: [
+          'Identifier l’action principale.',
+          'Répondre avec précision.'
+        ]
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Quelle valeur est défendue dans ce texte ?',
+        bareme: 4,
+        reponseModele: 'La valeur défendue est la solidarité.',
+        criteresCorrection: [
+          'Identifier la valeur centrale.',
+          'Justifier à partir du texte.'
+        ]
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédige un paragraphe de dix lignes sur l’importance de la solidarité au collège.',
+        bareme: 12,
+        reponseModele:
+          'Le paragraphe doit expliquer l’importance de la solidarité et donner des exemples concrets.',
+        criteresCorrection: [
+          'Présenter une idée claire.',
+          'Donner des arguments simples.',
+          'Utiliser des exemples.',
+          'Organiser le paragraphe.',
+          'Respecter la langue.'
+        ]
+      }
+    ],
+    objectifsPedagogiques: [
+      'Préparer l’examen régional.',
+      'Identifier une valeur dans un texte.',
+      'Produire un paragraphe argumentatif.'
+    ],
+    tags: ['3AC', 'examen-regional', 'argumentation', 'solidarite']
   }
 ];
 
