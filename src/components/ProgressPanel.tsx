@@ -94,7 +94,7 @@ export default function ProgressPanel({ stats, onResetStats }: ProgressPanelProp
      </div>
      <div>
       <div className="text-xl font-black text-[#1A1A1A] leading-none">{stats.totalCorrect}</div>
-      <div className="text-[10px] text-[#A39E93] font-bold">Réponses Justes</div>
+      <div className="text-[10px] text-[#A39E93] font-bold">Réponses justes</div>
      </div>
     </div>
 
