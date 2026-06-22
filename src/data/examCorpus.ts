@@ -1255,6 +1255,50 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Distinguer phrase nominale et phrase verbale.', 'Identifier le verbe conjugué.', 'Produire des phrases variées.'],
     tags: ['1AC', 'grammaire', 'phrase-nominale', 'phrase-verbale', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s1-proposition-relative',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — La proposition relative',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le livre que le professeur présente aux élèves raconte une histoire captivante. Les personnages qui avancent avec courage donnent une belle leçon de solidarité.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Que raconte le livre présenté aux élèves ?',
+        bareme: 4,
+        reponseModele: 'Le livre raconte une histoire captivante.',
+        criteresCorrection: ['Repérer l’information principale.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux propositions relatives dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux propositions relatives sont : que le professeur présente aux élèves ; qui avancent avec courage.',
+        criteresCorrection: ['Identifier deux propositions relatives.', 'Repérer le pronom relatif.', 'Ne pas confondre avec une proposition indépendante.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un paragraphe de huit lignes décrivant un personnage courageux en employant deux propositions relatives.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit décrire un personnage courageux avec deux propositions relatives correctement construites.',
+        criteresCorrection: ['Respecter le thème.', 'Employer deux propositions relatives.', 'Organiser la description.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier une proposition relative.', 'Repérer le pronom relatif.', 'Employer une proposition relative dans une production écrite.'],
+    tags: ['2AC', 'grammaire', 'proposition-relative', 'controle-continu']
   }
 ];
 
