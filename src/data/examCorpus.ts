@@ -812,6 +812,139 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Comprendre un récit personnel.', 'Repérer des sensations.', 'Produire un souvenir organisé.'],
     tags: ['2AC', 'recit', 'souvenir', 'controle-continu']
+  },
+  {
+    id: 'modele-1ac-controle-s1-ponctuation-dialogue',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Ponctuation du dialogue',
+    theme: 'dialogue',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans la cour du collège, Samir demande : « Pouvez-vous m’aider à retrouver mon cahier ? » Nadia répond : « Oui, cherchons ensemble près de la bibliothèque. »',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Où se déroule la scène ?',
+        bareme: 4,
+        reponseModele: 'La scène se déroule dans la cour du collège.',
+        criteresCorrection: ['Repérer le lieu.', 'Répondre par une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux signes de ponctuation utilisés dans le dialogue.',
+        bareme: 6,
+        reponseModele: 'Deux signes possibles sont les guillemets et le point d’interrogation.',
+        criteresCorrection: ['Identifier deux signes.', 'Les nommer correctement.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un court dialogue de six lignes entre deux élèves.',
+        bareme: 10,
+        reponseModele: 'Le dialogue doit utiliser les guillemets, des phrases correctes et une situation claire.',
+        criteresCorrection: ['Respecter la forme du dialogue.', 'Utiliser une ponctuation correcte.', 'Organiser les répliques.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un dialogue.', 'Identifier la ponctuation.', 'Produire un dialogue court.'],
+    tags: ['1AC', 'dialogue', 'ponctuation', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s2-comparaison',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — La comparaison',
+    theme: 'description',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le jardin du collège est calme comme une petite oasis. Ses arbres sont plus hauts que le mur et ses fleurs brillent autant que des lanternes colorées.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel lieu est décrit dans le texte ?',
+        bareme: 4,
+        reponseModele: 'Le lieu décrit est le jardin du collège.',
+        criteresCorrection: ['Identifier le lieu.', 'Répondre clairement.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez une comparaison dans le texte.',
+        bareme: 6,
+        reponseModele: 'Une comparaison est : calme comme une petite oasis.',
+        criteresCorrection: ['Repérer un outil de comparaison.', 'Citer une expression complète.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Décrivez un lieu en huit lignes en utilisant deux comparaisons.',
+        bareme: 10,
+        reponseModele: 'La production doit décrire un lieu avec deux comparaisons correctes.',
+        criteresCorrection: ['Décrire un lieu.', 'Employer deux comparaisons.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre une description.', 'Identifier une comparaison.', 'Produire une description enrichie.'],
+    tags: ['2AC', 'comparaison', 'description', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-local-lettre-reclamation',
+    niveau: '3AC',
+    typeEvaluation: 'examen_local',
+    competence: 'production_ecrite',
+    titre: 'Examen local 3AC — Lettre de réclamation',
+    theme: 'correspondance officielle',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis répondez aux questions.',
+    texteSupport:
+      'Vous avez participé à une activité scolaire, mais l’organisation n’a pas respecté le programme annoncé. Vous décidez d’écrire une lettre de réclamation polie au responsable.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel est le problème présenté dans la situation ?',
+        bareme: 4,
+        reponseModele: 'Le problème est que l’organisation n’a pas respecté le programme annoncé.',
+        criteresCorrection: ['Identifier le problème.', 'Formuler une réponse précise.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Citez une formule de politesse adaptée à une lettre officielle.',
+        bareme: 6,
+        reponseModele: 'Une formule possible est : Veuillez agréer, Monsieur, l’expression de mes salutations distinguées.',
+        criteresCorrection: ['Proposer une formule officielle.', 'Employer un ton respectueux.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une lettre de réclamation d’environ douze lignes.',
+        bareme: 10,
+        reponseModele: 'La lettre doit présenter le problème, demander une solution et respecter les formules officielles.',
+        criteresCorrection: ['Respecter la forme de la lettre.', 'Expliquer le problème.', 'Demander une solution.', 'Employer une langue correcte.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre une situation de communication.', 'Employer un registre officiel.', 'Rédiger une lettre de réclamation.'],
+    tags: ['3AC', 'examen-local', 'lettre', 'reclamation']
   }
 ];
 
