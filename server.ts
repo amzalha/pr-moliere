@@ -443,8 +443,8 @@ Réponse de l'élève : "${reponse_eleve}"
 
 Directives d'évaluation :
 - Vérifie si la réponse de l'élève est correcte par rapport à l'exercice d'origine.
-- Si c'est correct : renvoie un statut "[CORRECTION_JUSTE]" avec un compliment chaleureux ("Excellent !", "Félicitations Youssef/Amina !", "Bravo !").
-- Si c'est incorrect : renvoie un statut "[CORRECTION_FAUSSE]". Rappelle-toi : NE DONNE JAMAIS LA BONNE RÉPONSE. Donne un indice subtil, encourage-le et siffle la règle pour l'accompagner.
+- Si c'est correct : renvoie un statut "[CORRECTION_JUSTE]" avec un compliment chaleureux en vouvoyant toujours l’élève ("Excellent travail !", "Félicitations !", "Bravo !").
+- Si c'est incorrect : renvoie un statut "[CORRECTION_FAUSSE]". Règle obligatoire : vouvoie toujours l’élève. NE DONNE JAMAIS LA BONNE RÉPONSE. Donne un indice subtil, encourage l’élève et rappelle la règle pour l’accompagner.
 - Retourne l'output au strict format JSON requis.`;
 
     const response = await generateContentWithRobustFallback(ai, prompt, 0.3);
@@ -486,14 +486,14 @@ Directives d'évaluation :
     if (isCorrect) {
       res.json({
         statut: "[CORRECTION_JUSTE]",
-        contenu_pedagogique: `### Excellent travail ! 🎉\n\nC'est la réponse exacte ! Ta maîtrise du concept de **${matchedLesson ? matchedLesson.title : "Français"}** est fantastique.\n\n*Rappel de tuteur :* Très bien vu sous le soleil de Rabat ! Continue à récolter tes exploits scolaires.`,
+        contenu_pedagogique: `### Excellent travail ! 🎉\n\nC'est la réponse exacte ! Votre maîtrise du concept de **${matchedLesson ? matchedLesson.title : "Français"}** est excellente.\n\n*Rappel de tuteur :* Très bien vu sous le soleil de Rabat ! Continuez à consolider vos réussites scolaires.`,
         rappel_cours: `💡 [Prof-Ami Mode Résilience] ${exerciseData.rappel_cours}`,
         offlineFallback: true
       });
     } else {
       res.json({
         statut: "[CORRECTION_FAUSSE]",
-        contenu_pedagogique: `### Regarde d'un peu plus près ! 💡\n\nTa réponse **"${reponse_eleve}"** n'est pas tout à fait correcte pour ce défi.\n\n*Conseil de Pr. MOLIÈRE :* Relis la règle dorée ci-contre. Essaie d'ajuster l'orthographe ou le choix grammatical.\n\nNe baisse pas les bras, courage ! Retente ta chance.`,
+        contenu_pedagogique: `### Regarde d'un peu plus près ! 💡\n\nVotre réponse **"${reponse_eleve}"** n'est pas tout à fait correcte pour ce défi.\n\n*Conseil de Pr. MOLIÈRE :* Relis la règle dorée ci-contre. Essayez d'ajuster l'orthographe ou le choix grammatical.\n\nNe baisse pas les bras, courage ! Retentez votre chance.`,
         rappel_cours: `💡 [Prof-Ami Mode Résilience] ${exerciseData.rappel_cours}`,
         offlineFallback: true
       });
@@ -519,7 +519,7 @@ app.post("/api/pedagogie/chat", async (req, res) => {
 
     // Add instructions to prompt
     const promptWithRules = `Voici la question de l'élève marocain de niveau ${niveau}. Réponds de façon pédagogue en adaptant le vocabulaire à son niveau.
-Respecte les directives : prénoms, villes marocaines, encouragement chaleureux et explications claires sous format JSON afin de structurer ta réponse éducative.`;
+Respecte les directives : prénoms, villes marocaines, encouragement chaleureux et explications claires sous format JSON afin de structurer votre réponse éducative.`;
 
     const lastMsgIdx = formattedContents.length - 1;
     if (lastMsgIdx >= 0) {
@@ -546,7 +546,7 @@ Respecte les directives : prénoms, villes marocaines, encouragement chaleureux 
 
      res.json({
       statut: "[GENERATION_EXERCICE]",
-      contenu_pedagogique: `### Conseils Personnalisés de Pr. MOLIÈRE 💡\n\nSuite à une très forte affluence de la part de nos collèges partenaires, j'ai activé mon moteur de secours pour répondre sans attente à ta question !\n\nRévisons ensemble le module **${matchedLesson.title}** (${matchedLesson.level}) :\n\n- **Description du cours :** ${matchedLesson.description}\n- **Règle clé officielle :**\n> *${matchedLesson.keyRule}*\n\nAs-tu un autre doute grammatical sur lequel tu souhaites que nous dussions échanger ? Pose ta question !`,
+      contenu_pedagogique: `### Conseils Personnalisés de Pr. MOLIÈRE 💡\n\nSuite à une très forte affluence de la part de nos collèges partenaires, j'ai activé mon moteur de secours pour répondre sans attente à votre question !\n\nRévisons ensemble le module **${matchedLesson.title}** (${matchedLesson.level}) :\n\n- **Description du cours :** ${matchedLesson.description}\n- **Règle clé officielle :**\n> *${matchedLesson.keyRule}*\n\nAvez-vous un autre doute grammatical sur lequel vous souhaitez échanger ? Posez votre question !`,
       rappel_cours: `💡 [Pr. MOLIÈRE Mode Résilience] Règle : ${matchedLesson.keyRule}`,
       offlineFallback: true
     });

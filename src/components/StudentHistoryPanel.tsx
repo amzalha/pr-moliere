@@ -104,8 +104,8 @@ export default function StudentHistoryPanel({ userId }: Props) {
    weakThemes.length > 0 && weakThemes[0].wrong > 0
     ? `Révise en priorité : ${weakThemes[0].theme}.`
     : total === 0
-     ? "Commence par répondre à un premier défi pour générer ton diagnostic."
-     : "Très bon début : continue avec un nouveau thème pour consolider ta progression.";
+     ? "Commencez par répondre à un premier défi pour générer votre diagnostic."
+     : "Très bon début : continuez avec un nouveau thème pour consolider votre progression.";
 
   return {
    total,
@@ -126,7 +126,7 @@ export default function StudentHistoryPanel({ userId }: Props) {
      <Database className="w-4 h-4" />
      <span>Dashboard élève</span>
     </div>
-    <p>Connecte-toi avec Google pour enregistrer ton historique et afficher ton diagnostic personnalisé.</p>
+    <p>Connectez-vous avec Google pour enregistrer votre historique et afficher votre diagnostic personnalisé.</p>
    </div>
   );
  }

@@ -121,8 +121,8 @@ export default function BrevetTracker({ totalCorrect }: BrevetTrackerProps) {
       </div>
       <p className="text-[9px] text-[#A39E93] font-bold mt-1 leading-tight">
        {readinessPercentage >= 80 ? "🌟 Niveau Exceptionnel (Mention Très Bien visée !)" :
-        readinessPercentage >= 50 ? "👍 Progression Stable. Révise encore ton Lexique !" :
-        "📝 Remplis la checklist et réussis des exercices pour augmenter ta confiance."}
+        readinessPercentage >= 50 ? "👍 Progression Stable. Révisez encore votre lexique !" :
+        "📝 Remplissez la checklist et réussissez des exercices pour augmenter votre confiance."}
       </p>
      </div>
 
