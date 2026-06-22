@@ -1299,6 +1299,51 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier une proposition relative.', 'Repérer le pronom relatif.', 'Employer une proposition relative dans une production écrite.'],
     tags: ['2AC', 'grammaire', 'proposition-relative', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-regional-expression-opinion',
+    niveau: '3AC',
+    typeEvaluation: 'examen_regional',
+    competence: 'production_ecrite',
+    titre: 'Examen régional 3AC — Exprimer une opinion',
+    theme: 'argumentation',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Certains élèves pensent que les activités culturelles développent la confiance et l’esprit de groupe. Elles permettent aussi de découvrir des talents et de mieux s’exprimer.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel est le thème du texte ?',
+        bareme: 4,
+        reponseModele: 'Le thème du texte est l’importance des activités culturelles pour les élèves.',
+        criteresCorrection: ['Identifier le thème général.', 'Formuler une réponse claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux arguments en faveur des activités culturelles.',
+        bareme: 6,
+        reponseModele: 'Deux arguments sont : elles développent la confiance et l’esprit de groupe ; elles permettent de découvrir des talents.',
+        criteresCorrection: ['Repérer deux arguments.', 'Reformuler correctement les idées du texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un texte argumentatif de douze lignes pour donner votre opinion sur les activités culturelles au collège.',
+        bareme: 10,
+        reponseModele: 'Le texte doit présenter une opinion claire, des arguments pertinents et une conclusion.',
+        criteresCorrection: ['Présenter une opinion claire.', 'Développer au moins deux arguments.', 'Utiliser des connecteurs logiques.', 'Respecter la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un texte argumentatif.', 'Identifier des arguments.', 'Exprimer une opinion organisée.'],
+    tags: ['3AC', 'examen-regional', 'argumentation', 'opinion']
   }
 ];
 
