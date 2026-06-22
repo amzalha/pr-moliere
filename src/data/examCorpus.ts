@@ -1388,6 +1388,50 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier un complément du nom.', 'Comprendre le rôle du groupe nominal.', 'Employer des compléments du nom dans une production courte.'],
     tags: ['1AC', 'grammaire', 'complement-du-nom', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s2-proposition-subordonnee-circonstancielle',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — La proposition subordonnée circonstancielle',
+    theme: 'grammaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Lorsque le club de lecture commence, les élèves s’installent en silence. Ils participent avec sérieux parce que le sujet les intéresse.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Pourquoi les élèves participent-ils avec sérieux ?',
+        bareme: 4,
+        reponseModele: 'Les élèves participent avec sérieux parce que le sujet les intéresse.',
+        criteresCorrection: ['Repérer la cause.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux propositions subordonnées circonstancielles dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux propositions subordonnées circonstancielles sont : lorsque le club de lecture commence ; parce que le sujet les intéresse.',
+        criteresCorrection: ['Identifier deux propositions subordonnées.', 'Repérer le mot introducteur.', 'Préciser la valeur de temps ou de cause si possible.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un paragraphe de huit lignes sur une activité scolaire en utilisant deux propositions subordonnées circonstancielles.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit présenter une activité scolaire avec deux propositions subordonnées circonstancielles correctement construites.',
+        criteresCorrection: ['Respecter le thème.', 'Employer deux subordonnées circonstancielles.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier une proposition subordonnée circonstancielle.', 'Repérer une valeur de temps ou de cause.', 'Employer une subordonnée dans un paragraphe.'],
+    tags: ['2AC', 'grammaire', 'subordonnee-circonstancielle', 'controle-continu']
   }
 ];
 
