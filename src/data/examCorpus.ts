@@ -99,7 +99,7 @@ export const examCorpus: ExamCorpusItem[] = [
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
     consigne:
-      'Rédige le portrait physique et moral d’un personnage courageux que tu admires.',
+      'Rédige le portrait physique et moral d’un personnage courageux que vous admirez.',
     questions: [
       {
         id: 'q1',
@@ -137,7 +137,7 @@ export const examCorpus: ExamCorpusItem[] = [
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
     consigne:
-      'Rédige une lettre officielle au directeur de ton établissement pour demander l’organisation d’une activité culturelle.',
+      'Rédige une lettre officielle au directeur de votre établissement pour demander l’organisation d’une activité culturelle.',
     questions: [
       {
         id: 'q1',
@@ -328,7 +328,7 @@ export const examCorpus: ExamCorpusItem[] = [
       {
         id: 'q3',
         competence: 'production_ecrite',
-        enonce: 'Décris en six lignes un lieu de ton collège.',
+        enonce: 'Décrivez en six lignes un lieu de votre collège.',
         bareme: 10,
         reponseModele:
           'La production doit présenter un lieu précis, utiliser des adjectifs et organiser la description.',
@@ -424,7 +424,7 @@ export const examCorpus: ExamCorpusItem[] = [
     sourceNom: 'PR_Molière — sujet modèle original',
     consigne: 'Lis la situation puis réponds aux questions.',
     texteSupport:
-      'Ton ami a changé de collège. Tu veux lui écrire une lettre pour lui raconter ta nouvelle classe et lui demander de ses nouvelles.',
+      'Votre ami a changé de collège. Vous voulez lui écrire une lettre pour lui raconter votre nouvelle classe et lui demander de ses nouvelles.',
     questions: [
       {
         id: 'q1',
@@ -627,7 +627,7 @@ export const examCorpus: ExamCorpusItem[] = [
       {
         id: 'q3',
         competence: 'production_ecrite',
-        enonce: 'Écris quatre phrases simples sur ta journée au collège.',
+        enonce: 'Écrivez quatre phrases simples sur votre journée au collège.',
         bareme: 10,
         reponseModele: 'La réponse doit contenir quatre phrases simples claires.',
         criteresCorrection: ['Écrire quatre phrases.', 'Respecter la ponctuation.', 'Utiliser une langue correcte.']

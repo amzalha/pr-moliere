@@ -20,7 +20,7 @@ export default function ProgressPanel({ stats, onResetStats }: ProgressPanelProp
    {
     id: "first-step",
     title: "Pousse de Larache 🌿",
-    description: "Résoudre ton premier exercice ou défi de français.",
+    description: "Résoudre votre premier exercice ou défi de français.",
     unlocked: stats.totalCorrect >= 1,
     color: "bg-emerald-50 text-emerald-800 border-emerald-200",
     icon: Star,
@@ -52,7 +52,7 @@ export default function ProgressPanel({ stats, onResetStats }: ProgressPanelProp
    {
     id: "marathon",
     title: "Savant de la Koutoubia 🕌",
-    description: "Atteindre 4 réponses correctes au total dans ton palmarès.",
+    description: "Atteindre 4 réponses correctes au total dans votre palmarès.",
     unlocked: stats.totalCorrect >= 4,
     color: "bg-rose-50 text-rose-800 border-rose-200",
     icon: Trophy,
