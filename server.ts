@@ -238,6 +238,7 @@ async function generateOpenRouterContent(contents: any, temperature: number): Pr
     try {
       console.log(`[Pr. MOLIÈRE OpenRouter] task=${task} model=${model}`);
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+        signal: AbortSignal.timeout(Number(process.env.OPENROUTER_TIMEOUT_MS || 12000)),
         method: "POST",
         headers: {
           "Authorization": `Bearer ${apiKey}`,
@@ -252,6 +253,7 @@ async function generateOpenRouterContent(contents: any, temperature: number): Pr
             { role: "user", content: userPrompt },
           ],
           temperature,
+          max_tokens: 700,
           response_format: { type: "json_object" },
         }),
       });
