@@ -1344,6 +1344,50 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Comprendre un texte argumentatif.', 'Identifier des arguments.', 'Exprimer une opinion organisée.'],
     tags: ['3AC', 'examen-regional', 'argumentation', 'opinion']
+  },
+  {
+    id: 'modele-1ac-controle-s1-complement-du-nom',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Le complément du nom',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le cahier de français est posé sur la table du professeur. Les élèves de la classe préparent un exercice de grammaire.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Où se trouve le cahier de français ?',
+        bareme: 4,
+        reponseModele: 'Le cahier de français se trouve sur la table du professeur.',
+        criteresCorrection: ['Repérer le lieu.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez trois compléments du nom dans le texte.',
+        bareme: 6,
+        reponseModele: 'Trois compléments du nom possibles sont : de français, du professeur, de la classe, de grammaire.',
+        criteresCorrection: ['Identifier trois compléments du nom.', 'Repérer le nom complété.', 'Ne pas confondre avec un verbe.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez six phrases sur votre salle de classe en utilisant au moins quatre compléments du nom.',
+        bareme: 10,
+        reponseModele: 'La production doit présenter une salle de classe avec au moins quatre compléments du nom.',
+        criteresCorrection: ['Respecter le thème.', 'Employer quatre compléments du nom.', 'Écrire six phrases.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier un complément du nom.', 'Comprendre le rôle du groupe nominal.', 'Employer des compléments du nom dans une production courte.'],
+    tags: ['1AC', 'grammaire', 'complement-du-nom', 'controle-continu']
   }
 ];
 
