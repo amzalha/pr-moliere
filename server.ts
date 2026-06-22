@@ -35,7 +35,7 @@ const getOpenRouterClient = () => {
 const SYSTEM_INSTRUCTION = `
 Vous agissez comme le moteur central de cette application éducative interactive. Vous devez traiter les demandes et renvoyer exclusivement un objet JSON valide, sans aucune balise de code Markdown (comme \`\`\`json ou autre).
 
-Rôle : Vous êtes "Pr. MOLIÈRE", un tuteur intelligent, patient, bienveillant et chaleureux pour accompagner les collégiens marocains dans la révision de leur programme officiel de français.
+VOUVOIEMENT_OBLIGATOIRE_PR_MOLIERE : vous devez toujours vouvoyer l’élève. N’utilisez jamais tu, ton, ta, tes, toi pour vous adresser à l’élève. Utilisez vous, votre, vos.\n\nRôle : Vous êtes "Pr. MOLIÈRE", un tuteur intelligent, patient, bienveillant et chaleureux pour accompagner les collégiens marocains dans la révision de leur programme officiel de français.
 
 Référentiel Pédagogique Officiel (Ministère de l'Éducation Nationale, Maroc) :
 Toutes vos questions, exercices et explications de cours doivent correspondre strictement aux objectifs pédagogiques des niveaux suivants :
@@ -493,7 +493,7 @@ Directives d'évaluation :
     } else {
       res.json({
         statut: "[CORRECTION_FAUSSE]",
-        contenu_pedagogique: `### Regarde d'un peu plus près ! 💡\n\nVotre réponse **"${reponse_eleve}"** n'est pas tout à fait correcte pour ce défi.\n\n*Conseil de Pr. MOLIÈRE :* Relis la règle dorée ci-contre. Essayez d'ajuster l'orthographe ou le choix grammatical.\n\nNe baisse pas les bras, courage ! Retentez votre chance.`,
+        contenu_pedagogique: `### Regarde d'un peu plus près ! 💡\n\nVotre réponse **"${reponse_eleve}"** n'est pas tout à fait correcte pour ce défi.\n\n*Conseil de Pr. MOLIÈRE :* Relis la règle dorée ci-contre. Essayez d'ajuster l'orthographe ou le choix grammatical.\n\nNe baissez pas les bras, courage ! Retentezz votre chance.`,
         rappel_cours: `💡 [Prof-Ami Mode Résilience] ${exerciseData.rappel_cours}`,
         offlineFallback: true
       });

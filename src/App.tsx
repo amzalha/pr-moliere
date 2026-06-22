@@ -210,7 +210,7 @@ export default function App() {
  const [chatMessages, setChatMessages] = useState<Array<{ role: "user" | "model"; content: string }>>([
   {
    role: "model",
-   content: "Marhaban ! Je suis **Pr. MOLIÈRE**, votre tuteur de français. Sélectionnez la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou ton examen régional ! Je suis là pour vous accompagner chaleureusement."
+   content: "Marhaban ! Je suis **Pr. MOLIÈRE**, votre tuteur de français. Sélectionnezz la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou votre examen régional ! Je suis là pour vous accompagner chaleureusement."
   }
  ]);
  const [userQuery, setUserQuery] = useState<string>("");
@@ -1096,7 +1096,7 @@ const submitAnswer = async () => {
         </div>
         <div>
          <h4 className="text-sm font-black text-[#1A1A1A] tracking-tight">Discussion interactive avec le tuteur</h4>
-         <p className="text-xs text-[#A39E93] font-bold">Pose tes questions libres, demande des exemples ou de l'aide</p>
+         <p className="text-xs text-[#A39E93] font-bold">Pose vos questions libres, demande des exemples ou de l'aide</p>
         </div>
        </div>
       </div>
@@ -1262,7 +1262,7 @@ const submitAnswer = async () => {
          Bibliothèque des Modules & Fiches de Révision
         </h3>
         <p className="text-xs text-[#A39E93] font-semibold">
-         Clique sur "Créer un Défi " pour charger instantanément l'exercice ou sur "Lire la leçon" pour réviser la règle.
+         Cliquez sur "Créer un Défi " pour charger instantanément l'exercice ou sur "Lire la leçon" pour réviser la règle.
         </p>
        </div>
       </div>
