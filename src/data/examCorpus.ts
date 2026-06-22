@@ -1344,6 +1344,139 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Comprendre un texte argumentatif.', 'Identifier des arguments.', 'Exprimer une opinion organisée.'],
     tags: ['3AC', 'examen-regional', 'argumentation', 'opinion']
+  },
+  {
+    id: 'modele-1ac-controle-s1-complement-du-nom',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Le complément du nom',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le cahier de français est posé sur la table du professeur. Les élèves de la classe préparent un exercice de grammaire.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Où se trouve le cahier de français ?',
+        bareme: 4,
+        reponseModele: 'Le cahier de français se trouve sur la table du professeur.',
+        criteresCorrection: ['Repérer le lieu.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez trois compléments du nom dans le texte.',
+        bareme: 6,
+        reponseModele: 'Trois compléments du nom possibles sont : de français, du professeur, de la classe, de grammaire.',
+        criteresCorrection: ['Identifier trois compléments du nom.', 'Repérer le nom complété.', 'Ne pas confondre avec un verbe.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez six phrases sur votre salle de classe en utilisant au moins quatre compléments du nom.',
+        bareme: 10,
+        reponseModele: 'La production doit présenter une salle de classe avec au moins quatre compléments du nom.',
+        criteresCorrection: ['Respecter le thème.', 'Employer quatre compléments du nom.', 'Écrire six phrases.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier un complément du nom.', 'Comprendre le rôle du groupe nominal.', 'Employer des compléments du nom dans une production courte.'],
+    tags: ['1AC', 'grammaire', 'complement-du-nom', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s2-proposition-subordonnee-circonstancielle',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — La proposition subordonnée circonstancielle',
+    theme: 'grammaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Lorsque le club de lecture commence, les élèves s’installent en silence. Ils participent avec sérieux parce que le sujet les intéresse.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Pourquoi les élèves participent-ils avec sérieux ?',
+        bareme: 4,
+        reponseModele: 'Les élèves participent avec sérieux parce que le sujet les intéresse.',
+        criteresCorrection: ['Repérer la cause.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux propositions subordonnées circonstancielles dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux propositions subordonnées circonstancielles sont : lorsque le club de lecture commence ; parce que le sujet les intéresse.',
+        criteresCorrection: ['Identifier deux propositions subordonnées.', 'Repérer le mot introducteur.', 'Préciser la valeur de temps ou de cause si possible.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un paragraphe de huit lignes sur une activité scolaire en utilisant deux propositions subordonnées circonstancielles.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit présenter une activité scolaire avec deux propositions subordonnées circonstancielles correctement construites.',
+        criteresCorrection: ['Respecter le thème.', 'Employer deux subordonnées circonstancielles.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier une proposition subordonnée circonstancielle.', 'Repérer une valeur de temps ou de cause.', 'Employer une subordonnée dans un paragraphe.'],
+    tags: ['2AC', 'grammaire', 'subordonnee-circonstancielle', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-regional-narration-temps-recit',
+    niveau: '3AC',
+    typeEvaluation: 'examen_regional',
+    competence: 'langue',
+    titre: 'Examen régional 3AC — Narration et temps du récit',
+    theme: 'narration',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le jeune garçon marchait lentement dans la ruelle silencieuse. Soudain, il aperçut une lumière derrière une vieille porte. Il s’approcha avec prudence et découvrit un petit jardin caché.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel événement change la situation dans le récit ?',
+        bareme: 4,
+        reponseModele: 'L’événement qui change la situation est l’apparition d’une lumière derrière une vieille porte.',
+        criteresCorrection: ['Repérer l’événement important.', 'Formuler une réponse claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux verbes à l’imparfait et deux verbes au passé simple.',
+        bareme: 6,
+        reponseModele: 'Deux verbes à l’imparfait : marchait, était sous-entendu par la description. Deux verbes au passé simple : aperçut, s’approcha, découvrit.',
+        criteresCorrection: ['Identifier les temps du récit.', 'Distinguer imparfait et passé simple.', 'Citer des formes verbales exactes.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez la suite du récit en douze lignes en utilisant l’imparfait et le passé simple.',
+        bareme: 10,
+        reponseModele: 'La suite doit respecter la situation narrative, employer l’imparfait pour la description et le passé simple pour les actions principales.',
+        criteresCorrection: ['Respecter la cohérence du récit.', 'Employer l’imparfait.', 'Employer le passé simple.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un texte narratif.', 'Identifier les temps du récit.', 'Produire une suite narrative cohérente.'],
+    tags: ['3AC', 'examen-regional', 'narration', 'temps-du-recit']
   }
 ];
 
