@@ -1166,6 +1166,51 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier un complément circonstanciel.', 'Comprendre les indications de temps et de lieu.', 'Produire un paragraphe organisé.'],
     tags: ['2AC', 'grammaire', 'complement-circonstanciel', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-local-connecteurs-logiques',
+    niveau: '3AC',
+    typeEvaluation: 'examen_local',
+    competence: 'langue',
+    titre: 'Examen local 3AC — Les connecteurs logiques',
+    theme: 'argumentation',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'La lecture est importante car elle développe la réflexion. Elle enrichit aussi le vocabulaire. Donc, les élèves devraient lire régulièrement pour améliorer leur expression écrite.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel est le thème du texte ?',
+        bareme: 4,
+        reponseModele: 'Le thème du texte est l’importance de la lecture.',
+        criteresCorrection: ['Identifier le thème.', 'Répondre clairement.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux connecteurs logiques dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux connecteurs logiques sont : car et donc.',
+        criteresCorrection: ['Identifier deux connecteurs.', 'Ne pas confondre connecteur et verbe.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un paragraphe argumentatif de dix lignes sur l’importance de la lecture en utilisant trois connecteurs logiques.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit défendre l’importance de la lecture avec des arguments et trois connecteurs logiques.',
+        criteresCorrection: ['Présenter une opinion claire.', 'Employer trois connecteurs.', 'Développer des arguments.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier les connecteurs logiques.', 'Comprendre un texte argumentatif.', 'Produire un paragraphe argumentatif.'],
+    tags: ['3AC', 'examen-local', 'connecteurs-logiques', 'argumentation']
   }
 ];
 
