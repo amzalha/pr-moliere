@@ -1211,6 +1211,50 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier les connecteurs logiques.', 'Comprendre un texte argumentatif.', 'Produire un paragraphe argumentatif.'],
     tags: ['3AC', 'examen-local', 'connecteurs-logiques', 'argumentation']
+  },
+  {
+    id: 'modele-1ac-controle-s2-phrase-nominale-verbale',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Phrase nominale et phrase verbale',
+    theme: 'grammaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans la cour du collège, les élèves discutent calmement. Silence complet devant la bibliothèque. Une surveillante organise l’entrée des classes.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Où les élèves discutent-ils ?',
+        bareme: 4,
+        reponseModele: 'Les élèves discutent dans la cour du collège.',
+        criteresCorrection: ['Repérer le lieu.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez une phrase verbale et une phrase nominale dans le texte.',
+        bareme: 6,
+        reponseModele: 'Phrase verbale : les élèves discutent calmement. Phrase nominale : silence complet devant la bibliothèque.',
+        criteresCorrection: ['Identifier une phrase verbale.', 'Identifier une phrase nominale.', 'Justifier par la présence ou l’absence de verbe conjugué.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez six phrases sur la vie au collège : trois phrases verbales et trois phrases nominales.',
+        bareme: 10,
+        reponseModele: 'La production doit présenter trois phrases verbales et trois phrases nominales sur la vie au collège.',
+        criteresCorrection: ['Respecter le thème.', 'Écrire trois phrases verbales.', 'Écrire trois phrases nominales.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Distinguer phrase nominale et phrase verbale.', 'Identifier le verbe conjugué.', 'Produire des phrases variées.'],
+    tags: ['1AC', 'grammaire', 'phrase-nominale', 'phrase-verbale', 'controle-continu']
   }
 ];
 
