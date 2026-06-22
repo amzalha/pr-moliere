@@ -1432,6 +1432,51 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier une proposition subordonnée circonstancielle.', 'Repérer une valeur de temps ou de cause.', 'Employer une subordonnée dans un paragraphe.'],
     tags: ['2AC', 'grammaire', 'subordonnee-circonstancielle', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-regional-narration-temps-recit',
+    niveau: '3AC',
+    typeEvaluation: 'examen_regional',
+    competence: 'langue',
+    titre: 'Examen régional 3AC — Narration et temps du récit',
+    theme: 'narration',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le jeune garçon marchait lentement dans la ruelle silencieuse. Soudain, il aperçut une lumière derrière une vieille porte. Il s’approcha avec prudence et découvrit un petit jardin caché.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel événement change la situation dans le récit ?',
+        bareme: 4,
+        reponseModele: 'L’événement qui change la situation est l’apparition d’une lumière derrière une vieille porte.',
+        criteresCorrection: ['Repérer l’événement important.', 'Formuler une réponse claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux verbes à l’imparfait et deux verbes au passé simple.',
+        bareme: 6,
+        reponseModele: 'Deux verbes à l’imparfait : marchait, était sous-entendu par la description. Deux verbes au passé simple : aperçut, s’approcha, découvrit.',
+        criteresCorrection: ['Identifier les temps du récit.', 'Distinguer imparfait et passé simple.', 'Citer des formes verbales exactes.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez la suite du récit en douze lignes en utilisant l’imparfait et le passé simple.',
+        bareme: 10,
+        reponseModele: 'La suite doit respecter la situation narrative, employer l’imparfait pour la description et le passé simple pour les actions principales.',
+        criteresCorrection: ['Respecter la cohérence du récit.', 'Employer l’imparfait.', 'Employer le passé simple.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un texte narratif.', 'Identifier les temps du récit.', 'Produire une suite narrative cohérente.'],
+    tags: ['3AC', 'examen-regional', 'narration', 'temps-du-recit']
   }
 ];
 
