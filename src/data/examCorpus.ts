@@ -945,6 +945,139 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Comprendre une situation de communication.', 'Employer un registre officiel.', 'Rédiger une lettre de réclamation.'],
     tags: ['3AC', 'examen-local', 'lettre', 'reclamation']
+  },
+  {
+    id: 'modele-1ac-controle-s2-champ-lexical-ecole',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Le champ lexical de l’école',
+    theme: 'vocabulaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans la salle de classe, les élèves ouvrent leurs cahiers. Le professeur explique la leçon au tableau, puis chacun prépare son exercice avec attention.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Où se déroule la scène ?',
+        bareme: 4,
+        reponseModele: 'La scène se déroule dans une salle de classe.',
+        criteresCorrection: ['Repérer le lieu.', 'Répondre par une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez trois mots appartenant au champ lexical de l’école.',
+        bareme: 6,
+        reponseModele: 'Trois mots possibles sont : classe, cahiers, professeur, leçon, tableau, exercice.',
+        criteresCorrection: ['Identifier trois mots liés à l’école.', 'Ne pas citer des mots hors thème.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un paragraphe de six lignes sur une journée au collège en utilisant cinq mots du champ lexical de l’école.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit évoquer la vie scolaire et employer au moins cinq mots du champ lexical de l’école.',
+        criteresCorrection: ['Respecter le thème scolaire.', 'Employer cinq mots du champ lexical.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier un champ lexical.', 'Comprendre un court texte scolaire.', 'Produire un paragraphe thématique.'],
+    tags: ['1AC', 'vocabulaire', 'champ-lexical', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s1-discours-direct',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Le discours direct',
+    theme: 'dialogue',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le professeur annonce : « Aujourd’hui, nous allons préparer une courte présentation orale. » Les élèves répondent : « Nous sommes prêts à participer. »',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Qui parle en premier dans le texte ?',
+        bareme: 4,
+        reponseModele: 'Le professeur parle en premier.',
+        criteresCorrection: ['Identifier le premier locuteur.', 'Répondre clairement.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez une phrase au discours direct.',
+        bareme: 6,
+        reponseModele: 'Une phrase au discours direct est : « Aujourd’hui, nous allons préparer une courte présentation orale. »',
+        criteresCorrection: ['Repérer les guillemets.', 'Citer une parole directe complète.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un court échange au discours direct entre un professeur et un élève.',
+        bareme: 10,
+        reponseModele: 'L’échange doit contenir des paroles rapportées directement avec une ponctuation correcte.',
+        criteresCorrection: ['Employer le discours direct.', 'Respecter la ponctuation.', 'Construire un échange cohérent.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Reconnaître le discours direct.', 'Identifier les locuteurs.', 'Produire un échange dialogué.'],
+    tags: ['2AC', 'discours-direct', 'dialogue', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-regional-lecture-citoyenne',
+    niveau: '3AC',
+    typeEvaluation: 'examen_regional',
+    competence: 'lecture',
+    titre: 'Examen régional 3AC — Argumenter pour la lecture',
+    theme: 'lecture',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'La lecture développe l’imagination et enrichit le vocabulaire. Elle permet aussi de mieux comprendre les autres et de découvrir des expériences différentes. C’est pourquoi les collèges encouragent les élèves à lire régulièrement.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quelle est la thèse défendue dans le texte ?',
+        bareme: 4,
+        reponseModele: 'La thèse défendue est que la lecture est utile et doit être encouragée.',
+        criteresCorrection: ['Identifier l’opinion défendue.', 'Formuler une réponse précise.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Relevez deux arguments en faveur de la lecture.',
+        bareme: 6,
+        reponseModele: 'Deux arguments sont : la lecture développe l’imagination et enrichit le vocabulaire.',
+        criteresCorrection: ['Relever deux arguments.', 'S’appuyer sur le texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un paragraphe argumentatif de douze lignes pour encourager la lecture au collège.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit présenter une thèse claire, deux arguments et un exemple.',
+        criteresCorrection: ['Présenter une thèse.', 'Développer deux arguments.', 'Ajouter un exemple.', 'Respecter la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier une thèse.', 'Repérer des arguments.', 'Produire un paragraphe argumentatif.'],
+    tags: ['3AC', 'examen-regional', 'argumentation', 'lecture']
   }
 ];
 
