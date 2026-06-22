@@ -1211,6 +1211,139 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier les connecteurs logiques.', 'Comprendre un texte argumentatif.', 'Produire un paragraphe argumentatif.'],
     tags: ['3AC', 'examen-local', 'connecteurs-logiques', 'argumentation']
+  },
+  {
+    id: 'modele-1ac-controle-s2-phrase-nominale-verbale',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Phrase nominale et phrase verbale',
+    theme: 'grammaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans la cour du collège, les élèves discutent calmement. Silence complet devant la bibliothèque. Une surveillante organise l’entrée des classes.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Où les élèves discutent-ils ?',
+        bareme: 4,
+        reponseModele: 'Les élèves discutent dans la cour du collège.',
+        criteresCorrection: ['Repérer le lieu.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez une phrase verbale et une phrase nominale dans le texte.',
+        bareme: 6,
+        reponseModele: 'Phrase verbale : les élèves discutent calmement. Phrase nominale : silence complet devant la bibliothèque.',
+        criteresCorrection: ['Identifier une phrase verbale.', 'Identifier une phrase nominale.', 'Justifier par la présence ou l’absence de verbe conjugué.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez six phrases sur la vie au collège : trois phrases verbales et trois phrases nominales.',
+        bareme: 10,
+        reponseModele: 'La production doit présenter trois phrases verbales et trois phrases nominales sur la vie au collège.',
+        criteresCorrection: ['Respecter le thème.', 'Écrire trois phrases verbales.', 'Écrire trois phrases nominales.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Distinguer phrase nominale et phrase verbale.', 'Identifier le verbe conjugué.', 'Produire des phrases variées.'],
+    tags: ['1AC', 'grammaire', 'phrase-nominale', 'phrase-verbale', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s1-proposition-relative',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — La proposition relative',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le livre que le professeur présente aux élèves raconte une histoire captivante. Les personnages qui avancent avec courage donnent une belle leçon de solidarité.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Que raconte le livre présenté aux élèves ?',
+        bareme: 4,
+        reponseModele: 'Le livre raconte une histoire captivante.',
+        criteresCorrection: ['Repérer l’information principale.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux propositions relatives dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux propositions relatives sont : que le professeur présente aux élèves ; qui avancent avec courage.',
+        criteresCorrection: ['Identifier deux propositions relatives.', 'Repérer le pronom relatif.', 'Ne pas confondre avec une proposition indépendante.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un paragraphe de huit lignes décrivant un personnage courageux en employant deux propositions relatives.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit décrire un personnage courageux avec deux propositions relatives correctement construites.',
+        criteresCorrection: ['Respecter le thème.', 'Employer deux propositions relatives.', 'Organiser la description.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier une proposition relative.', 'Repérer le pronom relatif.', 'Employer une proposition relative dans une production écrite.'],
+    tags: ['2AC', 'grammaire', 'proposition-relative', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-regional-expression-opinion',
+    niveau: '3AC',
+    typeEvaluation: 'examen_regional',
+    competence: 'production_ecrite',
+    titre: 'Examen régional 3AC — Exprimer une opinion',
+    theme: 'argumentation',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Certains élèves pensent que les activités culturelles développent la confiance et l’esprit de groupe. Elles permettent aussi de découvrir des talents et de mieux s’exprimer.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel est le thème du texte ?',
+        bareme: 4,
+        reponseModele: 'Le thème du texte est l’importance des activités culturelles pour les élèves.',
+        criteresCorrection: ['Identifier le thème général.', 'Formuler une réponse claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux arguments en faveur des activités culturelles.',
+        bareme: 6,
+        reponseModele: 'Deux arguments sont : elles développent la confiance et l’esprit de groupe ; elles permettent de découvrir des talents.',
+        criteresCorrection: ['Repérer deux arguments.', 'Reformuler correctement les idées du texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un texte argumentatif de douze lignes pour donner votre opinion sur les activités culturelles au collège.',
+        bareme: 10,
+        reponseModele: 'Le texte doit présenter une opinion claire, des arguments pertinents et une conclusion.',
+        criteresCorrection: ['Présenter une opinion claire.', 'Développer au moins deux arguments.', 'Utiliser des connecteurs logiques.', 'Respecter la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un texte argumentatif.', 'Identifier des arguments.', 'Exprimer une opinion organisée.'],
+    tags: ['3AC', 'examen-regional', 'argumentation', 'opinion']
   }
 ];
 
