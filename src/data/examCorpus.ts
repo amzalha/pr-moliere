@@ -1078,6 +1078,139 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier une thèse.', 'Repérer des arguments.', 'Produire un paragraphe argumentatif.'],
     tags: ['3AC', 'examen-regional', 'argumentation', 'lecture']
+  },
+  {
+    id: 'modele-1ac-controle-s1-adjectif-qualificatif',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — L’adjectif qualificatif',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans une grande salle lumineuse, les élèves attentifs écoutent une histoire merveilleuse racontée par leur professeur.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Où se trouvent les élèves ?',
+        bareme: 4,
+        reponseModele: 'Les élèves se trouvent dans une grande salle lumineuse.',
+        criteresCorrection: ['Repérer le lieu.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez trois adjectifs qualificatifs dans le texte.',
+        bareme: 6,
+        reponseModele: 'Trois adjectifs sont : grande, lumineuse, attentifs ou merveilleuse.',
+        criteresCorrection: ['Identifier trois adjectifs.', 'Ne pas citer de noms communs.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez cinq phrases décrivant une salle de classe en utilisant au moins quatre adjectifs qualificatifs.',
+        bareme: 10,
+        reponseModele: 'La production doit décrire une salle avec des adjectifs qualificatifs pertinents.',
+        criteresCorrection: ['Écrire cinq phrases.', 'Employer quatre adjectifs.', 'Respecter le thème.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier un adjectif qualificatif.', 'Comprendre une description simple.', 'Produire une description courte.'],
+    tags: ['1AC', 'grammaire', 'adjectif', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s2-complement-circonstanciel',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Le complément circonstanciel',
+    theme: 'grammaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Chaque matin, les élèves entrent calmement dans la classe. Après la sonnerie, le professeur écrit la date au tableau pour commencer la leçon.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quand les élèves entrent-ils dans la classe ?',
+        bareme: 4,
+        reponseModele: 'Les élèves entrent dans la classe chaque matin.',
+        criteresCorrection: ['Repérer le moment.', 'Répondre par une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux compléments circonstanciels dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux compléments circonstanciels possibles sont : chaque matin, dans la classe, après la sonnerie, au tableau.',
+        criteresCorrection: ['Identifier deux compléments circonstanciels.', 'Préciser leur valeur si possible.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un paragraphe de huit lignes sur une journée scolaire en utilisant trois compléments circonstanciels.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit raconter une journée scolaire avec au moins trois compléments circonstanciels.',
+        criteresCorrection: ['Respecter le thème scolaire.', 'Employer trois compléments circonstanciels.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier un complément circonstanciel.', 'Comprendre les indications de temps et de lieu.', 'Produire un paragraphe organisé.'],
+    tags: ['2AC', 'grammaire', 'complement-circonstanciel', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-local-connecteurs-logiques',
+    niveau: '3AC',
+    typeEvaluation: 'examen_local',
+    competence: 'langue',
+    titre: 'Examen local 3AC — Les connecteurs logiques',
+    theme: 'argumentation',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'La lecture est importante car elle développe la réflexion. Elle enrichit aussi le vocabulaire. Donc, les élèves devraient lire régulièrement pour améliorer leur expression écrite.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel est le thème du texte ?',
+        bareme: 4,
+        reponseModele: 'Le thème du texte est l’importance de la lecture.',
+        criteresCorrection: ['Identifier le thème.', 'Répondre clairement.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux connecteurs logiques dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux connecteurs logiques sont : car et donc.',
+        criteresCorrection: ['Identifier deux connecteurs.', 'Ne pas confondre connecteur et verbe.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un paragraphe argumentatif de dix lignes sur l’importance de la lecture en utilisant trois connecteurs logiques.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit défendre l’importance de la lecture avec des arguments et trois connecteurs logiques.',
+        criteresCorrection: ['Présenter une opinion claire.', 'Employer trois connecteurs.', 'Développer des arguments.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier les connecteurs logiques.', 'Comprendre un texte argumentatif.', 'Produire un paragraphe argumentatif.'],
+    tags: ['3AC', 'examen-local', 'connecteurs-logiques', 'argumentation']
   }
 ];
 
