@@ -531,6 +531,66 @@ export const examCorpus: ExamCorpusItem[] = [
       'Produire un paragraphe argumentatif.'
     ],
     tags: ['3AC', 'examen-regional', 'argumentation', 'solidarite']
+  },
+  {
+    id: 'modele-2ac-controle-s2-dialogue-argumentatif',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 2AC — Dialogue argumentatif',
+    theme: 'dialogue et argumentation',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lis la situation puis réponds aux questions.',
+    texteSupport:
+      'Deux élèves discutent dans la cour. L’un pense que la lecture est inutile, l’autre explique qu’elle aide à mieux parler, mieux écrire et mieux comprendre le monde.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel est le sujet de la discussion ?',
+        bareme: 4,
+        reponseModele: 'Le sujet de la discussion est l’utilité de la lecture.',
+        criteresCorrection: [
+          'Identifier le thème principal.',
+          'Répondre par une phrase claire.'
+        ]
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Donne un argument en faveur de la lecture.',
+        bareme: 6,
+        reponseModele: 'La lecture aide à mieux parler, mieux écrire et mieux comprendre le monde.',
+        criteresCorrection: [
+          'Repérer un argument pertinent.',
+          'Ne pas confondre argument et exemple.'
+        ]
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédige un dialogue de huit répliques dans lequel deux élèves discutent de l’importance de la lecture.',
+        bareme: 10,
+        reponseModele:
+          'Le dialogue doit contenir deux personnages, des arguments simples et une conclusion claire.',
+        criteresCorrection: [
+          'Respecter la forme du dialogue.',
+          'Présenter des arguments.',
+          'Organiser les répliques.',
+          'Employer une langue correcte.'
+        ]
+      }
+    ],
+    objectifsPedagogiques: [
+      'Comprendre un échange argumentatif.',
+      'Identifier un argument.',
+      'Produire un dialogue argumentatif simple.'
+    ],
+    tags: ['2AC', 'dialogue', 'argumentation', 'controle-continu']
   }
 ];
 
