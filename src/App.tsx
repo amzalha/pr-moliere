@@ -722,7 +722,7 @@ const submitAnswer = async () => {
      </div>
      <div className="flex-1">
       <h4 className="font-serif font-black text-sm text-[#006233] tracking-tight">{celebrationPraise}</h4>
-      <p className="text-[10px] text-[#7A7468] font-bold">Réponse validée avec brio ! Votre score augmente. ✨</p>
+      <p className="text-[10px] text-[#7A7468] font-bold">Réponse enregistrée avec succès. Votre progression est mise à jour. ✨</p>
      </div>
      {/* Floating visual circles for celebration */}
      <div className="absolute -top-1 -right-1 w-3 h-3 bg-rose-500 rounded-full animate-ping"></div>
@@ -967,7 +967,7 @@ const submitAnswer = async () => {
          {submitting ? (
           <>
            <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-           <span>Correction en cours par l'IA...</span>
+           <span>Correction en cours...</span>
           </>
          ) : (
           <>
@@ -1067,7 +1067,7 @@ const submitAnswer = async () => {
       {/* Stats Overview */}
       <div className="bg-[#006233] text-white rounded-3xl p-5 shadow-sm flex flex-col justify-between shrink-0">
        <div className="flex justify-between items-start">
-        <p className="text-xs font-black uppercase tracking-widest text-[#F2EDE4]/80">Niveau de Maîtrise</p>
+        <p className="text-xs font-black uppercase tracking-widest text-[#F2EDE4]/80">Niveau de maîtrise</p>
         <span className="text-lg bg-green-900/30 px-2.5 py-0.5 rounded-full border border-green-700 text-xs font-bold">Score total</span>
        </div>
        <div className="my-3">

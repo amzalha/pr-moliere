@@ -136,7 +136,7 @@ export default function StudentHistoryPanel({ userId }: Props) {
    <div className="flex items-center justify-between mb-4">
     <div>
      <h4 className="text-sm font-black text-[#1A1A1A]">Dashboard élève</h4>
-     <p className="text-xs text-[#A39E93] font-bold">Historique, progression et recommandations Supabase</p>
+     <p className="text-xs text-[#A39E93] font-bold">Historique, progression et recommandations personnalisées</p>
     </div>
     <button
      onClick={loadHistory}
