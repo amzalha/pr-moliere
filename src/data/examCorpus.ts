@@ -591,6 +591,139 @@ export const examCorpus: ExamCorpusItem[] = [
       'Produire un dialogue argumentatif simple.'
     ],
     tags: ['2AC', 'dialogue', 'argumentation', 'controle-continu']
+  },
+  {
+    id: 'modele-1ac-controle-s1-phrase-simple',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — La phrase simple',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lis les phrases puis réponds aux questions.',
+    texteSupport:
+      'Le matin, Sara arrive au collège. Elle salue ses camarades. La classe commence à huit heures.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Qui arrive au collège ?',
+        bareme: 4,
+        reponseModele: 'Sara arrive au collège.',
+        criteresCorrection: ['Identifier le personnage.', 'Répondre par une phrase.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relève une phrase simple du texte.',
+        bareme: 6,
+        reponseModele: 'Une phrase simple est : Elle salue ses camarades.',
+        criteresCorrection: ['Choisir une phrase correcte.', 'Recopier sans erreur.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écris quatre phrases simples sur ta journée au collège.',
+        bareme: 10,
+        reponseModele: 'La réponse doit contenir quatre phrases simples claires.',
+        criteresCorrection: ['Écrire quatre phrases.', 'Respecter la ponctuation.', 'Utiliser une langue correcte.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre une phrase simple.', 'Repérer une information.', 'Produire des phrases courtes.'],
+    tags: ['1AC', 'grammaire', 'phrase-simple', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s2-portrait-moral',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 2AC — Le portrait moral',
+    theme: 'portrait',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lis le texte puis réponds aux questions.',
+    texteSupport:
+      'Nabil est un élève sérieux et généreux. Il aide souvent ses camarades à comprendre les leçons difficiles. Il reste calme même quand un problème se présente.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel personnage est présenté dans le texte ?',
+        bareme: 4,
+        reponseModele: 'Le personnage présenté est Nabil.',
+        criteresCorrection: ['Identifier le personnage.', 'Répondre clairement.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relève deux qualités de Nabil.',
+        bareme: 6,
+        reponseModele: 'Deux qualités de Nabil sont : sérieux et généreux.',
+        criteresCorrection: ['Repérer deux qualités.', 'Ne pas citer des actions seulement.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédige en six lignes le portrait moral d’un camarade.',
+        bareme: 10,
+        reponseModele: 'Le texte doit présenter des qualités morales avec des exemples simples.',
+        criteresCorrection: ['Décrire le caractère.', 'Donner des exemples.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un portrait moral.', 'Identifier des qualités.', 'Produire une description morale.'],
+    tags: ['2AC', 'portrait', 'lecture', 'controle-continu']
+  },
+  {
+    id: 'modele-3ac-regional-texte-explicatif-eau',
+    niveau: '3AC',
+    typeEvaluation: 'examen_regional',
+    competence: 'lecture',
+    titre: 'Examen régional 3AC — Texte explicatif sur l’eau',
+    theme: 'protection de l’eau',
+    region: 'Modèle national',
+    annee: 'modele',
+    dureeMinutes: 120,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lis le texte puis réponds aux questions.',
+    texteSupport:
+      'L’eau est une richesse précieuse. Dans certaines régions, elle devient rare à cause du gaspillage et du manque de pluie. Pour la protéger, chacun doit fermer les robinets et éviter les usages inutiles.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel est le thème principal du texte ?',
+        bareme: 4,
+        reponseModele: 'Le thème principal est la protection de l’eau.',
+        criteresCorrection: ['Identifier le thème.', 'Répondre avec précision.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Donne deux causes de la rareté de l’eau citées dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux causes sont le gaspillage et le manque de pluie.',
+        criteresCorrection: ['Repérer deux causes.', 'S’appuyer sur le texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédige un paragraphe de dix lignes pour expliquer comment protéger l’eau.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit expliquer le problème et proposer des gestes concrets.',
+        criteresCorrection: ['Présenter le problème.', 'Proposer des solutions.', 'Organiser le paragraphe.', 'Respecter la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un texte explicatif.', 'Identifier des causes.', 'Produire un paragraphe organisé.'],
+    tags: ['3AC', 'examen-regional', 'texte-explicatif', 'eau']
   }
 ];
 
