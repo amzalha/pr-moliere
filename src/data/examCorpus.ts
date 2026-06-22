@@ -1078,6 +1078,50 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier une thèse.', 'Repérer des arguments.', 'Produire un paragraphe argumentatif.'],
     tags: ['3AC', 'examen-regional', 'argumentation', 'lecture']
+  },
+  {
+    id: 'modele-1ac-controle-s1-adjectif-qualificatif',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — L’adjectif qualificatif',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans une grande salle lumineuse, les élèves attentifs écoutent une histoire merveilleuse racontée par leur professeur.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Où se trouvent les élèves ?',
+        bareme: 4,
+        reponseModele: 'Les élèves se trouvent dans une grande salle lumineuse.',
+        criteresCorrection: ['Repérer le lieu.', 'Répondre avec une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez trois adjectifs qualificatifs dans le texte.',
+        bareme: 6,
+        reponseModele: 'Trois adjectifs sont : grande, lumineuse, attentifs ou merveilleuse.',
+        criteresCorrection: ['Identifier trois adjectifs.', 'Ne pas citer de noms communs.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez cinq phrases décrivant une salle de classe en utilisant au moins quatre adjectifs qualificatifs.',
+        bareme: 10,
+        reponseModele: 'La production doit décrire une salle avec des adjectifs qualificatifs pertinents.',
+        criteresCorrection: ['Écrire cinq phrases.', 'Employer quatre adjectifs.', 'Respecter le thème.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier un adjectif qualificatif.', 'Comprendre une description simple.', 'Produire une description courte.'],
+    tags: ['1AC', 'grammaire', 'adjectif', 'controle-continu']
   }
 ];
 
