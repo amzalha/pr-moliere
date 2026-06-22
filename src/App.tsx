@@ -210,7 +210,7 @@ export default function App() {
  const [chatMessages, setChatMessages] = useState<Array<{ role: "user" | "model"; content: string }>>([
   {
    role: "model",
-   content: "Marhaban ! Je suis **Pr. MOLIÈRE**, ton tuteur de français. Sélectionne la leçon de ton choix ci-dessous, ou pose-moi directement tes questions sur la grammaire, la conjugaison ou ton examen régional ! Je suis là pour t'accompagner chaleureusement."
+   content: "Marhaban ! Je suis **Pr. MOLIÈRE**, votre tuteur de français. Sélectionnezz la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou votre examen régional ! Je suis là pour vous accompagner chaleureusement."
   }
  ]);
  const [userQuery, setUserQuery] = useState<string>("");
@@ -411,7 +411,7 @@ export default function App() {
    const levelKey = topic.level.toLowerCase();
    const fallback = OFFLINE_FALLBACK_EXERCISES[topic.id] || OFFLINE_FALLBACK_EXERCISES[`${levelKey}-structure-conte`] || {
     statut: "[GENERATION_EXERCICE]",
-    contenu_pedagogique: `### Défi interactif : ${topic.title} 🌟\n\nNous préparons ton exercice personnalisé !\n\nEn attendant, révisons la règle :\n> **${topic.keyRule}**\n\nQue signifie ce concept pour toi ? Écris une phrase d'exemple pour obtenir ton feedback !`,
+    contenu_pedagogique: `### Défi interactif : ${topic.title} 🌟\n\nNous préparons votre exercice personnalisé !\n\nEn attendant, révisons la règle :\n> **${topic.keyRule}**\n\nQue signifie ce concept pour vous ? Écrivez une phrase d'exemple pour obtenir votre feedback !`,
     rappel_cours: topic.keyRule,
     correctAnswers: []
    };
@@ -435,7 +435,7 @@ export default function App() {
    // Just show default reminder and chat prompt
    setReminderText(topic.keyRule);
    setFeedback(null);
-   setExerciseText(`### Fiche de révision : ${topic.title} 📖\n\n**Niveau scolaire :** ${topic.level} • **Catégorie :** ${topic.category}\n\n**Explication rapide :**\n${topic.description}\n\n> **Règle capitale :** ${topic.keyRule}\n\n*Clique sur le bouton "Créer un Défi " ci-dessous pour t'exercer !*`);
+   setExerciseText(`### Fiche de révision : ${topic.title} 📖\n\n**Niveau scolaire :** ${topic.level} • **Catégorie :** ${topic.category}\n\n**Explication rapide :**\n${topic.description}\n\n> **Règle capitale :** ${topic.keyRule}\n\n*Cliquez sur le bouton "Créer un Défi " ci-dessous pour vous exercer !*`);
   }
  };
 
@@ -489,11 +489,11 @@ const handleExamTraining = (item: ExamCorpusItem) => {
   setCorrectionContextText(correctionReference);
 
   setExerciseText(
-    `# ${item.titre}\n\n**Niveau :** ${item.niveau}\n\n**Type :** ${item.typeEvaluation.replaceAll("_", " ")}\n\n**Thème :** ${item.theme}\n\n**Barème total :** ${item.baremeTotal} points\n${texteSupport}\n\n## Consigne\n\n${item.consigne}\n\n${questionsMarkdown}\n\n## Réponse attendue\n\nRédige ta réponse dans la zone de réponse, puis clique sur **Valider ma réponse**.`
+    `# ${item.titre}\n\n**Niveau :** ${item.niveau}\n\n**Type :** ${item.typeEvaluation.replaceAll("_", " ")}\n\n**Thème :** ${item.theme}\n\n**Barème total :** ${item.baremeTotal} points\n${texteSupport}\n\n## Consigne\n\n${item.consigne}\n\n${questionsMarkdown}\n\n## Réponse attendue\n\nRédigez votre réponse dans la zone de réponse, puis cliquez sur **Valider ma réponse**.`
   );
 
   setReminderText(
-    `Mode examen : lis attentivement le sujet, réponds avec des phrases complètes et respecte le barème de ${item.baremeTotal} points.`
+    `Mode examen : lisez attentivement le sujet, répondez avec des phrases complètes et respecte le barème de ${item.baremeTotal} points.`
   );
 
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -571,13 +571,13 @@ const submitAnswer = async () => {
    if (match) {
     setFeedback({
      statut: "[CORRECTION_JUSTE]",
-     contenu: `### Excellent travail ! 🎉\n\nC'est la réponse exacte. Tu maîtrises parfaitement l'exercice sur **${selectedTopic.title}** !`
+     contenu: `### Excellent travail ! 🎉\n\nC'est la réponse exacte. Vous maîtrisez parfaitement l'exercice sur **${selectedTopic.title}** !`
     });
     updateSuccessStats();
    } else {
     setFeedback({
      statut: "[CORRECTION_FAUSSE]",
-     contenu: `### Oups, regarde de plus près ! 💡\n\nTa réponse **"${studentAnswer}"** n'est pas tout à fait correcte.\n\n*Indices :* Relis bien la leçon. Ne baisse pas les bras, Youssef / Amina ! Essaie d'identifier le marqueur précis.`
+     contenu: `### Oups, regarde de plus près ! 💡\n\nVotre réponse **"${studentAnswer}"** n'est pas tout à fait correcte.\n\n*Indices :* Relis bien la leçon. Ne baissez pas les bras, Youssef / Amina ! Essayez d'identifier le marqueur précis.`
     });
     setExerciseSessionStreak(0);
    }
@@ -598,16 +598,16 @@ const submitAnswer = async () => {
 
   const praiseList = [
    "Tbarkellah 'alik ! ✨ Quelle perspicacité !",
-   "Excellent travail ! L'Académie régionale sera fière de ta réussite ! 🏆",
-   "Mumtaz ! Tu as résolu le défi comme un vrai champion ! 🌟",
-   "Formidable ! Tu as trouvé la bonne formulation d'accord ! 🎉",
+   "Excellent travail ! L'Académie régionale sera fière de votre réussite ! 🏆",
+   "Mumtaz ! Vous avez résolu le défi comme un vrai champion ! 🌟",
+   "Formidable ! Vous avez trouvé la bonne formulation d'accord ! 🎉",
    "Magnifique réponse ! En route vers la mention d'Excellence ! 📚"
   ];
   
   // We set a custom grand celebration on 3-streak
   setTimeout(() => {
    if (earnedPerfectStreak) {
-    setCelebrationPraise("SÉRIE DE 3 MAÎTRISÉE ! 👑 Tu as obtenu le Titre d'Élite Régionale ! 🌟🇲🇦");
+    setCelebrationPraise("SÉRIE DE 3 MAÎTRISÉE ! 👑 Vous avez obtenu le Titre d'Élite Régionale ! 🌟🇲🇦");
    } else {
     setCelebrationPraise(praiseList[Math.floor(Math.random() * praiseList.length)]);
    }
@@ -673,7 +673,7 @@ const submitAnswer = async () => {
    const data = await res.json();
    setChatMessages(prev => [
     ...prev,
-    { role: "model", content: data.contenu_pedagogique || "Je suis là pour t'aider." }
+    { role: "model", content: data.contenu_pedagogique || "Je suis là pour vous aider." }
    ]);
    if (data.rappel_cours) {
     setReminderText(data.rappel_cours);
@@ -687,7 +687,7 @@ const submitAnswer = async () => {
      ...prev,
      { 
       role: "model", 
-      content: `### Analyse de "Pr. MOLIÈRE" 💡\n\nTu m'as posé une question sur **${selectedTopic.title}** (${selectedTopic.level}).\n\nRappelle-toi de cette formule essentielle :\n> **${selectedTopic.keyRule}**\n\nAs-tu un exemple pratique que tu aimerais que l'on vérifie ensemble ?` 
+      content: `### Analyse de "Pr. MOLIÈRE" 💡\n\nVous m'avez posé une question sur **${selectedTopic.title}** (${selectedTopic.level}).\n\nRetenez cette formule essentielle :\n> **${selectedTopic.keyRule}**\n\nAvez-vous un exemple pratique que vous aimeriez que l'on vérifie ensemble ?` 
      }
     ]);
    }, 605);
@@ -697,7 +697,7 @@ const submitAnswer = async () => {
  };
 
  const askForHint = () => {
-  const preset = `Peux-tu me donner un petit indice grammatical ou sémantique pour résoudre le défi sur "${selectedTopic.title}" ?`;
+  const preset = `Pouvez-vous me donner un petit indice grammatical ou sémantique pour résoudre le défi sur "${selectedTopic.title}" ?`;
   sendChatMessage(preset);
   // Focus the chat card
   const chatEl = document.getElementById("chat-sandbox");
@@ -722,7 +722,7 @@ const submitAnswer = async () => {
      </div>
      <div className="flex-1">
       <h4 className="font-serif font-black text-sm text-[#006233] tracking-tight">{celebrationPraise}</h4>
-      <p className="text-[10px] text-[#7A7468] font-bold">Réponse validée avec brio ! Ton score augmente. ✨</p>
+      <p className="text-[10px] text-[#7A7468] font-bold">Réponse validée avec brio ! Votre score augmente. ✨</p>
      </div>
      {/* Floating visual circles for celebration */}
      <div className="absolute -top-1 -right-1 w-3 h-3 bg-rose-500 rounded-full animate-ping"></div>
@@ -821,10 +821,10 @@ const submitAnswer = async () => {
        </span>
       </div>
       <h2 className="text-2xl sm:text-3xl font-serif font-black tracking-tight text-[#F8F7F3]">
-       Atteins ton Excellence en Français
+       Atteignez votre excellence en français
       </h2>
       <p className="text-sm text-emerald-100/90 max-w-xl leading-relaxed mt-1 font-medium">
-       Prépare sereinement tes examens de passage et l'épreuve du brevet régional (3AC) avec les contes marocains, le journal scolaire et les règles de grammaire par l'IA.
+       Préparez sereinement vos examens de passage et l'épreuve du brevet régional (3AC) avec les contes marocains, le journal scolaire et les règles de grammaire par l'IA.
       </p>
      </div>
 
@@ -858,7 +858,7 @@ const submitAnswer = async () => {
          <span className="bg-amber-200/60 text-amber-900 text-[9px] px-2 py-0.5 rounded-md font-bold uppercase tracking-wider">Actif</span>
         </h4>
         <p className="text-xs text-amber-800 font-semibold leading-relaxed mt-1">
-         Les serveurs d'IA IA-Studio connaissent actuellement une très forte affluence (Erreur 503). Pr. MOLIÈRE a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour t'assurer un soutien fluide, continu et instantané !
+         Les serveurs d'IA IA-Studio connaissent actuellement une très forte affluence (Erreur 503). Pr. MOLIÈRE a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour vous assurer un soutien fluide, continu et instantané !
         </p>
        </div>
       </div>
@@ -906,7 +906,7 @@ const submitAnswer = async () => {
            ? "bg-rose-50 border-rose-200 text-rose-700 animate-pulse" 
            : "bg-[#006233]/10 hover:bg-[#006233]/15 text-[#006233] border-[#006233]/20"
          }`}
-         title={isSpeaking ? "Arrêter la voix" : "Écouter l'énoncé à voix haute pour améliorer ta prononciation"}
+         title={isSpeaking ? "Arrêter la voix" : "Écouter l'énoncé à voix haute pour améliorer votre prononciation"}
         >
          {isSpeaking ? <VolumeX className="w-3.5 h-3.5 hover:scale-110" /> : <Volume2 className="w-3.5 h-3.5" />}
          <span>{isSpeaking ? "Arrêter" : "Prononciation"}</span>
@@ -943,13 +943,13 @@ const submitAnswer = async () => {
       <div className="space-y-4">
        <div>
         <label className="block text-xs font-extrabold text-[#7A7468] uppercase tracking-wide mb-1.5">
-         Ta réponse d'élève :
+         Votre réponse d'élève :
         </label>
         <input 
          type="text" 
          value={studentAnswer}
          onChange={(e) => setStudentAnswer(e.target.value)}
-         placeholder="Écris soigneusement ta réponse ici (ex: 'obtiendrait', 'les didascalies')..." 
+         placeholder="Écrivez soigneusement votre réponse ici (ex: 'obtiendrait', 'les didascalies')..." 
          className="w-full p-4 rounded-xl border-2 border-[#E5E1D8] focus:border-[#006233] focus:ring-1 focus:ring-[#006233] outline-none text-base transition-colors placeholder-gray-400 font-medium"
          onKeyDown={(e) => {
           if (e.key === "Enter") submitAnswer();
@@ -1072,7 +1072,7 @@ const submitAnswer = async () => {
        </div>
        <div className="my-3">
         <h4 className="text-3xl font-serif font-black">{Math.min(100, (stats.totalCorrect * 15))} %</h4>
-        <p className="text-xs opacity-85 mt-0.5">Plus tu résous des défis distincts, plus ta jauge grimpe !</p>
+        <p className="text-xs opacity-85 mt-0.5">Plus vous résolvez des défis distincts, plus votre jauge grimpe !</p>
        </div>
        <div className="w-full bg-white/20 h-2.5 rounded-full mt-2 overflow-hidden">
         <div 
@@ -1096,7 +1096,7 @@ const submitAnswer = async () => {
         </div>
         <div>
          <h4 className="text-sm font-black text-[#1A1A1A] tracking-tight">Discussion interactive avec le tuteur</h4>
-         <p className="text-xs text-[#A39E93] font-bold">Pose tes questions libres, demande des exemples ou de l'aide</p>
+         <p className="text-xs text-[#A39E93] font-bold">Pose vos questions libres, demande des exemples ou de l'aide</p>
         </div>
        </div>
       </div>
@@ -1160,7 +1160,7 @@ const submitAnswer = async () => {
         type="text" 
         value={userQuery}
         onChange={(e) => setUserQuery(e.target.value)}
-        placeholder="Pose ta question en français..." 
+        placeholder="Posez votre question en français..." 
         disabled={chatLoading}
         className="flex-1 text-xs px-4 py-3 bg-white text-[#2D2D2D] border-2 border-[#E5E1D8] focus:border-[#006233] outline-none rounded-xl font-medium"
         onKeyDown={(e) => {
@@ -1262,7 +1262,7 @@ const submitAnswer = async () => {
          Bibliothèque des Modules & Fiches de Révision
         </h3>
         <p className="text-xs text-[#A39E93] font-semibold">
-         Clique sur "Créer un Défi " pour charger instantanément l'exercice ou sur "Lire la leçon" pour réviser la règle.
+         Cliquez sur "Créer un Défi " pour charger instantanément l'exercice ou sur "Lire la leçon" pour réviser la règle.
         </p>
        </div>
       </div>

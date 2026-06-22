@@ -52,7 +52,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis le texte puis réponds aux questions.',
+    consigne: 'Lis le texte puis répondez aux questions.',
     texteSupport:
       'Il était une fois, dans un petit village au pied des montagnes, un jeune berger qui gardait ses chèvres près d’une source claire. Chaque soir, il entendait une voix douce sortir de la forêt.',
     questions: [
@@ -99,7 +99,7 @@ export const examCorpus: ExamCorpusItem[] = [
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
     consigne:
-      'Rédige le portrait physique et moral d’un personnage courageux que tu admires.',
+      'Rédige le portrait physique et moral d’un personnage courageux que vous admirez.',
     questions: [
       {
         id: 'q1',
@@ -137,7 +137,7 @@ export const examCorpus: ExamCorpusItem[] = [
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
     consigne:
-      'Rédige une lettre officielle au directeur de ton établissement pour demander l’organisation d’une activité culturelle.',
+      'Rédige une lettre officielle au directeur de votre établissement pour demander l’organisation d’une activité culturelle.',
     questions: [
       {
         id: 'q1',
@@ -176,7 +176,7 @@ export const examCorpus: ExamCorpusItem[] = [
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
     consigne:
-      'Lis le texte narratif puis réponds aux questions de compréhension, de langue et de production écrite.',
+      'Lis le texte narratif puis répondez aux questions de compréhension, de langue et de production écrite.',
     texteSupport:
       'Le jeune garçon avançait lentement dans la ruelle silencieuse. Il tenait dans sa main une vieille enveloppe jaunie. Au bout de la rue, une lumière brillait derrière une fenêtre entrouverte.',
     questions: [
@@ -239,9 +239,9 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis le dialogue puis réponds aux questions.',
+    consigne: 'Lis le dialogue puis répondez aux questions.',
     texteSupport:
-      'Dans la cour du collège, Salma demande à son camarade : « Peux-tu me prêter ton cahier, s’il te plaît ? » Yassine répond : « Bien sûr, mais rends-le-moi après la séance. » Salma sourit et dit : « Merci beaucoup. »',
+      'Dans la cour du collège, Salma demande à son camarade : « Pouvez-vous me prêter ton cahier, s’il te plaît ? » Yassine répond : « Bien sûr, mais rends-le-moi après la séance. » Salma sourit et dit : « Merci beaucoup. »',
     questions: [
       {
         id: 'q1',
@@ -268,7 +268,7 @@ export const examCorpus: ExamCorpusItem[] = [
       {
         id: 'q3',
         competence: 'production_ecrite',
-        enonce: 'Écris un court dialogue de quatre répliques entre deux élèves.',
+        enonce: 'Écrivez un court dialogue de quatre répliques entre deux élèves.',
         bareme: 10,
         reponseModele:
           'Le dialogue doit contenir deux personnages, quatre répliques et au moins une formule de politesse.',
@@ -299,7 +299,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis le texte descriptif puis réponds aux questions.',
+    consigne: 'Lis le texte descriptif puis répondez aux questions.',
     texteSupport:
       'La bibliothèque du collège était calme et lumineuse. De grandes fenêtres laissaient entrer le soleil. Les livres étaient rangés sur des étagères en bois, et quelques élèves lisaient en silence autour d’une table ronde.',
     questions: [
@@ -328,7 +328,7 @@ export const examCorpus: ExamCorpusItem[] = [
       {
         id: 'q3',
         competence: 'production_ecrite',
-        enonce: 'Décris en six lignes un lieu de ton collège.',
+        enonce: 'Décrivez en six lignes un lieu de votre collège.',
         bareme: 10,
         reponseModele:
           'La production doit présenter un lieu précis, utiliser des adjectifs et organiser la description.',
@@ -422,9 +422,9 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis la situation puis réponds aux questions.',
+    consigne: 'Lis la situation puis répondez aux questions.',
     texteSupport:
-      'Ton ami a changé de collège. Tu veux lui écrire une lettre pour lui raconter ta nouvelle classe et lui demander de ses nouvelles.',
+      'Votre ami a changé de collège. Vous voulez lui écrire une lettre pour lui raconter votre nouvelle classe et lui demander de ses nouvelles.',
     questions: [
       {
         id: 'q1',
@@ -483,7 +483,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis le texte puis réponds aux questions.',
+    consigne: 'Lis le texte puis répondez aux questions.',
     texteSupport:
       'Dans un collège, des élèves décident d’aider un camarade malade en organisant une collecte de livres et de cahiers. Cette initiative montre que la solidarité rend la vie scolaire plus humaine.',
     questions: [
@@ -544,7 +544,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis la situation puis réponds aux questions.',
+    consigne: 'Lis la situation puis répondez aux questions.',
     texteSupport:
       'Deux élèves discutent dans la cour. L’un pense que la lecture est inutile, l’autre explique qu’elle aide à mieux parler, mieux écrire et mieux comprendre le monde.',
     questions: [
@@ -604,7 +604,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis les phrases puis réponds aux questions.',
+    consigne: 'Lis les phrases puis répondez aux questions.',
     texteSupport:
       'Le matin, Sara arrive au collège. Elle salue ses camarades. La classe commence à huit heures.',
     questions: [
@@ -627,7 +627,7 @@ export const examCorpus: ExamCorpusItem[] = [
       {
         id: 'q3',
         competence: 'production_ecrite',
-        enonce: 'Écris quatre phrases simples sur ta journée au collège.',
+        enonce: 'Écrivez quatre phrases simples sur votre journée au collège.',
         bareme: 10,
         reponseModele: 'La réponse doit contenir quatre phrases simples claires.',
         criteresCorrection: ['Écrire quatre phrases.', 'Respecter la ponctuation.', 'Utiliser une langue correcte.']
@@ -648,7 +648,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis le texte puis réponds aux questions.',
+    consigne: 'Lis le texte puis répondez aux questions.',
     texteSupport:
       'Nabil est un élève sérieux et généreux. Il aide souvent ses camarades à comprendre les leçons difficiles. Il reste calme même quand un problème se présente.',
     questions: [
@@ -693,7 +693,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis le texte puis réponds aux questions.',
+    consigne: 'Lis le texte puis répondez aux questions.',
     texteSupport:
       'L’eau est une richesse précieuse. Dans certaines régions, elle devient rare à cause du gaspillage et du manque de pluie. Pour la protéger, chacun doit fermer les robinets et éviter les usages inutiles.',
     questions: [
@@ -737,7 +737,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis le texte puis réponds aux questions.',
+    consigne: 'Lis le texte puis répondez aux questions.',
     texteSupport:
       'Amine est un garçon souriant. Il a les cheveux noirs, les yeux vifs et porte souvent un cartable bleu. Ses camarades l’aiment parce qu’il est gentil et serviable.',
     questions: [
@@ -781,7 +781,7 @@ export const examCorpus: ExamCorpusItem[] = [
     baremeTotal: 20,
     sourceType: 'modele_original',
     sourceNom: 'PR_Molière — sujet modèle original',
-    consigne: 'Lis le texte puis réponds aux questions.',
+    consigne: 'Lis le texte puis répondez aux questions.',
     texteSupport:
       'Pendant les vacances, Lina a visité un village près de la mer. Elle se souvient du bruit des vagues, de l’odeur du pain chaud et des longues promenades avec sa famille.',
     questions: [
