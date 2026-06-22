@@ -1122,6 +1122,50 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Identifier un adjectif qualificatif.', 'Comprendre une description simple.', 'Produire une description courte.'],
     tags: ['1AC', 'grammaire', 'adjectif', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s2-complement-circonstanciel',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Le complément circonstanciel',
+    theme: 'grammaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Chaque matin, les élèves entrent calmement dans la classe. Après la sonnerie, le professeur écrit la date au tableau pour commencer la leçon.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quand les élèves entrent-ils dans la classe ?',
+        bareme: 4,
+        reponseModele: 'Les élèves entrent dans la classe chaque matin.',
+        criteresCorrection: ['Repérer le moment.', 'Répondre par une phrase complète.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux compléments circonstanciels dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux compléments circonstanciels possibles sont : chaque matin, dans la classe, après la sonnerie, au tableau.',
+        criteresCorrection: ['Identifier deux compléments circonstanciels.', 'Préciser leur valeur si possible.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez un paragraphe de huit lignes sur une journée scolaire en utilisant trois compléments circonstanciels.',
+        bareme: 10,
+        reponseModele: 'Le paragraphe doit raconter une journée scolaire avec au moins trois compléments circonstanciels.',
+        criteresCorrection: ['Respecter le thème scolaire.', 'Employer trois compléments circonstanciels.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Identifier un complément circonstanciel.', 'Comprendre les indications de temps et de lieu.', 'Produire un paragraphe organisé.'],
+    tags: ['2AC', 'grammaire', 'complement-circonstanciel', 'controle-continu']
   }
 ];
 
