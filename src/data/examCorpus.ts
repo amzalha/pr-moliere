@@ -724,6 +724,94 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Comprendre un texte explicatif.', 'Identifier des causes.', 'Produire un paragraphe organisé.'],
     tags: ['3AC', 'examen-regional', 'texte-explicatif', 'eau']
+  },
+  {
+    id: 'modele-1ac-controle-s2-description-personnage',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 1AC — Décrire un personnage',
+    theme: 'description physique',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lis le texte puis réponds aux questions.',
+    texteSupport:
+      'Amine est un garçon souriant. Il a les cheveux noirs, les yeux vifs et porte souvent un cartable bleu. Ses camarades l’aiment parce qu’il est gentil et serviable.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel personnage est décrit dans le texte ?',
+        bareme: 4,
+        reponseModele: 'Le personnage décrit est Amine.',
+        criteresCorrection: ['Identifier le personnage.', 'Répondre clairement.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relève deux adjectifs qualificatifs.',
+        bareme: 6,
+        reponseModele: 'Deux adjectifs sont : souriant et gentil.',
+        criteresCorrection: ['Repérer deux adjectifs.', 'Éviter de citer des noms.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Décris en six lignes un camarade de classe.',
+        bareme: 10,
+        reponseModele: 'La production doit décrire l’apparence et le caractère du camarade.',
+        criteresCorrection: ['Décrire clairement le personnage.', 'Utiliser des adjectifs.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre une description.', 'Identifier des adjectifs.', 'Produire un portrait simple.'],
+    tags: ['1AC', 'description', 'portrait', 'controle-continu']
+  },
+  {
+    id: 'modele-2ac-controle-s1-recit-souvenir',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 2AC — Raconter un souvenir',
+    theme: 'récit personnel',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lis le texte puis réponds aux questions.',
+    texteSupport:
+      'Pendant les vacances, Lina a visité un village près de la mer. Elle se souvient du bruit des vagues, de l’odeur du pain chaud et des longues promenades avec sa famille.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quand Lina a-t-elle visité le village ?',
+        bareme: 4,
+        reponseModele: 'Lina a visité le village pendant les vacances.',
+        criteresCorrection: ['Repérer le moment.', 'Répondre avec précision.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Relève deux souvenirs sensoriels dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux souvenirs sensoriels sont le bruit des vagues et l’odeur du pain chaud.',
+        criteresCorrection: ['Identifier deux sensations.', 'S’appuyer sur le texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Raconte en huit lignes un souvenir agréable.',
+        bareme: 10,
+        reponseModele: 'Le récit doit raconter un souvenir personnel avec des détails précis.',
+        criteresCorrection: ['Respecter la forme du récit.', 'Employer des indicateurs de temps.', 'Ajouter des détails.', 'Respecter la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un récit personnel.', 'Repérer des sensations.', 'Produire un souvenir organisé.'],
+    tags: ['2AC', 'recit', 'souvenir', 'controle-continu']
   }
 ];
 
