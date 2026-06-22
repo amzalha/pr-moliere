@@ -493,7 +493,7 @@ Directives d'évaluation :
     } else {
       res.json({
         statut: "[CORRECTION_FAUSSE]",
-        contenu_pedagogique: `### Regarde d'un peu plus près ! 💡\n\nVotre réponse **"${reponse_eleve}"** n'est pas tout à fait correcte pour ce défi.\n\n*Conseil de Pr. MOLIÈRE :* Relis la règle dorée ci-contre. Essayez d'ajuster l'orthographe ou le choix grammatical.\n\nNe baissez pas les bras, courage ! Retentezz votre chance.`,
+        contenu_pedagogique: `### Regardez d'un peu plus près ! 💡\n\nVotre réponse **"${reponse_eleve}"** n'est pas tout à fait correcte pour ce défi.\n\n*Conseil de Pr. MOLIÈRE :* Relisez la règle dorée ci-contre. Essayez d'ajuster l'orthographe ou le choix grammatical.\n\nNe baissez pas les bras, courage ! Retentez votre chance.`,
         rappel_cours: `💡 [Prof-Ami Mode Résilience] ${exerciseData.rappel_cours}`,
         offlineFallback: true
       });
