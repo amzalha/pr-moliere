@@ -793,3 +793,163 @@ header strong {
 #hero-banner > div span:first-of-type * {
   color: #065f46 !important;
 }
+
+/* Phase design final — hiérarchie visuelle et organisation premium douce */
+
+/* Fond général plus académique et moins plat */
+#pr-moliere-root {
+  background:
+    radial-gradient(circle at top left, rgba(91, 156, 234, 0.10), transparent 30rem),
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.07), transparent 24rem),
+    #f7f8f5 !important;
+}
+
+/* Header plus net */
+#welcome-ribbon {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 40 !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(18px) !important;
+  border-bottom: 1px solid #dbeafe !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.055) !important;
+}
+
+/* Hero plus équilibré */
+#hero-banner {
+  min-height: 150px !important;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255,255,255,0.72), transparent 14rem),
+    linear-gradient(135deg, #eef7ff 0%, #dceeff 55%, #cde6fb 100%) !important;
+  border-bottom: 1px solid #bfdbfe !important;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.055) !important;
+}
+
+#hero-banner h1,
+#hero-banner h2 {
+  font-size: clamp(1.55rem, 2.8vw, 2.25rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.02em !important;
+}
+
+#hero-banner p {
+  max-width: 760px !important;
+  color: #334155 !important;
+}
+
+/* Séparation claire des cartes principales */
+#exercise-focus-card,
+#course-reminder-slate,
+#chat-sandbox,
+#progress-panel,
+#success-lexicon-widget {
+  border-radius: 22px !important;
+  border: 1px solid #d7e7f7 !important;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.07) !important;
+}
+
+/* Carte exercice prioritaire */
+#exercise-focus-card {
+  border-left: 4px solid #7fb7f1 !important;
+}
+
+/* Carte tuteur différenciée */
+#chat-sandbox {
+  border-left: 4px solid #fbbf24 !important;
+  background: linear-gradient(180deg, #ffffff 0%, #fffaf1 100%) !important;
+}
+
+/* Progression plus engageante */
+#progress-panel {
+  border-left: 4px solid #7fb7f1 !important;
+  background: linear-gradient(180deg, #eaf5ff, #d8ebff) !important;
+}
+
+/* Bibliothèque : panneau compact au lieu d'une page interminable */
+#pr-moliere-root main .col-span-12.border-t-2 {
+  margin-top: 34px !important;
+  padding: 22px !important;
+  border-radius: 26px !important;
+  background: #ffffff !important;
+  border: 1px solid #dbeafe !important;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08) !important;
+  max-height: 820px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* Titre bibliothèque plus lisible */
+#pr-moliere-root main .col-span-12.border-t-2 h3 {
+  font-size: 1.12rem !important;
+  font-weight: 850 !important;
+  color: #0f172a !important;
+}
+
+/* Cartes de modules plus différenciées */
+#pr-moliere-root main .col-span-12.border-t-2 .grid {
+  gap: 16px !important;
+  padding: 6px !important;
+}
+
+#pr-moliere-root main .col-span-12.border-t-2 .grid > div {
+  border-radius: 20px !important;
+  min-height: 225px !important;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.055) !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+}
+
+#pr-moliere-root main .col-span-12.border-t-2 .grid > div:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.095) !important;
+}
+
+/* Boutons : action principale plus visible */
+#pr-moliere-root main .col-span-12.border-t-2 button:last-child {
+  background: #7fb7f1 !important;
+  color: #102033 !important;
+  font-weight: 800 !important;
+}
+
+#pr-moliere-root main .col-span-12.border-t-2 button:first-child {
+  background: #ffffff !important;
+  color: #334155 !important;
+  border: 1px solid #dbeafe !important;
+}
+
+/* Scrollbar discrète de la bibliothèque */
+#pr-moliere-root main .col-span-12.border-t-2::-webkit-scrollbar {
+  width: 8px;
+}
+
+#pr-moliere-root main .col-span-12.border-t-2::-webkit-scrollbar-track {
+  background: #f8fafc;
+  border-radius: 99px;
+}
+
+#pr-moliere-root main .col-span-12.border-t-2::-webkit-scrollbar-thumb {
+  background: #bfdbfe;
+  border-radius: 99px;
+}
+
+/* Indication douce */
+#pr-moliere-root main .col-span-12.border-t-2::after {
+  content: "Faites défiler ce panneau pour consulter les autres modules.";
+  display: block;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  border: 1px dashed #cbd5e1;
+}
+
+/* Mobile : hauteur naturelle */
+@media (max-width: 768px) {
+  #pr-moliere-root main .col-span-12.border-t-2 {
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+}
