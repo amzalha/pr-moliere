@@ -854,17 +854,17 @@ const submitAnswer = async () => {
        </div>
        <div>
         <h4 className="text-sm font-black text-amber-950 tracking-tight flex items-center gap-2">
-         <span>Mode Résilience Pédagogique Activé (Secours Local)</span>
+         <span>Mode exercices locaux</span>
          <span className="bg-amber-200/60 text-amber-900 text-[9px] px-2 py-0.5 rounded-md font-bold uppercase tracking-wider">Actif</span>
         </h4>
         <p className="text-xs text-amber-800 font-semibold leading-relaxed mt-1">
-         Le service d'IA connaît actuellement une très forte affluence (Erreur 503). PR Molière a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour vous assurer un soutien fluide, continu et instantané !
+         Les exercices intégrés sont disponibles. Vous pouvez continuer à vous entraîner normalement avec les fiches et corrections locales conformes au programme.
         </p>
        </div>
       </div>
       <div className="flex items-center gap-2">
        <span className="text-[10px] bg-amber-500/10 text-amber-800 font-extrabold border border-amber-300 px-3 py-1.5 rounded-xl uppercase tracking-wider block whitespace-nowrap text-center">
-        Réussite Continue 🎓
+        Révision disponible 🎓
        </span>
       </div>
      </div>
