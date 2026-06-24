@@ -12,7 +12,9 @@ export function renderMarkdown(text: string): React.ReactNode {
    .replace(/Chère élève,?/g, "Bonjour,")
    .replace(/Cher élève,?/g, "Bonjour,")
    .replace(/Chère élève/g, "Bonjour")
-   .replace(/Cher élève/g, "Bonjour");
+   .replace(/Cher élève/g, "Bonjour")
+   .replace(/jeune élève,?/gi, "avec plaisir,")
+   .replace(/jeune eleve,?/gi, "avec plaisir,");
 
  text = sanitizeTutorTone(text);
 
