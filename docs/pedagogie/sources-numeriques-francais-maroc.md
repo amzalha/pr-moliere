@@ -85,3 +85,76 @@ Usage dans PR Molière :
 ## Statut
 
 Ces sources constituent un référentiel de travail. Les contenus doivent être utilisés avec prudence : reformulation, respect des droits, traçabilité et vérification régulière des liens.
+
+## Sources récentes prioritaires à privilégier
+
+### 1. Attarbia.net — examens locaux récents
+
+Attarbia contient des examens normalisés locaux utiles pour la 3ème année collège, avec des sujets récents et des archives.
+
+Lien de travail :
+
+https://fr.attarbia.net/p/francais-3eme-annee-college-examens.html
+
+Statut dans PR Molière :
+
+- source récente prioritaire ;
+- utile pour les examens locaux ;
+- utile pour les consignes de production écrite ;
+- utile pour les actes de communication ;
+- utile pour les écrits fonctionnels.
+
+### 2. Attarbia.net — examens régionaux français 3AC
+
+Cette source sert à repérer la structure générale des examens régionaux de français 3AC.
+
+Lien de travail :
+
+https://fr.attarbia.net/p/examens-regionaux-francais-3ac.html
+
+Statut dans PR Molière :
+
+- source régionale utile ;
+- utile pour les structures d'épreuves ;
+- utile pour la préparation 3AC ;
+- à compléter par des sources récentes lorsqu'elles sont disponibles.
+
+### 3. ProfeLhamdaoui — examens régionaux français 3AC
+
+Cette source est utile pour comparer les sujets régionaux récents et renforcer la préparation au français 3AC.
+
+Lien de travail :
+
+https://profelhamdaoui.com/examens-regionaux-francais-3eme-annee-college/
+
+Statut dans PR Molière :
+
+- source récente prioritaire ;
+- utile pour les sujets régionaux ;
+- utile pour comparer les régions ;
+- utile pour enrichir le corpus 3AC.
+
+### 4. Ministère de l'Éducation Nationale — contexte institutionnel
+
+Le site du Ministère reste la source institutionnelle à consulter pour le contexte officiel.
+
+Lien de travail :
+
+https://www.men.gov.ma/fr
+
+Statut dans PR Molière :
+
+- source institutionnelle ;
+- utile pour le contexte officiel ;
+- non suffisante seule pour constituer une banque d'exercices de français 3AC.
+
+## Décision pédagogique
+
+Pour la version MVP pédagogique finale, les sources récentes prioritaires sont :
+
+1. Attarbia examens locaux ;
+2. ProfeLhamdaoui examens régionaux français 3AC ;
+3. Attarbia examens régionaux français 3AC ;
+4. Ministère comme source institutionnelle de contexte.
+
+9rayti et Scribd sont conservés comme sources complémentaires, avec prudence.
