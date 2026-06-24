@@ -210,7 +210,7 @@ export default function App() {
  const [chatMessages, setChatMessages] = useState<Array<{ role: "user" | "model"; content: string }>>([
   {
    role: "model",
-   content: "Marhaban ! Je suis **PR Molière**, votre tuteur de français. Sélectionnezz la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou votre examen régional ! Je suis là pour vous accompagner chaleureusement."
+   content: "Marhaban ! Je suis **PR Molière**, votre tuteur de français. Sélectionnez la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou votre examen régional ! Je suis là pour vous accompagner chaleureusement."
   }
  ]);
  const [userQuery, setUserQuery] = useState<string>("");
@@ -858,7 +858,7 @@ const submitAnswer = async () => {
          <span className="bg-amber-200/60 text-amber-900 text-[9px] px-2 py-0.5 rounded-md font-bold uppercase tracking-wider">Actif</span>
         </h4>
         <p className="text-xs text-amber-800 font-semibold leading-relaxed mt-1">
-         Les serveurs d'IA IA-Studio connaissent actuellement une très forte affluence (Erreur 503). PR Molière a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour vous assurer un soutien fluide, continu et instantané !
+         Les serveurs d'service d'IA connaissent actuellement une très forte affluence (Erreur 503). PR Molière a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour vous assurer un soutien fluide, continu et instantané !
         </p>
        </div>
       </div>
@@ -1006,7 +1006,7 @@ const submitAnswer = async () => {
          </div>
          <div className="flex-1">
           <span className="text-xs font-black tracking-widest uppercase block mb-1 opacity-70">
-           {feedback.statut === "[CORRECTION_JUSTE]" ? "✨ RÉPONSE CORRECTE" : "💡 BESOIN D'AILE ! CONSEIL SÉMANTIQUE"}
+           {feedback.statut === "[CORRECTION_JUSTE]" ? "✨ RÉPONSE CORRECTE" : "💡 BESOIN D'AIDE ! CONSEIL SÉMANTIQUE"}
           </span>
           <div className="text-sm font-medium leading-relaxed font-serif">
            {renderMarkdown(feedback.contenu)}
@@ -1060,7 +1060,7 @@ const submitAnswer = async () => {
         <span>Conseils pour l'examen Régional</span>
        </h4>
        <p className="text-xs leading-relaxed text-[#334155] font-medium">
-        Pour l'examen régional du brevet (3AC), ne néglige pas les **formules de politesse** des lettres administratives et la concordance des temps de l'**hypothèse** ! C'est ce qui fait la différence.
+        Pour l'examen régional du brevet (3AC), ne négligez pas les **formules de politesse** des lettres administratives et la concordance des temps de l'**hypothèse** ! C'est ce qui fait la différence.
        </p>
       </div>
 
@@ -1262,7 +1262,7 @@ const submitAnswer = async () => {
          Bibliothèque des Modules & Fiches de Révision
         </h3>
         <p className="text-xs text-[#64748B] font-semibold">
-         Cliquez sur "Créer un Défi " pour charger instantanément l'exercice ou sur "Lire la leçon" pour réviser la règle.
+         Cliquez sur "Créer un défi" pour charger instantanément l'exercice ou sur "Lire la leçon" pour réviser la règle.
         </p>
        </div>
       </div>

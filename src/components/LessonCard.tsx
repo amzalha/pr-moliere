@@ -141,7 +141,7 @@ export default function LessonCard({ onSelectTopic, selectedTopicId, solvedTopic
          onClick={() => onSelectTopic(lesson, true)}
          className="flex-1 flex items-center justify-center gap-1.5 bg-[#1D4ED8] hover:bg-[#1E3A8A] text-white py-2 rounded-xl text-xs font-black transition shadow-xs"
         >
-         <span>Créer un Défi</span>
+         <span>Créer un défi</span>
          <ArrowRight className="w-3.5 h-3.5" />
         </button>
        </div>
