@@ -1,4 +1,5 @@
 import React from "react";
+import { sanitizeTutorText } from "./sanitizeTutorText";
 
 /**
  * A lightweight, safe Markdown renderer for React 19
@@ -7,16 +8,7 @@ import React from "react";
 export function renderMarkdown(text: string): React.ReactNode {
  if (!text) return null;
 
- const sanitizeTutorTone = (value: string) =>
-  value
-   .replace(/Chère élève,?/g, "Bonjour,")
-   .replace(/Cher élève,?/g, "Bonjour,")
-   .replace(/Chère élève/g, "Bonjour")
-   .replace(/Cher élève/g, "Bonjour")
-   .replace(/jeune élève,?/gi, "avec plaisir,")
-   .replace(/jeune eleve,?/gi, "avec plaisir,");
-
- text = sanitizeTutorTone(text);
+ text = sanitizeTutorText(text);
 
  const lines = text.split("\n");
  let inList = false;

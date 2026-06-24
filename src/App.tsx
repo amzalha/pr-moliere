@@ -44,6 +44,7 @@ import {
  FirebaseUser
 } from "./lib/firebase";
 import { saveStudentAnswer } from "./services/studentHistory";
+import { sanitizeTutorText } from "./utils/sanitizeTutorText";
 
 interface ProgressStats {
  solvedCount: Record<string, number>;
@@ -1118,7 +1119,7 @@ const submitAnswer = async () => {
             {renderMarkdown(msg.content)}
            </div>
           ) : (
-           <p className="font-semibold">{msg.content}</p>
+           <p className="font-semibold">{sanitizeTutorText(msg.content)}</p>
           )}
          </div>
         </div>
