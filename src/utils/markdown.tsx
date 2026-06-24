@@ -7,6 +7,15 @@ import React from "react";
 export function renderMarkdown(text: string): React.ReactNode {
  if (!text) return null;
 
+ const sanitizeTutorTone = (value: string) =>
+  value
+   .replace(/Chère élève,?/g, "Bonjour,")
+   .replace(/Cher élève,?/g, "Bonjour,")
+   .replace(/Chère élève/g, "Bonjour")
+   .replace(/Cher élève/g, "Bonjour");
+
+ text = sanitizeTutorTone(text);
+
  const lines = text.split("\n");
  let inList = false;
  let listItems: React.ReactNode[] = [];
