@@ -206,7 +206,7 @@ export default function StudentHistoryPanel({ userId }: Props) {
    <div className="mb-4">
     <div className="flex items-center gap-2 text-[#1A1A1A] font-black text-xs mb-2">
      <AlertTriangle className="w-4 h-4 text-orange-600" />
-     <span>Thèmes à renforcer</span>
+     <span>Suivi des thèmes</span>
     </div>
 
     {analytics.weakThemes.length === 0 ? (
