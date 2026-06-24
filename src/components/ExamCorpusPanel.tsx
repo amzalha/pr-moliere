@@ -58,9 +58,9 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
 
   return (
     <div className="space-y-5">
-      <div className="bg-white rounded-3xl border-2 border-[#E5E1D8] p-5 shadow-sm">
+      <div className="bg-white rounded-3xl border-2 border-[#D9E2EC] p-5 shadow-sm">
         <div className="flex items-start gap-3 mb-4">
-          <div className="bg-[#006233]/10 text-[#006233] p-2.5 rounded-2xl">
+          <div className="bg-[#1D4ED8]/10 text-[#1D4ED8] p-2.5 rounded-2xl">
             <ClipboardCheck className="w-5 h-5" />
           </div>
           <div>
@@ -74,22 +74,22 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
         </div>
 
         <div className="grid grid-cols-3 gap-3">
-          <div className="bg-[#F8F5EF] border border-[#E5E1D8] rounded-2xl p-3 text-center">
-            <p className="text-2xl font-bold text-[#006233]">{examCorpus.length}</p>
+          <div className="bg-[#F8F5EF] border border-[#D9E2EC] rounded-2xl p-3 text-center">
+            <p className="text-2xl font-bold text-[#1D4ED8]">{examCorpus.length}</p>
             <p className="text-xs text-[#333333]">Sujets</p>
           </div>
-          <div className="bg-[#F8F5EF] border border-[#E5E1D8] rounded-2xl p-3 text-center">
-            <p className="text-2xl font-bold text-[#006233]">{totalTroisieme}</p>
+          <div className="bg-[#F8F5EF] border border-[#D9E2EC] rounded-2xl p-3 text-center">
+            <p className="text-2xl font-bold text-[#1D4ED8]">{totalTroisieme}</p>
             <p className="text-xs text-[#333333]">3AC</p>
           </div>
-          <div className="bg-[#F8F5EF] border border-[#E5E1D8] rounded-2xl p-3 text-center">
-            <p className="text-2xl font-bold text-[#006233]">{totalRegional}</p>
+          <div className="bg-[#F8F5EF] border border-[#D9E2EC] rounded-2xl p-3 text-center">
+            <p className="text-2xl font-bold text-[#1D4ED8]">{totalRegional}</p>
             <p className="text-xs text-[#333333]">Régional</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-[#FDFCFB] rounded-3xl border-2 border-[#E5E1D8] p-4">
+      <div className="bg-[#FFFFFF] rounded-3xl border-2 border-[#D9E2EC] p-4">
         <div className="flex items-center gap-2 mb-3 text-[#111111]">
           <Filter className="w-4 h-4" />
           <span className="text-sm font-bold">Filtres</span>
@@ -105,8 +105,8 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
                   onClick={() => setLevelFilter(level)}
                   className={`px-3 py-2 rounded-xl border text-xs transition ${
                     levelFilter === level
-                      ? "bg-[#006233] text-white border-[#006233]"
-                      : "bg-white text-[#111111] border-[#E5E1D8]"
+                      ? "bg-[#1D4ED8] text-white border-[#1D4ED8]"
+                      : "bg-white text-[#111111] border-[#D9E2EC]"
                   }`}
                 >
                   {levelLabels[level]}
@@ -124,8 +124,8 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
                   onClick={() => setTypeFilter(type)}
                   className={`px-3 py-2 rounded-xl border text-xs transition ${
                     typeFilter === type
-                      ? "bg-[#006233] text-white border-[#006233]"
-                      : "bg-white text-[#111111] border-[#E5E1D8]"
+                      ? "bg-[#1D4ED8] text-white border-[#1D4ED8]"
+                      : "bg-white text-[#111111] border-[#D9E2EC]"
                   }`}
                 >
                   {typeLabels[type]}
@@ -142,18 +142,18 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
         {filteredCorpus.map((item) => (
           <div
             key={item.id}
-            className="bg-white border-2 border-[#E5E1D8] rounded-3xl p-4 shadow-sm"
+            className="bg-white border-2 border-[#D9E2EC] rounded-3xl p-4 shadow-sm"
           >
             <div className="flex items-start justify-between gap-3 mb-3">
               <div>
                 <div className="flex flex-wrap gap-2 mb-2">
-                  <span className="bg-[#006233]/10 text-[#006233] border border-[#006233]/20 px-2 py-1 rounded-lg text-xs">
+                  <span className="bg-[#1D4ED8]/10 text-[#1D4ED8] border border-[#1D4ED8]/20 px-2 py-1 rounded-lg text-xs">
                     {item.niveau}
                   </span>
                   <span className="bg-amber-100 text-amber-900 border border-amber-200 px-2 py-1 rounded-lg text-xs">
                     {typeLabels[item.typeEvaluation]}
                   </span>
-                  <span className="bg-[#F2EDE4] text-[#111111] border border-[#E5E1D8] px-2 py-1 rounded-lg text-xs">
+                  <span className="bg-[#F8FAFC] text-[#111111] border border-[#D9E2EC] px-2 py-1 rounded-lg text-xs">
                     {item.competence}
                   </span>
                 </div>
@@ -163,7 +163,7 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
                 </h4>
               </div>
 
-              <BookOpen className="w-5 h-5 text-[#006233] shrink-0" />
+              <BookOpen className="w-5 h-5 text-[#1D4ED8] shrink-0" />
             </div>
 
             <p className="text-sm text-[#222222] mb-3">
@@ -172,31 +172,31 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#333333]">
               <div className="flex items-center gap-2">
-                <GraduationCap className="w-4 h-4 text-[#006233]" />
+                <GraduationCap className="w-4 h-4 text-[#1D4ED8]" />
                 <span>Thème : {item.theme}</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Timer className="w-4 h-4 text-[#006233]" />
+                <Timer className="w-4 h-4 text-[#1D4ED8]" />
                 <span>Barème : {item.baremeTotal} points</span>
               </div>
 
               {item.region ? (
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#006233]" />
+                  <MapPin className="w-4 h-4 text-[#1D4ED8]" />
                   <span>Région : {item.region}</span>
                 </div>
               ) : null}
             </div>
 
-            <div className="mt-3 pt-3 border-t border-[#E5E1D8] space-y-3">
+            <div className="mt-3 pt-3 border-t border-[#D9E2EC] space-y-3">
               <p className="text-xs text-[#333333]">
                 Questions : {item.questions.length} · {item.sourceType === "modele_original" ? "Sujet modèle original PR_Molière" : "Source web à structurer"} · Source : {item.sourceNom}
               </p>
 
               <button
                 onClick={() => onStartTraining(item)}
-                className="w-full bg-[#006233] hover:bg-[#004D28] text-white rounded-2xl px-4 py-3 text-sm font-bold flex items-center justify-center gap-2 transition"
+                className="w-full bg-[#1D4ED8] hover:bg-[#1E40AF] text-white rounded-2xl px-4 py-3 text-sm font-bold flex items-center justify-center gap-2 transition"
               >
                 <Play className="w-4 h-4" />
                 <span>S’entraîner</span>

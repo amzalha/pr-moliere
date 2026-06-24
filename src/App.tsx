@@ -210,7 +210,7 @@ export default function App() {
  const [chatMessages, setChatMessages] = useState<Array<{ role: "user" | "model"; content: string }>>([
   {
    role: "model",
-   content: "Marhaban ! Je suis **Pr. MOLIÈRE**, votre tuteur de français. Sélectionnezz la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou votre examen régional ! Je suis là pour vous accompagner chaleureusement."
+   content: "Marhaban ! Je suis **PR Molière**, votre tuteur de français. Sélectionnezz la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou votre examen régional ! Je suis là pour vous accompagner chaleureusement."
   }
  ]);
  const [userQuery, setUserQuery] = useState<string>("");
@@ -687,7 +687,7 @@ const submitAnswer = async () => {
      ...prev,
      { 
       role: "model", 
-      content: `### Analyse de "Pr. MOLIÈRE" 💡\n\nVous m'avez posé une question sur **${selectedTopic.title}** (${selectedTopic.level}).\n\nRetenez cette formule essentielle :\n> **${selectedTopic.keyRule}**\n\nAvez-vous un exemple pratique que vous aimeriez que l'on vérifie ensemble ?` 
+      content: `### Analyse de "PR Molière" 💡\n\nVous m'avez posé une question sur **${selectedTopic.title}** (${selectedTopic.level}).\n\nRetenez cette formule essentielle :\n> **${selectedTopic.keyRule}**\n\nAvez-vous un exemple pratique que vous aimeriez que l'on vérifie ensemble ?` 
      }
     ]);
    }, 605);
@@ -716,13 +716,13 @@ const submitAnswer = async () => {
    
    {/* Floating Sparkling Celebration */}
    {showCelebration && (
-    <div className="fixed top-5 left-1/2 -translate-x-1/2 z-[100] animate-fade-in w-[90%] max-w-md bg-white border-2 border-[#006233] rounded-3xl p-4 shadow-xl flex items-center gap-3.5">
-     <div className="bg-[#006233]/15 text-[#006233] p-2.5 rounded-2xl shrink-0 animate-sparkle">
+    <div className="fixed top-5 left-1/2 -translate-x-1/2 z-[100] animate-fade-in w-[90%] max-w-md bg-white border-2 border-[#1D4ED8] rounded-3xl p-4 shadow-xl flex items-center gap-3.5">
+     <div className="bg-[#1D4ED8]/15 text-[#1D4ED8] p-2.5 rounded-2xl shrink-0 animate-sparkle">
       <Sparkles className="w-5 h-5" />
      </div>
      <div className="flex-1">
-      <h4 className="font-serif font-black text-sm text-[#006233] tracking-tight">{celebrationPraise}</h4>
-      <p className="text-[10px] text-[#7A7468] font-bold">Réponse enregistrée avec succès. Votre progression est mise à jour. ✨</p>
+      <h4 className="font-serif font-black text-sm text-[#1D4ED8] tracking-tight">{celebrationPraise}</h4>
+      <p className="text-[10px] text-[#64748B] font-bold">Réponse enregistrée avec succès. Votre progression est mise à jour. ✨</p>
      </div>
      {/* Floating visual circles for celebration */}
      <div className="absolute -top-1 -right-1 w-3 h-3 bg-rose-500 rounded-full animate-ping"></div>
@@ -731,34 +731,34 @@ const submitAnswer = async () => {
    )}
    
    {/* Upper Brand Ribbons & Student Welcome */}
-   <header id="welcome-ribbon" className="bg-white border-b border-[#E5E1D8] sticky top-0 z-50 shadow-xs">
+   <header id="welcome-ribbon" className="bg-white border-b border-[#D9E2EC] sticky top-0 z-50 shadow-xs">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-4">
      
      {/* Logo */}
      <div className="flex items-center gap-3">
-      <div className="w-10 h-10 bg-[#006233] rounded-xl flex items-center justify-center text-white font-serif font-black text-xl shadow-xs">
+      <div className="w-10 h-10 bg-[#1D4ED8] rounded-xl flex items-center justify-center text-white font-serif font-black text-xl shadow-xs">
        M
       </div>
       <div>
-       <h1 className="font-extrabold text-xl tracking-tight text-[#006233] flex items-center gap-1.5 font-serif uppercase">
-        Pr. MOLIÈRE
+       <h1 className="font-extrabold text-xl tracking-tight text-[#1D4ED8] flex items-center gap-1.5 font-serif uppercase">
+        PR Molière
        </h1>
       </div>
      </div>
 
      {/* Student Profile & Quick Level Stats Badge */}
-     <span className="hidden sm:inline-block w-px h-6 bg-[#E5E1D8]"></span>
+     <span className="hidden sm:inline-block w-px h-6 bg-[#D9E2EC]"></span>
 
      <div className="flex items-center gap-3.5 flex-wrap justify-center">
-      <div className="flex items-center gap-2 bg-[#F2EDE4]/60 px-4 py-2 rounded-2xl border border-[#E5E1D8]/60">
+      <div className="flex items-center gap-2 bg-[#F8FAFC]/60 px-4 py-2 rounded-2xl border border-[#D9E2EC]/60">
        <span className="text-orange-500 font-bold animate-bounce block">🔥</span>
-       <span className="text-xs font-black text-[#4A453C]">
+       <span className="text-xs font-black text-[#334155]">
         {stats.streak} jour{stats.streak > 1 ? 's' : ''} de révision !
        </span>
       </div>
 
       {authLoading ? (
-       <div className="bg-[#FDFCFB] px-3.5 py-1.5 rounded-2xl border border-dashed border-[#E5E1D8] text-xs font-bold text-[#A39E93] animate-pulse">
+       <div className="bg-[#FFFFFF] px-3.5 py-1.5 rounded-2xl border border-dashed border-[#D9E2EC] text-xs font-bold text-[#64748B] animate-pulse">
         Synchronisation...
        </div>
       ) : currentUser ? (
@@ -773,18 +773,18 @@ const submitAnswer = async () => {
           />
          ) : (
           <span className="relative flex h-2 w-2">
-           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#006233] opacity-75"></span>
-           <span className="relative inline-flex rounded-full h-2 w-2 bg-[#006233]"></span>
+           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1D4ED8] opacity-75"></span>
+           <span className="relative inline-flex rounded-full h-2 w-2 bg-[#1D4ED8]"></span>
           </span>
          )}
-         <span className="text-xs font-extrabold text-[#006233]">
+         <span className="text-xs font-extrabold text-[#1D4ED8]">
           {currentUser.displayName || currentUser.email || "élève"} (Soutenu) ✨
          </span>
         </div>
         <button
          onClick={handleGoogleLogout}
          title="Se déconnecter"
-         className="p-2 text-[#7A7468] hover:text-[#CA3E3E] hover:bg-rose-50 rounded-xl transition border border-transparent hover:border-rose-100"
+         className="p-2 text-[#64748B] hover:text-[#CA3E3E] hover:bg-rose-50 rounded-xl transition border border-transparent hover:border-rose-100"
         >
          <LogOut className="w-4 h-4" />
         </button>
@@ -792,7 +792,7 @@ const submitAnswer = async () => {
       ) : (
        <button
         onClick={handleGoogleLogin}
-        className="flex items-center gap-2 bg-[#006233] hover:bg-[#004D28] text-white px-4 py-2 rounded-2xl border border-[#006233] text-xs font-black shadow-xs transition"
+        className="flex items-center gap-2 bg-[#1D4ED8] hover:bg-[#1E40AF] text-white px-4 py-2 rounded-2xl border border-[#1D4ED8] text-xs font-black shadow-xs transition"
        >
         <LogIn className="w-4 h-4" />
         <span>Connexion Google</span>
@@ -804,7 +804,7 @@ const submitAnswer = async () => {
    </header>
 
    {/* Hero Banner Area */}
-   <section id="hero-banner" className="bg-[#006233] text-white py-8 px-4 sm:px-6 lg:px-8 shadow-inner relative overflow-hidden">
+   <section id="hero-banner" className="bg-[#1D4ED8] text-white py-8 px-4 sm:px-6 lg:px-8 shadow-inner relative overflow-hidden">
     {/* Abstract shapes reminiscent of Moroccan geometry */}
     <div className="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-12 -translate-y-12">
      <div className="w-96 h-96 rounded-full border-8 border-white"></div>
@@ -834,7 +834,7 @@ const submitAnswer = async () => {
         const randomLesson = LESSONS[Math.floor(Math.random() * LESSONS.length)];
         generateExercise(randomLesson);
        }}
-       className="bg-white hover:bg-[#F2EDE4] text-[#006233] font-black text-xs px-4 py-3 rounded-2xl shadow-md transition flex items-center gap-2"
+       className="bg-white hover:bg-[#F8FAFC] text-[#1D4ED8] font-black text-xs px-4 py-3 rounded-2xl shadow-md transition flex items-center gap-2"
       >
        <Sparkles className="w-4 h-4" />
        <span>Générer un défi au hasard</span>
@@ -858,7 +858,7 @@ const submitAnswer = async () => {
          <span className="bg-amber-200/60 text-amber-900 text-[9px] px-2 py-0.5 rounded-md font-bold uppercase tracking-wider">Actif</span>
         </h4>
         <p className="text-xs text-amber-800 font-semibold leading-relaxed mt-1">
-         Les serveurs d'IA IA-Studio connaissent actuellement une très forte affluence (Erreur 503). Pr. MOLIÈRE a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour vous assurer un soutien fluide, continu et instantané !
+         Les serveurs d'IA IA-Studio connaissent actuellement une très forte affluence (Erreur 503). PR Molière a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour vous assurer un soutien fluide, continu et instantané !
         </p>
        </div>
       </div>
@@ -876,19 +876,19 @@ const submitAnswer = async () => {
      {/* Box 1: Focus Exercise Unit (col-span-12 lg:col-span-8) */}
      <div 
       id="exercise-focus-card" 
-      className="col-span-12 lg:col-span-8 bg-white rounded-3xl border-2 border-[#E5E1D8] p-6 sm:p-8 shadow-sm flex flex-col hover:border-[#C18F5A]/40 transition-colors"
+      className="col-span-12 lg:col-span-8 bg-white rounded-3xl border-2 border-[#D9E2EC] p-6 sm:p-8 shadow-sm flex flex-col hover:border-[#2563EB]/40 transition-colors"
      >
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-[#F2EDE4]">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-[#F8FAFC]">
        <div>
         <div className="flex items-center gap-2 flex-wrap">
-         <span className="px-3 py-1 bg-[#006233]/15 text-[#006233] text-[10px] font-black rounded-lg uppercase tracking-wider border border-[#006233]/10">
+         <span className="px-3 py-1 bg-[#1D4ED8]/15 text-[#1D4ED8] text-[10px] font-black rounded-lg uppercase tracking-wider border border-[#1D4ED8]/10">
           DÉFI ACTIF • {selectedTopic.level}
          </span>
          
          {/* Dynamic mini session scorecard */}
-         <div className="flex items-center gap-1 bg-[#F2EDE4]/80 px-2.5 py-0.5 rounded-lg border border-[#E5E1D8] text-[9px] font-bold text-[#4A453C]">
+         <div className="flex items-center gap-1 bg-[#F8FAFC]/80 px-2.5 py-0.5 rounded-lg border border-[#D9E2EC] text-[9px] font-bold text-[#334155]">
           <span>Série de défis :</span>
-          <span className="text-[#006233] font-black">{exerciseSessionStreak}/3</span>
+          <span className="text-[#1D4ED8] font-black">{exerciseSessionStreak}/3</span>
           <span className="text-amber-500">
            {exerciseSessionStreak === 1 ? "⭐️" : exerciseSessionStreak === 2 ? "⭐️⭐️" : exerciseSessionStreak >= 3 ? "👑 PERFECT" : "▫️"}
           </span>
@@ -904,14 +904,14 @@ const submitAnswer = async () => {
          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black border transition cursor-pointer select-none ${
           isSpeaking 
            ? "bg-rose-50 border-rose-200 text-rose-700 animate-pulse" 
-           : "bg-[#006233]/10 hover:bg-[#006233]/15 text-[#006233] border-[#006233]/20"
+           : "bg-[#1D4ED8]/10 hover:bg-[#1D4ED8]/15 text-[#1D4ED8] border-[#1D4ED8]/20"
          }`}
          title={isSpeaking ? "Arrêter la voix" : "Écouter l'énoncé à voix haute pour améliorer votre prononciation"}
         >
          {isSpeaking ? <VolumeX className="w-3.5 h-3.5 hover:scale-110" /> : <Volume2 className="w-3.5 h-3.5" />}
          <span>{isSpeaking ? "Arrêter" : "Prononciation"}</span>
         </button>
-        <span className="text-xs text-[#A39E93] font-mono select-all hidden sm:inline">
+        <span className="text-xs text-[#64748B] font-mono select-all hidden sm:inline">
          {selectedTopic.id}
         </span>
        </div>
@@ -922,17 +922,17 @@ const submitAnswer = async () => {
        {exerciseLoading ? (
         <div className="absolute inset-0 bg-white/95 flex flex-col items-center justify-center z-10 p-6 text-center">
          <div className="w-12 h-12 rounded-full border-4 border-amber-200 border-t-amber-600 animate-spin mb-4" />
-         <p className="text-sm font-bold text-[#4A453C]">Analyse du programme officiel marocain...</p>
-         <p className="text-xs text-[#A39E93] mt-1">Génération en cours...</p>
+         <p className="text-sm font-bold text-[#334155]">Analyse du programme officiel marocain...</p>
+         <p className="text-xs text-[#64748B] mt-1">Génération en cours...</p>
         </div>
        ) : null}
 
        {/* Pedatogial Text content */}
-       <div className="bg-[#FDFCFB] p-5 sm:p-7 rounded-2xl border-l-4 border-[#C18F5A] border-y border-r border-[#E5E1D8]/60 mb-6 font-serif">
+       <div className="bg-[#FFFFFF] p-5 sm:p-7 rounded-2xl border-l-4 border-[#2563EB] border-y border-r border-[#D9E2EC]/60 mb-6 font-serif">
         {exerciseText ? (
          renderMarkdown(exerciseText)
         ) : (
-         <div className="text-[#A39E93] italic text-center py-4">
+         <div className="text-[#64748B] italic text-center py-4">
           Aucun défi sélectionné. Choisissez une fiche de révision ci-dessous !
          </div>
         )}
@@ -942,7 +942,7 @@ const submitAnswer = async () => {
       {/* Answer Input Frame */}
       <div className="space-y-4">
        <div>
-        <label className="block text-xs font-extrabold text-[#7A7468] uppercase tracking-wide mb-1.5">
+        <label className="block text-xs font-extrabold text-[#64748B] uppercase tracking-wide mb-1.5">
          Votre réponse d'élève :
         </label>
         <input 
@@ -950,7 +950,7 @@ const submitAnswer = async () => {
          value={studentAnswer}
          onChange={(e) => setStudentAnswer(e.target.value)}
          placeholder="Écrivez soigneusement votre réponse ici (ex: 'obtiendrait', 'les didascalies')..." 
-         className="w-full p-4 rounded-xl border-2 border-[#E5E1D8] focus:border-[#006233] focus:ring-1 focus:ring-[#006233] outline-none text-base transition-colors placeholder-gray-400 font-medium"
+         className="w-full p-4 rounded-xl border-2 border-[#D9E2EC] focus:border-[#1D4ED8] focus:ring-1 focus:ring-[#1D4ED8] outline-none text-base transition-colors placeholder-gray-400 font-medium"
          onKeyDown={(e) => {
           if (e.key === "Enter") submitAnswer();
          }}
@@ -962,7 +962,7 @@ const submitAnswer = async () => {
         <button 
          onClick={submitAnswer}
          disabled={submitting || !studentAnswer.trim()}
-         className={`flex-1 flex items-center justify-center gap-2 bg-[#006233] hover:bg-[#004e28] text-white font-extrabold py-3.5 px-6 rounded-xl shadow-lg shadow-green-950/10 transition disabled:opacity-40`}
+         className={`flex-1 flex items-center justify-center gap-2 bg-[#1D4ED8] hover:bg-[#1E40AF] text-white font-extrabold py-3.5 px-6 rounded-xl shadow-lg shadow-blue-950/10 transition disabled:opacity-40`}
         >
          {submitting ? (
           <>
@@ -978,9 +978,9 @@ const submitAnswer = async () => {
         </button>
         <button 
          onClick={askForHint}
-         className="px-5 py-3.5 border border-[#E5E1D8] hover:border-[#A39E93] rounded-xl font-bold text-xs text-[#7A7468] bg-[#FDFCFB] hover:bg-neutral-50 transition flex items-center justify-center gap-2"
+         className="px-5 py-3.5 border border-[#D9E2EC] hover:border-[#64748B] rounded-xl font-bold text-xs text-[#64748B] bg-[#FFFFFF] hover:bg-neutral-50 transition flex items-center justify-center gap-2"
         >
-         <Lightbulb className="w-4 h-4 text-[#C18F5A]" />
+         <Lightbulb className="w-4 h-4 text-[#2563EB]" />
          <span>Besoin d'un indice ?</span>
         </button>
        </div>
@@ -1023,15 +1023,15 @@ const submitAnswer = async () => {
       {/* Cours Memorization Slate */}
       <div 
        id="course-reminder-slate" 
-       className="bg-[#F2EDE4] rounded-3xl p-6 border-2 border-[#E5E1D8] shadow-sm relative overflow-hidden shrink-0 flex flex-col justify-between min-h-[220px]"
+       className="bg-[#F8FAFC] rounded-3xl p-6 border-2 border-[#D9E2EC] shadow-sm relative overflow-hidden shrink-0 flex flex-col justify-between min-h-[220px]"
       >
        {/* Pattern detail reminiscent of architecture */}
-       <div className="absolute top-0 right-0 w-12 h-12 bg-[#006233]/5 rounded-bl-full pointer-events-none"></div>
+       <div className="absolute top-0 right-0 w-12 h-12 bg-[#1D4ED8]/5 rounded-bl-full pointer-events-none"></div>
 
        <div>
         <div className="flex items-center gap-2 mb-3">
-         <Lightbulb className="w-5 h-5 text-[#C18F5A] shrink-0" />
-         <p className="text-xs font-black text-[#A39E93] uppercase tracking-wider">
+         <Lightbulb className="w-5 h-5 text-[#2563EB] shrink-0" />
+         <p className="text-xs font-black text-[#64748B] uppercase tracking-wider">
           Rappel de cours en direct
          </p>
         </div>
@@ -1040,34 +1040,34 @@ const submitAnswer = async () => {
          Pour surmonter ce thème :
         </h4>
         
-        <p className="text-sm font-sans leading-relaxed text-[#4A453C] font-semibold">
+        <p className="text-sm font-sans leading-relaxed text-[#334155] font-semibold">
          {reminderText || selectedTopic.keyRule}
         </p>
        </div>
 
-       <div className="border-t border-[#E5E1D8] pt-4 mt-4 flex items-center justify-between">
-        <span className="text-[10px] text-[#A39E93] font-bold">Règle officielle {selectedTopic.level}</span>
-        <span className="text-[10px] bg-white text-[#006233] px-2 py-0.5 rounded-md font-extrabold border border-[#E5E1D8]">
+       <div className="border-t border-[#D9E2EC] pt-4 mt-4 flex items-center justify-between">
+        <span className="text-[10px] text-[#64748B] font-bold">Règle officielle {selectedTopic.level}</span>
+        <span className="text-[10px] bg-white text-[#1D4ED8] px-2 py-0.5 rounded-md font-extrabold border border-[#D9E2EC]">
          {selectedTopic.category}
         </span>
        </div>
       </div>
 
       {/* Quick Helper Moroccan Fact */}
-      <div className="bg-white rounded-3xl p-5 border-2 border-[#E5E1D8] shadow-xs shrink-0">
-       <h4 className="text-xs font-black text-[#006233] uppercase tracking-wider mb-2 flex items-center gap-2">
+      <div className="bg-white rounded-3xl p-5 border-2 border-[#D9E2EC] shadow-xs shrink-0">
+       <h4 className="text-xs font-black text-[#1D4ED8] uppercase tracking-wider mb-2 flex items-center gap-2">
         <GraduationCap className="w-4 h-4" />
         <span>Conseils pour l'examen Régional</span>
        </h4>
-       <p className="text-xs leading-relaxed text-[#4A453C] font-medium">
+       <p className="text-xs leading-relaxed text-[#334155] font-medium">
         Pour l'examen régional du brevet (3AC), ne néglige pas les **formules de politesse** des lettres administratives et la concordance des temps de l'**hypothèse** ! C'est ce qui fait la différence.
        </p>
       </div>
 
       {/* Stats Overview */}
-      <div className="bg-[#006233] text-white rounded-3xl p-5 shadow-sm flex flex-col justify-between shrink-0">
+      <div className="bg-[#1D4ED8] text-white rounded-3xl p-5 shadow-sm flex flex-col justify-between shrink-0">
        <div className="flex justify-between items-start">
-        <p className="text-xs font-black uppercase tracking-widest text-[#F2EDE4]/80">Niveau de maîtrise</p>
+        <p className="text-xs font-black uppercase tracking-widest text-[#F8FAFC]/80">Niveau de maîtrise</p>
         <span className="text-lg bg-green-900/30 px-2.5 py-0.5 rounded-full border border-green-700 text-xs font-bold">Score total</span>
        </div>
        <div className="my-3">
@@ -1076,7 +1076,7 @@ const submitAnswer = async () => {
        </div>
        <div className="w-full bg-white/20 h-2.5 rounded-full mt-2 overflow-hidden">
         <div 
-         className="bg-[#C18F5A] h-full rounded-full transition-all duration-700" 
+         className="bg-[#2563EB] h-full rounded-full transition-all duration-700" 
          style={{ width: `${Math.min(100, Math.max(10, (stats.totalCorrect * 15)))}%` }}
         ></div>
        </div>
@@ -1087,22 +1087,22 @@ const submitAnswer = async () => {
      {/* Box 3: Ask PR_Molière / Sandbox Chat (col-span-12 lg:col-span-7) */}
      <div 
       id="chat-sandbox" 
-      className="col-span-12 lg:col-span-7 bg-white rounded-3xl border-2 border-[#E5E1D8] p-6 shadow-sm flex flex-col"
+      className="col-span-12 lg:col-span-7 bg-white rounded-3xl border-2 border-[#D9E2EC] p-6 shadow-sm flex flex-col"
      >
-      <div className="flex items-center justify-between pb-4 mb-4 border-b border-[#F2EDE4]">
+      <div className="flex items-center justify-between pb-4 mb-4 border-b border-[#F8FAFC]">
        <div className="flex items-center gap-3">
         <div className="bg-amber-100 text-amber-900 p-2 rounded-xl">
          <MessageSquare className="w-5 h-5 text-amber-700" />
         </div>
         <div>
          <h4 className="text-sm font-black text-[#1A1A1A] tracking-tight">Discussion interactive avec le tuteur</h4>
-         <p className="text-xs text-[#A39E93] font-bold">Posez vos questions, demandez des exemples ou une aide ciblée</p>
+         <p className="text-xs text-[#64748B] font-bold">Posez vos questions, demandez des exemples ou une aide ciblée</p>
         </div>
        </div>
       </div>
 
       {/* Chat messages viewport */}
-      <div className="space-y-4 max-h-[300px] overflow-y-auto mb-4 p-2 bg-[#FDFCFB] rounded-2xl border border-[#E5E1D8]/40">
+      <div className="space-y-4 max-h-[300px] overflow-y-auto mb-4 p-2 bg-[#FFFFFF] rounded-2xl border border-[#D9E2EC]/40">
        {chatMessages.map((msg, index) => (
         <div 
          key={index} 
@@ -1110,8 +1110,8 @@ const submitAnswer = async () => {
         >
          <div className={`p-2.5 rounded-2xl text-xs leading-relaxed ${
           msg.role === "user" 
-           ? "bg-[#006233] text-white rounded-tr-xs" 
-           : "bg-[#F2EDE4] text-[#2D2D2D] rounded-tl-xs border border-[#E5E1D8]/60"
+           ? "bg-[#1D4ED8] text-white rounded-tr-xs" 
+           : "bg-[#F8FAFC] text-[#2D2D2D] rounded-tl-xs border border-[#D9E2EC]/60"
          }`}>
           {msg.role === "model" ? (
            <div className="font-serif prose">
@@ -1125,18 +1125,18 @@ const submitAnswer = async () => {
        ))}
        
        {chatLoading && (
-        <div className="mr-auto max-w-[85%] flex items-center gap-2 p-2 bg-[#F2EDE4] rounded-2xl">
+        <div className="mr-auto max-w-[85%] flex items-center gap-2 p-2 bg-[#F8FAFC] rounded-2xl">
          <span className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce"></span>
          <span className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></span>
          <span className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></span>
-         <span className="text-[10px] text-amber-900 font-bold ml-1">Pr. MOLIÈRE réfléchit...</span>
+         <span className="text-[10px] text-amber-900 font-bold ml-1">PR Molière réfléchit...</span>
         </div>
        )}
       </div>
 
       {/* Quick replies */}
       <div className="flex flex-wrap gap-2 mb-4">
-       <span className="text-[10px] text-[#A39E93] font-black uppercase tracking-wider block w-full">Questions rapides :</span>
+       <span className="text-[10px] text-[#64748B] font-black uppercase tracking-wider block w-full">Questions rapides :</span>
        {[
         "Explique l'imparfait et le passé simple",
         "Donne un exemple de lettre d'invitation",
@@ -1147,7 +1147,7 @@ const submitAnswer = async () => {
          key={chip}
          onClick={() => sendChatMessage(chip)}
          disabled={chatLoading}
-         className="text-[11px] bg-[#F2EDE4]/60 hover:bg-[#F2EDE4] text-[#4A453C] border border-[#E5E1D8] px-2.5 py-1.5 rounded-xl font-bold transition duration-200"
+         className="text-[11px] bg-[#F8FAFC]/60 hover:bg-[#F8FAFC] text-[#334155] border border-[#D9E2EC] px-2.5 py-1.5 rounded-xl font-bold transition duration-200"
         >
          {chip}
         </button>
@@ -1162,7 +1162,7 @@ const submitAnswer = async () => {
         onChange={(e) => setUserQuery(e.target.value)}
         placeholder="Posez votre question en français..." 
         disabled={chatLoading}
-        className="flex-1 text-xs px-4 py-3 bg-white text-[#2D2D2D] border-2 border-[#E5E1D8] focus:border-[#006233] outline-none rounded-xl font-medium"
+        className="flex-1 text-xs px-4 py-3 bg-white text-[#2D2D2D] border-2 border-[#D9E2EC] focus:border-[#1D4ED8] outline-none rounded-xl font-medium"
         onKeyDown={(e) => {
          if (e.key === "Enter") sendChatMessage();
         }}
@@ -1170,7 +1170,7 @@ const submitAnswer = async () => {
        <button 
         onClick={() => sendChatMessage()}
         disabled={chatLoading || !userQuery.trim()}
-        className="bg-[#006233] text-white px-4 py-2.5 rounded-xl font-bold text-xs hover:bg-[#005129] transition disabled:opacity-40 shrink-0"
+        className="bg-[#1D4ED8] text-white px-4 py-2.5 rounded-xl font-bold text-xs hover:bg-[#1E40AF] transition disabled:opacity-40 shrink-0"
        >
         Envoyer
        </button>
@@ -1179,13 +1179,13 @@ const submitAnswer = async () => {
 
      {/* Box 4: Palmarès & Badges widget (col-span-12 lg:col-span-5) */}
      <div className="col-span-12 lg:col-span-5 space-y-4">
-      <div className="flex bg-[#F2EDE4]/60 p-1 rounded-3xl border border-[#E5E1D8] shadow-xs gap-0.5">
+      <div className="flex bg-[#F8FAFC]/60 p-1 rounded-3xl border border-[#D9E2EC] shadow-xs gap-0.5">
        <button
         onClick={() => setActiveRightTab("BADGES")}
         className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
          activeRightTab === "BADGES"
-          ? "bg-[#006233] text-white shadow-md"
-          : "text-[#4A453C] hover:bg-white/40 hover:text-[#006233]"
+          ? "bg-[#1D4ED8] text-white shadow-md"
+          : "text-[#334155] hover:bg-white/40 hover:text-[#1D4ED8]"
         }`}
        >
         <span>🏆 Palmarès</span>
@@ -1194,8 +1194,8 @@ const submitAnswer = async () => {
         onClick={() => setActiveRightTab("HISTORY")}
         className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
          activeRightTab === "HISTORY"
-          ? "bg-[#006233] text-white shadow-md"
-          : "text-[#4A453C] hover:bg-white/40 hover:text-[#006233]"
+          ? "bg-[#1D4ED8] text-white shadow-md"
+          : "text-[#334155] hover:bg-white/40 hover:text-[#1D4ED8]"
         }`}
        >
         <Clock className="w-3 h-3" />
@@ -1205,8 +1205,8 @@ const submitAnswer = async () => {
         onClick={() => setActiveRightTab("EXAMS")}
         className={`flex items-center justify-center gap-2 px-3 py-2 rounded-xl text-xs transition ${
          activeRightTab === "EXAMS"
-          ? "bg-[#006233] text-white"
-          : "bg-[#F2EDE4] text-[#111111] hover:bg-[#E5E1D8]"
+          ? "bg-[#1D4ED8] text-white"
+          : "bg-[#F8FAFC] text-[#111111] hover:bg-[#D9E2EC]"
         }`}
        >
         <BookOpen className="w-4 h-4" />
@@ -1216,8 +1216,8 @@ const submitAnswer = async () => {
         onClick={() => setActiveRightTab("LEXICON")}
         className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
          activeRightTab === "LEXICON"
-          ? "bg-[#006233] text-white shadow-md"
-          : "text-[#4A453C] hover:bg-white/40 hover:text-[#006233]"
+          ? "bg-[#1D4ED8] text-white shadow-md"
+          : "text-[#334155] hover:bg-white/40 hover:text-[#1D4ED8]"
         }`}
        >
         <span>✍️ Lexique</span>
@@ -1226,8 +1226,8 @@ const submitAnswer = async () => {
         onClick={() => setActiveRightTab("BREVET")}
         className={`flex-1 py-2 rounded-2xl text-[10px] font-black transition-all flex items-center justify-center gap-1 ${
          activeRightTab === "BREVET"
-          ? "bg-[#006233] text-white shadow-md"
-          : "text-[#4A453C] hover:bg-white/40 hover:text-[#006233]"
+          ? "bg-[#1D4ED8] text-white shadow-md"
+          : "text-[#334155] hover:bg-white/40 hover:text-[#1D4ED8]"
         }`}
        >
         <span>🎯 Brevet 3AC</span>
@@ -1255,13 +1255,13 @@ const submitAnswer = async () => {
      </div>
 
      {/* Section: Fiches de Révision / Course Catalogue (col-span-12) */}
-     <div className="col-span-12 border-t-2 border-[#E5E1D8] pt-8 mt-4">
+     <div className="col-span-12 border-t-2 border-[#D9E2EC] pt-8 mt-4">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-6">
        <div>
         <h3 className="text-xl font-serif font-black text-[#1A1A1A] tracking-tight">
          Bibliothèque des Modules & Fiches de Révision
         </h3>
-        <p className="text-xs text-[#A39E93] font-semibold">
+        <p className="text-xs text-[#64748B] font-semibold">
          Cliquez sur "Créer un Défi " pour charger instantanément l'exercice ou sur "Lire la leçon" pour réviser la règle.
         </p>
        </div>
@@ -1279,9 +1279,9 @@ const submitAnswer = async () => {
    </main>
 
    {/* Footer */}
-   <footer className="bg-white border-t border-[#E5E1D8] py-8 mt-12 text-center text-xs text-[#A39E93] font-medium">
+   <footer className="bg-white border-t border-[#D9E2EC] py-8 mt-12 text-center text-xs text-[#64748B] font-medium">
     <div className="max-w-7xl mx-auto px-4 space-y-2">
-     <p className="font-serif font-extrabold text-[#006233] text-sm">Pr. MOLIÈRE, Tuteur virtuel du collège marocain</p>
+     <p className="font-serif font-extrabold text-[#1D4ED8] text-sm">PR Molière, Plateforme de français du collège</p>
      <p></p>
      <p className="opacity-80">© {new Date().getFullYear()} • Fait avec passion pour la réussite des élèves.</p>
     </div>

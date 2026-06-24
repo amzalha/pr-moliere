@@ -26,17 +26,17 @@ export default function LessonCard({ onSelectTopic, selectedTopicId, solvedTopic
  return (
   <div className="space-y-4">
    {/* Search and Filters Header */}
-   <div className="bg-[#F2EDE4]/60 p-4 rounded-3xl border border-[#E5E1D8]/70 flex flex-col sm:flex-row gap-3 items-center justify-between">
+   <div className="bg-[#F8FAFC]/60 p-4 rounded-3xl border border-[#D9E2EC]/70 flex flex-col sm:flex-row gap-3 items-center justify-between">
     {/* Levels */}
-    <div className="flex bg-white p-1 rounded-2xl border border-[#E5E1D8] shadow-sm w-full sm:w-auto">
+    <div className="flex bg-white p-1 rounded-2xl border border-[#D9E2EC] shadow-sm w-full sm:w-auto">
      {(["TOUS", "1AC", "2AC", "3AC"] as const).map((lvl) => (
       <button
        key={lvl}
        onClick={() => setSelectedLevel(lvl)}
        className={`flex-1 sm:flex-none px-4 py-2 rounded-xl text-xs font-extrabold transition-all ${
         selectedLevel === lvl
-         ? "bg-[#006233] text-white shadow"
-         : "text-[#4A453C] hover:bg-[#F8F7F3]"
+         ? "bg-[#1D4ED8] text-white shadow"
+         : "text-[#334155] hover:bg-[#F8F7F3]"
        }`}
       >
        {lvl === "TOUS" ? "Tous les niveaux" : lvl}
@@ -51,16 +51,16 @@ export default function LessonCard({ onSelectTopic, selectedTopicId, solvedTopic
       placeholder="Rechercher une notion, thème..."
       value={searchQuery}
       onChange={(e) => setSearchQuery(e.target.value)}
-      className="w-full text-xs bg-white text-[#2D2D2D] border border-[#E5E1D8] rounded-2xl pl-10 pr-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#006233] font-medium"
+      className="w-full text-xs bg-white text-[#2D2D2D] border border-[#D9E2EC] rounded-2xl pl-10 pr-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-[#1D4ED8] font-medium"
      />
-     <Search className="absolute left-3.5 top-3 w-4 h-4 text-[#A39E93]" />
+     <Search className="absolute left-3.5 top-3 w-4 h-4 text-[#64748B]" />
     </div>
    </div>
 
    {/* Program Summary Banner per level */}
-   <div className="bg-[#F2EDE4]/30 p-4 border border-dashed border-[#E5E1D8] rounded-2xl">
-    <p className="text-xs text-[#4A453C] font-semibold flex items-center gap-2">
-     <GraduationCap className="w-4 h-4 text-[#006233]" />
+   <div className="bg-[#F8FAFC]/30 p-4 border border-dashed border-[#D9E2EC] rounded-2xl">
+    <p className="text-xs text-[#334155] font-semibold flex items-center gap-2">
+     <GraduationCap className="w-4 h-4 text-[#1D4ED8]" />
      <span>
       {selectedLevel === "1AC" && "Programme 1AC (1ère année) : Le genre narratif, portrait, conte merveilleux, schéma du récit."}
       {selectedLevel === "2AC" && "Programme 2AC (2ème année) : Le théâtre scolaire (dialogues, didascalies) et les médias (La Une de presse)."}
@@ -80,8 +80,8 @@ export default function LessonCard({ onSelectTopic, selectedTopicId, solvedTopic
        key={lesson.id}
        className={`p-5 rounded-3xl border-2 transition-all flex flex-col justify-between ${
         isSelected
-         ? "bg-white border-[#006233] shadow-md ring-1 ring-[#006233] scale-[1.01]"
-         : "bg-white hover:bg-[#F2EDE4]/10 border-[#E5E1D8] shadow-sm"
+         ? "bg-white border-[#1D4ED8] shadow-md ring-1 ring-[#1D4ED8] scale-[1.01]"
+         : "bg-white hover:bg-[#F8FAFC]/10 border-[#D9E2EC] shadow-sm"
        }`}
       >
        <div>
@@ -113,33 +113,33 @@ export default function LessonCard({ onSelectTopic, selectedTopicId, solvedTopic
         <h3 className="font-serif font-black text-[#1A1A1A] text-sm leading-snug tracking-tight mb-1.5">
          {lesson.title}
         </h3>
-        <p className="text-xs text-[#7A7468] leading-relaxed mb-3">
+        <p className="text-xs text-[#64748B] leading-relaxed mb-3">
          {lesson.description}
         </p>
 
         {/* Key Rule Box */}
-        <div className="bg-[#F2EDE4]/40 rounded-2xl p-3 border border-[#E5E1D8]/60 mb-4 flex gap-2 items-start">
-         <Lightbulb className="w-4 h-4 text-[#C18F5A] mt-0.5 shrink-0" />
-         <div className="text-[11px] text-[#4A453C] leading-normal font-sans">
-          <span className="font-black text-[#C18F5A] uppercase tracking-wider block mb-0.5">La règle d'or :</span>
+        <div className="bg-[#F8FAFC]/40 rounded-2xl p-3 border border-[#D9E2EC]/60 mb-4 flex gap-2 items-start">
+         <Lightbulb className="w-4 h-4 text-[#2563EB] mt-0.5 shrink-0" />
+         <div className="text-[11px] text-[#334155] leading-normal font-sans">
+          <span className="font-black text-[#2563EB] uppercase tracking-wider block mb-0.5">La règle d'or :</span>
           {lesson.keyRule}
          </div>
         </div>
        </div>
 
        {/* Action bar and launchers */}
-       <div className="flex gap-2 items-center mt-3 border-t border-[#F2EDE4] pt-3">
+       <div className="flex gap-2 items-center mt-3 border-t border-[#F8FAFC] pt-3">
         <button
          type="button"
          onClick={() => onSelectTopic(lesson, false)}
-         className="flex-1 text-center bg-[#F2EDE4]/50 hover:bg-[#F2EDE4] text-[#4A453C] border border-[#E5E1D8] py-2 rounded-xl text-xs font-bold transition"
+         className="flex-1 text-center bg-[#F8FAFC]/50 hover:bg-[#F8FAFC] text-[#334155] border border-[#D9E2EC] py-2 rounded-xl text-xs font-bold transition"
         >
          Lire la fiche
         </button>
         <button
          type="button"
          onClick={() => onSelectTopic(lesson, true)}
-         className="flex-1 flex items-center justify-center gap-1.5 bg-[#006233] hover:bg-[#004b25] text-white py-2 rounded-xl text-xs font-black transition shadow-xs"
+         className="flex-1 flex items-center justify-center gap-1.5 bg-[#1D4ED8] hover:bg-[#1E3A8A] text-white py-2 rounded-xl text-xs font-black transition shadow-xs"
         >
          <span>Créer un Défi</span>
          <ArrowRight className="w-3.5 h-3.5" />
@@ -151,9 +151,9 @@ export default function LessonCard({ onSelectTopic, selectedTopicId, solvedTopic
    </div>
 
    {filteredLessons.length === 0 && (
-    <div className="text-center py-10 bg-[#F2EDE4]/20 rounded-3xl border border-dashed border-[#E5E1D8]">
-     <p className="text-xs font-bold text-[#4A453C]">Aucune leçon trouvée pour votre sélection.</p>
-     <p className="text-[11px] text-[#A39E93] mt-1">Essayer d'élargir la recherche ou réinitialiser les filtres.</p>
+    <div className="text-center py-10 bg-[#F8FAFC]/20 rounded-3xl border border-dashed border-[#D9E2EC]">
+     <p className="text-xs font-bold text-[#334155]">Aucune leçon trouvée pour votre sélection.</p>
+     <p className="text-[11px] text-[#64748B] mt-1">Essayer d'élargir la recherche ou réinitialiser les filtres.</p>
     </div>
    )}
   </div>
