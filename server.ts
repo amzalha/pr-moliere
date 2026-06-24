@@ -422,7 +422,7 @@ Directives : Crée un petit énoncé chaleureux en français adapté au niveau $
     res.json({
       statut: "[GENERATION_EXERCICE]",
       contenu_pedagogique: exercise.contenu_pedagogique,
-      rappel_cours: `💡 [Pr. MOLIÈRE Mode Résilience] ${exercise.rappel_cours}`,
+      rappel_cours: `💡 ${exercise.rappel_cours}`,
       offlineFallback: true
     });
   }
@@ -489,14 +489,14 @@ Directives d'évaluation :
       res.json({
         statut: "[CORRECTION_JUSTE]",
         contenu_pedagogique: `### Excellent travail ! 🎉\n\nC'est la réponse exacte ! Votre maîtrise du concept de **${matchedLesson ? matchedLesson.title : "Français"}** est excellente.\n\n*Rappel de tuteur :* Très bien vu sous le soleil de Rabat ! Continuez à consolider vos réussites scolaires.`,
-        rappel_cours: `💡 [Prof-Ami Mode Résilience] ${exerciseData.rappel_cours}`,
+        rappel_cours: `💡 [Prof-Ami mode local] ${exerciseData.rappel_cours}`,
         offlineFallback: true
       });
     } else {
       res.json({
         statut: "[CORRECTION_FAUSSE]",
         contenu_pedagogique: `### Regardez d'un peu plus près ! 💡\n\nVotre réponse **"${reponse_eleve}"** n'est pas tout à fait correcte pour ce défi.\n\n*Conseil de Pr. MOLIÈRE :* Relisez la règle dorée ci-contre. Essayez d'ajuster l'orthographe ou le choix grammatical.\n\nNe baissez pas les bras, courage ! Retentez votre chance.`,
-        rappel_cours: `💡 [Prof-Ami Mode Résilience] ${exerciseData.rappel_cours}`,
+        rappel_cours: `💡 [Prof-Ami mode local] ${exerciseData.rappel_cours}`,
         offlineFallback: true
       });
     }
@@ -549,7 +549,7 @@ Respecte les directives : prénoms, villes marocaines, encouragement chaleureux 
      res.json({
       statut: "[GENERATION_EXERCICE]",
       contenu_pedagogique: `### Conseils Personnalisés de Pr. MOLIÈRE 💡\n\nSuite à une très forte affluence de la part de nos collèges partenaires, j'ai activé mon moteur de secours pour répondre sans attente à votre question !\n\nRévisons ensemble le module **${matchedLesson.title}** (${matchedLesson.level}) :\n\n- **Description du cours :** ${matchedLesson.description}\n- **Règle clé officielle :**\n> *${matchedLesson.keyRule}*\n\nAvez-vous un autre doute grammatical sur lequel vous souhaitez échanger ? Posez votre question !`,
-      rappel_cours: `💡 [Pr. MOLIÈRE Mode Résilience] Règle : ${matchedLesson.keyRule}`,
+      rappel_cours: `💡 Règle : ${matchedLesson.keyRule}`,
       offlineFallback: true
     });
   }

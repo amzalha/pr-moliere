@@ -355,3 +355,441 @@ textarea,
 select {
   font-family: inherit;
 }
+
+/* Phase 8.7.0 — adoucissement bleu pastel */
+:root {
+  --pm-blue-pastel: #93C5FD;
+  --pm-blue-pastel-strong: #60A5FA;
+  --pm-blue-pastel-dark: #2563EB;
+  --pm-blue-pastel-bg: #EFF6FF;
+}
+
+.bg-\[\#1D4ED8\],
+.bg-\[\#2563EB\],
+.bg-blue-600,
+.bg-blue-700,
+button.bg-\[\#1D4ED8\],
+button.bg-\[\#2563EB\] {
+  background: linear-gradient(180deg, var(--pm-blue-pastel), var(--pm-blue-pastel-strong)) !important;
+  color: #0F172A !important;
+}
+
+.text-\[\#1D4ED8\],
+.text-\[\#2563EB\],
+.text-blue-600,
+.text-blue-700 {
+  color: var(--pm-blue-pastel-dark) !important;
+}
+
+.border-\[\#1D4ED8\],
+.border-\[\#2563EB\],
+.border-blue-600,
+.border-blue-700 {
+  border-color: var(--pm-blue-pastel-strong) !important;
+}
+
+#progress-panel,
+#success-lexicon-widget .bg-\[\#1D4ED8\],
+#success-lexicon-widget .bg-\[\#2563EB\] {
+  background: linear-gradient(180deg, #DBEAFE, #BFDBFE) !important;
+  color: #0F172A !important;
+}
+
+#progress-panel *,
+#success-lexicon-widget .bg-\[\#1D4ED8\] *,
+#success-lexicon-widget .bg-\[\#2563EB\] * {
+  color: #0F172A !important;
+}
+
+#welcome-ribbon .bg-\[\#1D4ED8\],
+#welcome-ribbon .bg-\[\#2563EB\] {
+  background: var(--pm-blue-pastel-strong) !important;
+  color: #0F172A !important;
+}
+
+/* Phase 8.7.1 — hero bleu pastel doux */
+#hero-banner {
+  background:
+    radial-gradient(circle at 88% 20%, rgba(255,255,255,0.45), transparent 15rem),
+    linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 48%, #93C5FD 100%) !important;
+  color: #0F172A !important;
+}
+
+#hero-banner h1,
+#hero-banner h2,
+#hero-banner p,
+#hero-banner span {
+  color: #0F172A !important;
+}
+
+#hero-banner .bg-\[\#006233\],
+#hero-banner .bg-\[\#16a34a\],
+#hero-banner .bg-green-600 {
+  background: #60A5FA !important;
+  color: #0F172A !important;
+}
+
+#hero-banner button {
+  background: #FFFFFF !important;
+  color: #1D4ED8 !important;
+  border: 1px solid #BFDBFE !important;
+  box-shadow: 0 10px 24px rgba(96, 165, 250, 0.22) !important;
+}
+
+#hero-banner button:hover {
+  background: #EFF6FF !important;
+}
+
+/* Phase 8.7.2 — bleu principal exact #5b9cea */
+:root {
+  --pm-blue-main: #5b9cea;
+  --pm-blue-soft: #eaf3ff;
+  --pm-blue-border: #b8d6f8;
+  --pm-blue-text: #0f172a;
+}
+
+#hero-banner {
+  background:
+    radial-gradient(circle at 88% 20%, rgba(255,255,255,0.35), transparent 15rem),
+    linear-gradient(135deg, #5b9cea 0%, #5b9cea 100%) !important;
+  color: var(--pm-blue-text) !important;
+}
+
+#hero-banner h1,
+#hero-banner h2,
+#hero-banner p,
+#hero-banner span {
+  color: var(--pm-blue-text) !important;
+}
+
+.bg-\[\#1D4ED8\],
+.bg-\[\#2563EB\],
+.bg-blue-600,
+.bg-blue-700,
+button.bg-\[\#1D4ED8\],
+button.bg-\[\#2563EB\] {
+  background: #5b9cea !important;
+  color: #0f172a !important;
+}
+
+.text-\[\#1D4ED8\],
+.text-\[\#2563EB\],
+.text-blue-600,
+.text-blue-700 {
+  color: #2563eb !important;
+}
+
+.border-\[\#1D4ED8\],
+.border-\[\#2563EB\],
+.border-blue-600,
+.border-blue-700 {
+  border-color: #5b9cea !important;
+}
+
+#progress-panel {
+  background: #5b9cea !important;
+  color: #0f172a !important;
+}
+
+#progress-panel * {
+  color: #0f172a !important;
+}
+
+#welcome-ribbon .bg-\[\#1D4ED8\],
+#welcome-ribbon .bg-\[\#2563EB\] {
+  background: #5b9cea !important;
+  color: #0f172a !important;
+}
+
+#hero-banner button {
+  background: #ffffff !important;
+  color: #2563eb !important;
+  border: 1px solid #b8d6f8 !important;
+}
+
+/* Phase 8.7.3 — palette douce et supportable */
+:root {
+  --pm-bg-soft: #f8fafc;
+  --pm-card-soft: #ffffff;
+  --pm-blue-main: #5b9cea;
+  --pm-blue-soft: #e8f2ff;
+  --pm-blue-soft-2: #dbeafe;
+  --pm-blue-border: #bfdbfe;
+  --pm-text-main: #1e293b;
+  --pm-text-muted: #64748b;
+  --pm-green-soft: #d1fae5;
+  --pm-green-main: #10b981;
+  --pm-orange-soft: #fff7ed;
+  --pm-orange-border: #fed7aa;
+}
+
+body,
+#pr-moliere-root {
+  background:
+    radial-gradient(circle at top left, rgba(91, 156, 234, 0.12), transparent 28rem),
+    radial-gradient(circle at top right, rgba(251, 146, 60, 0.10), transparent 24rem),
+    var(--pm-bg-soft) !important;
+  color: var(--pm-text-main) !important;
+}
+
+/* Hero plus doux : le bleu n'est plus une masse agressive */
+#hero-banner {
+  background:
+    radial-gradient(circle at 88% 20%, rgba(255,255,255,0.55), transparent 15rem),
+    linear-gradient(135deg, #eef6ff 0%, #dbeafe 55%, #c7ddfb 100%) !important;
+  color: var(--pm-text-main) !important;
+  border-bottom: 1px solid var(--pm-blue-border) !important;
+}
+
+#hero-banner h1,
+#hero-banner h2,
+#hero-banner p,
+#hero-banner span {
+  color: var(--pm-text-main) !important;
+}
+
+/* Boutons principaux : bleu #5b9cea, mais lisible */
+button.bg-\[\#1D4ED8\],
+button.bg-\[\#2563EB\],
+.bg-blue-600,
+.bg-blue-700,
+button.bg-blue-600,
+button.bg-blue-700 {
+  background: linear-gradient(180deg, #6aa8ee, #5b9cea) !important;
+  color: #ffffff !important;
+  border-color: #5b9cea !important;
+  box-shadow: 0 10px 22px rgba(91, 156, 234, 0.22) !important;
+}
+
+/* Bouton du hero : plus calme */
+#hero-banner button {
+  background: #ffffff !important;
+  color: #2563eb !important;
+  border: 1px solid var(--pm-blue-border) !important;
+  box-shadow: 0 10px 24px rgba(91, 156, 234, 0.18) !important;
+}
+
+#hero-banner button:hover {
+  background: var(--pm-blue-soft) !important;
+}
+
+/* Badges et pastilles : moins saturés */
+.text-blue-600,
+.text-blue-700,
+.text-\[\#1D4ED8\],
+.text-\[\#2563EB\] {
+  color: #2563eb !important;
+}
+
+.border-blue-600,
+.border-blue-700,
+.border-\[\#1D4ED8\],
+.border-\[\#2563EB\] {
+  border-color: var(--pm-blue-border) !important;
+}
+
+/* Panneau progression : bleu doux, pas agressif */
+#progress-panel {
+  background: linear-gradient(180deg, #eaf3ff, #dbeafe) !important;
+  color: var(--pm-text-main) !important;
+  border: 1px solid var(--pm-blue-border) !important;
+}
+
+#progress-panel * {
+  color: var(--pm-text-main) !important;
+}
+
+/* Cartes : contraste plus reposant */
+#exercise-focus-card,
+#course-reminder-slate,
+#chat-sandbox,
+#success-lexicon-widget,
+#pr-moliere-root main .col-span-12.border-t-2 {
+  background: rgba(255,255,255,0.96) !important;
+  border-color: #dbeafe !important;
+}
+
+/* Zone tuteur : orange très léger */
+#chat-sandbox {
+  background: linear-gradient(180deg, #ffffff 0%, var(--pm-orange-soft) 100%) !important;
+  border-color: var(--pm-orange-border) !important;
+}
+
+/* Badge soutien scolaire : vert doux */
+#hero-banner .bg-\[\#006233\],
+#hero-banner .bg-green-600,
+#hero-banner .bg-\[\#16a34a\] {
+  background: var(--pm-green-soft) !important;
+  color: #065f46 !important;
+  border: 1px solid #a7f3d0 !important;
+}
+
+/* Phase 8.7.4 — palette reposante anti-fatigue */
+body,
+#pr-moliere-root {
+  background: #f6f7f4 !important;
+  color: #1f2937 !important;
+}
+
+#hero-banner {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(255,255,255,0.65), transparent 16rem),
+    linear-gradient(135deg, #eef7ff 0%, #dbeeff 55%, #c8e2fb 100%) !important;
+  color: #1f2937 !important;
+  border-bottom: 1px solid #c7dff8 !important;
+}
+
+#hero-banner h1,
+#hero-banner h2,
+#hero-banner p,
+#hero-banner span,
+#hero-banner div {
+  color: #1f2937 !important;
+}
+
+#hero-banner button,
+button.bg-\[\#1D4ED8\],
+button.bg-\[\#2563EB\],
+button.bg-blue-600,
+button.bg-blue-700,
+.bg-blue-600,
+.bg-blue-700,
+.bg-\[\#1D4ED8\],
+.bg-\[\#2563EB\] {
+  background: #7fb7f1 !important;
+  color: #102033 !important;
+  border-color: #a9cef5 !important;
+  box-shadow: 0 8px 18px rgba(91,156,234,0.16) !important;
+}
+
+#hero-banner button {
+  background: #ffffff !important;
+  color: #2563eb !important;
+}
+
+#progress-panel {
+  background: linear-gradient(180deg, #edf6ff, #dbeeff) !important;
+  color: #1f2937 !important;
+  border: 1px solid #c7dff8 !important;
+}
+
+#progress-panel * {
+  color: #1f2937 !important;
+}
+
+.text-blue-600,
+.text-blue-700,
+.text-\[\#1D4ED8\],
+.text-\[\#2563EB\] {
+  color: #3b82c4 !important;
+}
+
+.border-blue-600,
+.border-blue-700,
+.border-\[\#1D4ED8\],
+.border-\[\#2563EB\] {
+  border-color: #b7d7f5 !important;
+}
+
+#exercise-focus-card,
+#course-reminder-slate,
+#chat-sandbox,
+#success-lexicon-widget,
+#pr-moliere-root main .col-span-12.border-t-2 {
+  background: #ffffff !important;
+  border-color: #d7e7f7 !important;
+}
+
+/* Phase 8.7.6 — badge Soutien scolaire plus lisible */
+#hero-banner .bg-\[\#006233\],
+#hero-banner .bg-green-600,
+#hero-banner .bg-\[\#16a34a\] {
+  background: #d1fae5 !important;
+  color: #065f46 !important;
+  border: 1px solid #a7f3d0 !important;
+  text-transform: none !important;
+  letter-spacing: 0.02em !important;
+  font-weight: 700 !important;
+}
+
+/* Phase 8.7.7 — correction finale casse nom et badge */
+#welcome-ribbon *,
+header *,
+#hero-banner *,
+#hero-banner .uppercase {
+  text-transform: none !important;
+}
+
+#welcome-ribbon h1,
+#welcome-ribbon h2,
+#welcome-ribbon span,
+#welcome-ribbon strong,
+header h1,
+header h2,
+header span,
+header strong {
+  letter-spacing: normal !important;
+}
+
+#hero-banner .uppercase,
+#hero-banner span,
+#hero-banner .tracking-\[0\.18em\],
+#hero-banner .tracking-widest {
+  text-transform: none !important;
+  letter-spacing: 0.02em !important;
+}
+
+#hero-banner .bg-\[\#006233\],
+#hero-banner .bg-green-600,
+#hero-banner .bg-\[\#16a34a\] {
+  background: #d1fae5 !important;
+  color: #065f46 !important;
+  border: 1px solid #a7f3d0 !important;
+  text-transform: none !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* Phase 8.7.8 — contraste lisible du badge Soutien scolaire */
+#hero-banner .bg-\[\#006233\],
+#hero-banner .bg-\[\#16a34a\],
+#hero-banner .bg-green-600,
+#hero-banner .bg-green-700,
+#hero-banner span[class*="green"],
+#hero-banner span[class*="006233"] {
+  background: #047857 !important;
+  color: #ffffff !important;
+  border: 1px solid #059669 !important;
+  text-transform: none !important;
+  letter-spacing: 0.02em !important;
+  font-weight: 800 !important;
+}
+
+#hero-banner .bg-\[\#006233\] *,
+#hero-banner .bg-\[\#16a34a\] *,
+#hero-banner .bg-green-600 *,
+#hero-banner .bg-green-700 *,
+#hero-banner span[class*="green"] *,
+#hero-banner span[class*="006233"] * {
+  color: #ffffff !important;
+}
+
+
+
+
+/* Phase 8.7.9 — correction propre de la pastille Soutien scolaire */
+#hero-banner .max-w-7xl span:first-of-type,
+#hero-banner > div span:first-of-type {
+  background: #d1fae5 !important;
+  color: #065f46 !important;
+  border: 1px solid #86efac !important;
+  text-transform: none !important;
+  letter-spacing: 0.01em !important;
+  font-weight: 800 !important;
+  font-family: Inter, system-ui, sans-serif !important;
+  box-shadow: none !important;
+}
+
+#hero-banner .max-w-7xl span:first-of-type *,
+#hero-banner > div span:first-of-type * {
+  color: #065f46 !important;
+}

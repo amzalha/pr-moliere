@@ -210,7 +210,7 @@ export default function App() {
  const [chatMessages, setChatMessages] = useState<Array<{ role: "user" | "model"; content: string }>>([
   {
    role: "model",
-   content: "Marhaban ! Je suis **PR Molière**, votre tuteur de français. Sélectionnez la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou votre examen régional ! Je suis là pour vous accompagner chaleureusement."
+   content: "Marhaban ! Je suis **Pr. Molière**, votre tuteur de français. Sélectionnez la leçon de votre choix ci-dessous, ou posez-moi directement vos questions sur la grammaire, la conjugaison ou votre examen régional ! Je suis là pour vous accompagner chaleureusement."
   }
  ]);
  const [userQuery, setUserQuery] = useState<string>("");
@@ -687,7 +687,7 @@ const submitAnswer = async () => {
      ...prev,
      { 
       role: "model", 
-      content: `### Analyse de "PR Molière" 💡\n\nVous m'avez posé une question sur **${selectedTopic.title}** (${selectedTopic.level}).\n\nRetenez cette formule essentielle :\n> **${selectedTopic.keyRule}**\n\nAvez-vous un exemple pratique que vous aimeriez que l'on vérifie ensemble ?` 
+      content: `### Analyse de "Pr. Molière" 💡\n\nVous m'avez posé une question sur **${selectedTopic.title}** (${selectedTopic.level}).\n\nRetenez cette formule essentielle :\n> **${selectedTopic.keyRule}**\n\nAvez-vous un exemple pratique que vous aimeriez que l'on vérifie ensemble ?` 
      }
     ]);
    }, 605);
@@ -741,7 +741,7 @@ const submitAnswer = async () => {
       </div>
       <div>
        <h1 className="font-extrabold text-xl tracking-tight text-[#1D4ED8] flex items-center gap-1.5 font-serif uppercase">
-        PR Molière
+        Pr. Molière
        </h1>
       </div>
      </div>
@@ -1129,7 +1129,7 @@ const submitAnswer = async () => {
          <span className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce"></span>
          <span className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></span>
          <span className="w-1.5 h-1.5 bg-amber-600 rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></span>
-         <span className="text-[10px] text-amber-900 font-bold ml-1">PR Molière réfléchit...</span>
+         <span className="text-[10px] text-amber-900 font-bold ml-1">Pr. Molière réfléchit...</span>
         </div>
        )}
       </div>
@@ -1281,7 +1281,7 @@ const submitAnswer = async () => {
    {/* Footer */}
    <footer className="bg-white border-t border-[#D9E2EC] py-8 mt-12 text-center text-xs text-[#64748B] font-medium">
     <div className="max-w-7xl mx-auto px-4 space-y-2">
-     <p className="font-serif font-extrabold text-[#1D4ED8] text-sm">PR Molière, Plateforme de français du collège</p>
+     <p className="font-serif font-extrabold text-[#1D4ED8] text-sm">Pr. Molière, Plateforme de français du collège</p>
      <p></p>
      <p className="opacity-80">© {new Date().getFullYear()} • Fait avec passion pour la réussite des élèves.</p>
     </div>
