@@ -158,3 +158,37 @@ Pour la version MVP pédagogique finale, les sources récentes prioritaires sont
 4. Ministère comme source institutionnelle de contexte.
 
 9rayti et Scribd sont conservés comme sources complémentaires, avec prudence.
+
+## Sources récentes prioritaires
+
+Pour la version MVP pédagogique finale, les sources doivent être classées selon leur fraîcheur et leur utilité.
+
+### Sources prioritaires récentes
+
+1. Attarbia.net — examens locaux récents 3AC  
+Lien : https://fr.attarbia.net/p/francais-3eme-annee-college-examens.html
+
+2. Attarbia.net — examens régionaux français 3AC  
+Lien : https://fr.attarbia.net/p/examens-regionaux-francais-3ac.html
+
+3. ProfeLhamdaoui — examens régionaux français 3AC  
+Lien : https://profelhamdaoui.com/examens-regionaux-francais-3eme-annee-college/
+
+4. Ministère de l'Éducation Nationale — contexte institutionnel  
+Lien : https://www.men.gov.ma/fr
+
+### Sources complémentaires
+
+9rayti et Scribd sont conservés comme sources complémentaires ou archives. Elles ne doivent pas être les seules sources de référence pour une version pédagogique finale.
+
+### Décision pédagogique finale
+
+Le corpus pédagogique de PR Molière doit privilégier :
+
+- les examens locaux et régionaux récents ;
+- les structures marocaines récurrentes ;
+- les tableaux d'énonciation ;
+- l'alternance imparfait / passé simple ;
+- la production écrite notée sur critères ;
+- la préparation spécifique de l'examen régional 3AC.
+
