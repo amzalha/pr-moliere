@@ -64,15 +64,15 @@ export default function ProgressPanel({ stats, onResetStats }: ProgressPanelProp
  const unlockedCount = badgeList.filter(b => b.unlocked).length;
 
  return (
-  <div id="progress-panel" className="bg-white rounded-3xl border-2 border-[#E5E1D8] p-5 shadow-sm transition-all">
-   <div className="flex items-center justify-between border-b border-[#F2EDE4] pb-3 mb-4">
+  <div id="progress-panel" className="bg-white rounded-3xl border-2 border-[#D9E2EC] p-5 shadow-sm transition-all">
+   <div className="flex items-center justify-between border-b border-[#F8FAFC] pb-3 mb-4">
     <div className="flex items-center gap-2.5">
-     <div className="bg-[#006233]/10 text-[#006233] p-2 rounded-xl">
+     <div className="bg-[#1D4ED8]/10 text-[#1D4ED8] p-2 rounded-xl">
       <Trophy className="w-5 h-5" />
      </div>
      <div>
-      <h2 className="text-base font-serif font-black text-[#1A1A1A]">Mon parcours de réussite</h2>
-      <p className="text-[11px] text-[#7A7468] font-bold">Progression, assiduité et réussites débloquées</p>
+      <h2 className="text-base font-serif font-black text-[#1A1A1A]">Tableau de progression</h2>
+      <p className="text-[11px] text-[#64748B] font-bold">Progression, assiduité et réussites débloquées</p>
      </div>
     </div>
 
@@ -88,24 +88,24 @@ export default function ProgressPanel({ stats, onResetStats }: ProgressPanelProp
 
    <div className="grid grid-cols-2 gap-3 mb-4">
     {/* Total stats */}
-    <div className="bg-[#FDFCFB] rounded-2xl p-3 border border-[#E5E1D8]/60 flex items-center gap-3">
-     <div className="bg-[#006233] text-white rounded-lg p-2 shrink-0">
+    <div className="bg-[#FFFFFF] rounded-2xl p-3 border border-[#D9E2EC]/60 flex items-center gap-3">
+     <div className="bg-[#1D4ED8] text-white rounded-lg p-2 shrink-0">
       <Award className="w-4 h-4" />
      </div>
      <div>
       <div className="text-xl font-black text-[#1A1A1A] leading-none">{stats.totalCorrect}</div>
-      <div className="text-[10px] text-[#A39E93] font-bold">Réponses justes</div>
+      <div className="text-[10px] text-[#64748B] font-bold">Réponses justes</div>
      </div>
     </div>
 
     {/* Level distribution */}
-    <div className="bg-[#FDFCFB] rounded-2xl p-3 border border-[#E5E1D8]/60 flex items-center gap-3">
-     <div className="bg-[#C18F5A] text-white rounded-lg p-2 shrink-0 animate-pulse">
+    <div className="bg-[#FFFFFF] rounded-2xl p-3 border border-[#D9E2EC]/60 flex items-center gap-3">
+     <div className="bg-[#2563EB] text-white rounded-lg p-2 shrink-0 animate-pulse">
       <Flame className="w-4 h-4" />
      </div>
      <div>
       <div className="text-xl font-black text-[#1A1A1A] leading-none">{stats.streak}</div>
-      <div className="text-[10px] text-[#A39E93] font-bold">Assiduité (jours)</div>
+      <div className="text-[10px] text-[#64748B] font-bold">Assiduité (jours)</div>
      </div>
     </div>
    </div>
@@ -128,7 +128,7 @@ export default function ProgressPanel({ stats, onResetStats }: ProgressPanelProp
         }`}
        >
         <div className={`p-1.5 rounded-lg shrink-0 mt-0.5 ${badge.unlocked ? "bg-white shadow-xs" : "bg-gray-100"}`}>
-         <IconComp className={`w-4 h-4 ${badge.unlocked ? "text-[#006233]" : "text-gray-400"}`} />
+         <IconComp className={`w-4 h-4 ${badge.unlocked ? "text-[#1D4ED8]" : "text-gray-400"}`} />
         </div>
         <div className="flex-1 min-w-0">
          <div className="flex items-center justify-between">

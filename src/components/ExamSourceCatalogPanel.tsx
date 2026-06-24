@@ -3,7 +3,7 @@ import { examSourceCatalog } from "../data/examSourceCatalog";
 
 export default function ExamSourceCatalogPanel() {
   return (
-    <div className="bg-white rounded-3xl border-2 border-[#E5E1D8] p-5 shadow-sm">
+    <div className="bg-white rounded-3xl border-2 border-[#D9E2EC] p-5 shadow-sm">
       <div className="flex items-start gap-3 mb-4">
         <div className="bg-blue-50 text-blue-700 p-2.5 rounded-2xl">
           <Link2 className="w-5 h-5" />
@@ -20,7 +20,7 @@ export default function ExamSourceCatalogPanel() {
       </div>
 
       <div className="mb-4 bg-emerald-50 border border-emerald-200 rounded-2xl p-3 flex items-start gap-2">
-        <ShieldCheck className="w-4 h-4 text-[#006233] mt-0.5 shrink-0" />
+        <ShieldCheck className="w-4 h-4 text-[#1D4ED8] mt-0.5 shrink-0" />
         <p className="text-xs text-[#114433]">
           Utilisation prudente : référencement, métadonnées et orientation seulement. Les sujets réels doivent être autorisés ou reformulés avant intégration.
         </p>
@@ -33,15 +33,15 @@ export default function ExamSourceCatalogPanel() {
             href={source.url}
             target="_blank"
             rel="noreferrer"
-            className="block bg-[#FDFCFB] border border-[#E5E1D8] rounded-2xl p-3 hover:border-[#006233]/40 transition"
+            className="block bg-[#FFFFFF] border border-[#D9E2EC] rounded-2xl p-3 hover:border-[#1D4ED8]/40 transition"
           >
             <div className="flex items-start justify-between gap-3">
               <div>
                 <div className="flex flex-wrap gap-2 mb-2">
-                  <span className="bg-[#006233]/10 text-[#006233] px-2 py-1 rounded-lg text-xs">
+                  <span className="bg-[#1D4ED8]/10 text-[#1D4ED8] px-2 py-1 rounded-lg text-xs">
                     {source.niveau}
                   </span>
-                  <span className="bg-[#F2EDE4] text-[#111111] px-2 py-1 rounded-lg text-xs">
+                  <span className="bg-[#F8FAFC] text-[#111111] px-2 py-1 rounded-lg text-xs">
                     {source.source}
                   </span>
                 </div>
@@ -55,7 +55,7 @@ export default function ExamSourceCatalogPanel() {
                 </p>
               </div>
 
-              <ExternalLink className="w-4 h-4 text-[#006233] shrink-0" />
+              <ExternalLink className="w-4 h-4 text-[#1D4ED8] shrink-0" />
             </div>
           </a>
         ))}

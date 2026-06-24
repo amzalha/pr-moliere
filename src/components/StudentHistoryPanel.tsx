@@ -121,8 +121,8 @@ export default function StudentHistoryPanel({ userId }: Props) {
 
  if (!userId) {
   return (
-   <div className="bg-white rounded-3xl border-2 border-[#E5E1D8] p-5 text-sm text-[#4A453C]">
-    <div className="flex items-center gap-2 font-black text-[#006233] mb-2">
+   <div className="bg-white rounded-3xl border-2 border-[#D9E2EC] p-5 text-sm text-[#334155]">
+    <div className="flex items-center gap-2 font-black text-[#1D4ED8] mb-2">
      <Database className="w-4 h-4" />
      <span>Dashboard élève</span>
     </div>
@@ -132,16 +132,16 @@ export default function StudentHistoryPanel({ userId }: Props) {
  }
 
  return (
-  <div className="bg-white rounded-3xl border-2 border-[#E5E1D8] p-5 shadow-sm">
+  <div className="bg-white rounded-3xl border-2 border-[#D9E2EC] p-5 shadow-sm">
    <div className="flex items-center justify-between mb-4">
     <div>
      <h4 className="text-sm font-black text-[#1A1A1A]">Dashboard élève</h4>
-     <p className="text-xs text-[#A39E93] font-bold">Historique, progression et recommandations personnalisées</p>
+     <p className="text-xs text-[#64748B] font-bold">Historique, progression et recommandations personnalisées</p>
     </div>
     <button
      onClick={loadHistory}
      disabled={loading}
-     className="text-[10px] px-3 py-2 rounded-xl bg-[#F2EDE4] hover:bg-[#E5E1D8] text-[#4A453C] font-black border border-[#E5E1D8] flex items-center gap-1"
+     className="text-[10px] px-3 py-2 rounded-xl bg-[#F8FAFC] hover:bg-[#D9E2EC] text-[#334155] font-black border border-[#D9E2EC] flex items-center gap-1"
     >
      <RefreshCcw className={`w-3 h-3 ${loading ? "animate-spin" : ""}`} />
      Actualiser
@@ -149,8 +149,8 @@ export default function StudentHistoryPanel({ userId }: Props) {
    </div>
 
    <div className="grid grid-cols-3 gap-2 mb-4">
-    <div className="bg-[#F2EDE4] rounded-2xl p-3 text-center">
-     <p className="text-[10px] font-black text-[#7A7468] uppercase">Total</p>
+    <div className="bg-[#F8FAFC] rounded-2xl p-3 text-center">
+     <p className="text-[10px] font-black text-[#64748B] uppercase">Total</p>
      <p className="text-xl font-black text-[#1A1A1A]">{analytics.total}</p>
     </div>
     <div className="bg-emerald-50 rounded-2xl p-3 text-center">
@@ -163,17 +163,17 @@ export default function StudentHistoryPanel({ userId }: Props) {
     </div>
    </div>
 
-   <div className="bg-[#006233]/5 border border-[#006233]/15 rounded-2xl p-3 mb-4">
-    <div className="flex items-center gap-2 text-[#006233] font-black text-xs mb-1">
+   <div className="bg-[#1D4ED8]/5 border border-[#1D4ED8]/15 rounded-2xl p-3 mb-4">
+    <div className="flex items-center gap-2 text-[#1D4ED8] font-black text-xs mb-1">
      <Target className="w-4 h-4" />
      <span>Recommandation personnalisée</span>
     </div>
-    <p className="text-xs text-[#4A453C] font-bold">{analytics.recommendation}</p>
+    <p className="text-xs text-[#334155] font-bold">{analytics.recommendation}</p>
    </div>
 
    <div className="mb-4">
     <div className="flex items-center gap-2 text-[#1A1A1A] font-black text-xs mb-2">
-     <BarChart3 className="w-4 h-4 text-[#006233]" />
+     <BarChart3 className="w-4 h-4 text-[#1D4ED8]" />
      <span>Progression par niveau</span>
     </div>
 
@@ -183,18 +183,18 @@ export default function StudentHistoryPanel({ userId }: Props) {
       const rate = item.total ? Math.round((item.correct / item.total) * 100) : 0;
 
       return (
-       <div key={level} className="bg-[#FDFCFB] border border-[#E5E1D8] rounded-2xl p-3">
+       <div key={level} className="bg-[#FFFFFF] border border-[#D9E2EC] rounded-2xl p-3">
         <div className="flex items-center justify-between text-xs font-black mb-1">
          <span>{level}</span>
-         <span className="text-[#006233]">{rate}%</span>
+         <span className="text-[#1D4ED8]">{rate}%</span>
         </div>
-        <div className="w-full bg-[#F2EDE4] h-2 rounded-full overflow-hidden">
+        <div className="w-full bg-[#F8FAFC] h-2 rounded-full overflow-hidden">
          <div
-          className="bg-[#006233] h-full rounded-full transition-all"
+          className="bg-[#1D4ED8] h-full rounded-full transition-all"
           style={{ width: `${Math.max(5, rate)}%` }}
          />
         </div>
-        <p className="text-[10px] text-[#A39E93] font-bold mt-1">
+        <p className="text-[10px] text-[#64748B] font-bold mt-1">
          {item.correct}/{item.total} réponses justes
         </p>
        </div>
@@ -210,7 +210,7 @@ export default function StudentHistoryPanel({ userId }: Props) {
     </div>
 
     {analytics.weakThemes.length === 0 ? (
-     <p className="text-xs text-[#A39E93] font-bold">Aucun thème faible détecté pour le moment.</p>
+     <p className="text-xs text-[#64748B] font-bold">Aucun thème faible détecté pour le moment.</p>
     ) : (
      <div className="space-y-2">
       {analytics.weakThemes.map((item) => (
@@ -238,21 +238,21 @@ export default function StudentHistoryPanel({ userId }: Props) {
 
    <div>
     <div className="flex items-center gap-2 text-[#1A1A1A] font-black text-xs mb-2">
-     <BookOpen className="w-4 h-4 text-[#006233]" />
+     <BookOpen className="w-4 h-4 text-[#1D4ED8]" />
      <span>Dernières réponses</span>
     </div>
 
     {loading ? (
-     <div className="text-xs text-[#A39E93] font-bold">Chargement de l’historique...</div>
+     <div className="text-xs text-[#64748B] font-bold">Chargement de l’historique...</div>
     ) : rows.length === 0 ? (
-     <div className="text-xs text-[#A39E93] font-bold">Aucune réponse enregistrée pour le moment.</div>
+     <div className="text-xs text-[#64748B] font-bold">Aucune réponse enregistrée pour le moment.</div>
     ) : (
      <div className="space-y-2 max-h-[320px] overflow-y-auto pr-1">
       {rows.slice(0, 8).map((row) => {
        const ok = normalizeStatus(row.statut) === "JUSTE";
 
        return (
-        <div key={row.id} className="border border-[#E5E1D8] rounded-2xl p-3 bg-[#FDFCFB]">
+        <div key={row.id} className="border border-[#D9E2EC] rounded-2xl p-3 bg-[#FFFFFF]">
          <div className="flex items-center justify-between gap-2 mb-1">
           <div className="flex items-center gap-2">
            {ok ? (
@@ -262,12 +262,12 @@ export default function StudentHistoryPanel({ userId }: Props) {
            )}
            <span className="text-xs font-black text-[#1A1A1A]">{row.theme}</span>
           </div>
-          <span className="text-[10px] font-black text-[#006233] bg-[#006233]/10 px-2 py-0.5 rounded-lg">
+          <span className="text-[10px] font-black text-[#1D4ED8] bg-[#1D4ED8]/10 px-2 py-0.5 rounded-lg">
            {row.niveau}
           </span>
          </div>
-         <p className="text-xs text-[#4A453C] line-clamp-2">{row.reponse_eleve}</p>
-         <div className="flex items-center gap-1 mt-2 text-[10px] text-[#A39E93] font-bold">
+         <p className="text-xs text-[#334155] line-clamp-2">{row.reponse_eleve}</p>
+         <div className="flex items-center gap-1 mt-2 text-[10px] text-[#64748B] font-bold">
           <Clock className="w-3 h-3" />
           {new Date(row.created_at).toLocaleString("fr-FR")}
          </div>

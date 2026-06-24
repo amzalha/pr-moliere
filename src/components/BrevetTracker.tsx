@@ -73,31 +73,31 @@ export default function BrevetTracker({ totalCorrect }: BrevetTrackerProps) {
  const readinessPercentage = Math.min(baselinePercentage + bonus, 100);
 
  return (
-  <div id="brevet-tracker-widget" className="bg-white rounded-3xl border-2 border-[#E5E1D8] p-5 shadow-sm transition-all">
+  <div id="brevet-tracker-widget" className="bg-white rounded-3xl border-2 border-[#D9E2EC] p-5 shadow-sm transition-all">
    {/* Header */}
-   <div className="flex items-center justify-between border-b border-[#F2EDE4] pb-3 mb-4">
+   <div className="flex items-center justify-between border-b border-[#F8FAFC] pb-3 mb-4">
     <div className="flex items-center gap-2.5">
-     <div className="bg-[#006233]/10 text-[#006233] p-2 rounded-xl">
+     <div className="bg-[#1D4ED8]/10 text-[#1D4ED8] p-2 rounded-xl">
       <Target className="w-5 h-5" />
      </div>
      <div>
       <h2 className="text-base font-serif font-black text-[#1A1A1A]">Simulateur Brevet 100% 🎯</h2>
-      <p className="text-[11px] text-[#7A7468] font-bold">Checklist officielle de l'Examen Régional (3AC)</p>
+      <p className="text-[11px] text-[#64748B] font-bold">Checklist officielle de l'Examen Régional (3AC)</p>
      </div>
     </div>
    </div>
 
    {/* Region selector & stats */}
    <div className="space-y-3 mb-4">
-    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 bg-[#F2EDE4]/40 p-3 rounded-2xl border border-[#E5E1D8]/60">
-     <div className="flex items-center gap-1 text-xs text-[#4A453C] font-bold">
+    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 bg-[#F8FAFC]/40 p-3 rounded-2xl border border-[#D9E2EC]/60">
+     <div className="flex items-center gap-1 text-xs text-[#334155] font-bold">
       <MapPin className="w-4 h-4 text-rose-600 shrink-0" />
       <span>Mon Académie Académique :</span>
      </div>
      <select
       value={selectedRegion}
       onChange={(e) => setSelectedRegion(e.target.value)}
-      className="text-[11px] font-black bg-white text-[#2C2C2C] border border-[#E5E1D8] px-2 py-1 rounded-xl focus:outline-none focus:ring-1 focus:ring-[#006233]"
+      className="text-[11px] font-black bg-white text-[#2C2C2C] border border-[#D9E2EC] px-2 py-1 rounded-xl focus:outline-none focus:ring-1 focus:ring-[#1D4ED8]"
      >
       {MAROC_REGIONS.map(reg => (
        <option key={reg} value={reg}>{reg}</option>
@@ -106,20 +106,20 @@ export default function BrevetTracker({ totalCorrect }: BrevetTrackerProps) {
     </div>
 
     {/* Readiness progress gauge */}
-    <div className="bg-gradient-to-br from-[#006233]/5 to-[#C18F5A]/5 rounded-2xl p-4 border border-[#E5E1D8]/80 flex items-center justify-between gap-4">
+    <div className="bg-gradient-to-br from-[#1D4ED8]/5 to-[#2563EB]/5 rounded-2xl p-4 border border-[#D9E2EC]/80 flex items-center justify-between gap-4">
      <div className="flex-1">
       <div className="flex justify-between items-center mb-1">
        <span className="text-[11px] font-black text-[#1A1A1A] uppercase tracking-wide">Taux de Réussite Régionale estimé :</span>
-       <span className="text-sm font-black text-[#006233]">{readinessPercentage}%</span>
+       <span className="text-sm font-black text-[#1D4ED8]">{readinessPercentage}%</span>
       </div>
       
-      <div className="w-full bg-[#E5E1D8] h-2.5 rounded-full overflow-hidden">
+      <div className="w-full bg-[#D9E2EC] h-2.5 rounded-full overflow-hidden">
        <div 
-        className="bg-gradient-to-r from-[#C18F5A] to-[#006233] h-full rounded-full transition-all duration-500"
+        className="bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] h-full rounded-full transition-all duration-500"
         style={{ width: `${readinessPercentage}%` }}
        ></div>
       </div>
-      <p className="text-[9px] text-[#A39E93] font-bold mt-1 leading-tight">
+      <p className="text-[9px] text-[#64748B] font-bold mt-1 leading-tight">
        {readinessPercentage >= 80 ? "🌟 Niveau exceptionnel (Mention Très Bien visée !)" :
         readinessPercentage >= 50 ? "👍 Progression stable. Continuez à réviser votre lexique !" :
         "📝 Remplissez la checklist et réussissez des exercices pour augmenter votre confiance."}
@@ -127,8 +127,8 @@ export default function BrevetTracker({ totalCorrect }: BrevetTrackerProps) {
      </div>
 
      <div className="flex flex-col items-center justify-center shrink-0">
-      <Gauge className="w-8 h-8 text-[#C18F5A] mb-1 opacity-90 animate-pulse" />
-      <span className="text-[9px] text-[#7A7468] font-semibold">Tuteur marocain</span>
+      <Gauge className="w-8 h-8 text-[#2563EB] mb-1 opacity-90 animate-pulse" />
+      <span className="text-[9px] text-[#64748B] font-semibold">Tuteur marocain</span>
      </div>
     </div>
    </div>
@@ -150,21 +150,21 @@ export default function BrevetTracker({ totalCorrect }: BrevetTrackerProps) {
         className={`w-full text-left p-2.5 rounded-xl border transition-all flex items-start gap-2.5 leading-snug ${
          isChecked
           ? "bg-emerald-50/50 border-emerald-200 text-emerald-950"
-          : "bg-[#FDFCFB] border-[#E5E1D8]/60 text-[#4A453C] hover:bg-[#F2EDE4]/20"
+          : "bg-[#FFFFFF] border-[#D9E2EC]/60 text-[#334155] hover:bg-[#F8FAFC]/20"
         }`}
        >
         <div className="mt-0.5 shrink-0">
          {isChecked ? (
           <CheckSquare className="w-4 h-4 text-emerald-600" />
          ) : (
-          <Square className="w-4 h-4 text-[#A39E93]" />
+          <Square className="w-4 h-4 text-[#64748B]" />
          )}
         </div>
         <div>
          <h4 className={`text-[11px] font-black tracking-tight ${isChecked ? "line-through text-emerald-800" : "text-[#1A1A1A]"}`}>
           {item.label}
          </h4>
-         <p className="text-[9px] text-[#7A7468] leading-tight mt-0.5">{item.desc}</p>
+         <p className="text-[9px] text-[#64748B] leading-tight mt-0.5">{item.desc}</p>
         </div>
        </button>
       );
@@ -173,8 +173,8 @@ export default function BrevetTracker({ totalCorrect }: BrevetTrackerProps) {
    </div>
 
    {/* Advisory Note from inspector */}
-   <div className="mt-3 border-t border-[#F2EDE4] pt-3 flex gap-2 items-start">
-    <div className="text-[9px] text-[#7A7468] leading-relaxed">
+   <div className="mt-3 border-t border-[#F8FAFC] pt-3 flex gap-2 items-start">
+    <div className="text-[9px] text-[#64748B] leading-relaxed">
      💡 <strong>Note de l'Inspecteur régional :</strong> Pour l'examen de l'Académie de <strong>{selectedRegion}</strong>, accordez un soin maximal à l'orthographe d'usage des homophones et à la propreté de la copie d'examen !
     </div>
    </div>

@@ -339,3 +339,19 @@ select {
  background-color: #f8f5ef !important;
  color: #111111 !important;
 }
+
+/* Phase 8.5 — interface classique type plateforme de cours */
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: #F8FAFC;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
