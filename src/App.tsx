@@ -858,7 +858,7 @@ const submitAnswer = async () => {
          <span className="bg-amber-200/60 text-amber-900 text-[9px] px-2 py-0.5 rounded-md font-bold uppercase tracking-wider">Actif</span>
         </h4>
         <p className="text-xs text-amber-800 font-semibold leading-relaxed mt-1">
-         Les serveurs d'service d'IA connaissent actuellement une très forte affluence (Erreur 503). PR Molière a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour vous assurer un soutien fluide, continu et instantané !
+         Le service d'IA connaît actuellement une très forte affluence (Erreur 503). PR Molière a automatiquement activé sa bibliothèque d'exercices et de corrections locales de secours conformes au programme officiel pour vous assurer un soutien fluide, continu et instantané !
         </p>
        </div>
       </div>
