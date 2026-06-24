@@ -54,7 +54,45 @@ export const LESSONS: LessonTopic[] = [
   description: "Enrichir la description avec des adjectifs qualificatifs épithètes/attributs et des comparaisons.",
   defaultPrompt: "Génère un exercice facile sur les comparaisons et les adjectifs qualificatifs décrivant un magnifique cheval arabe de la fantasia à Oujda.",
   keyRule: "L'adjectif s'accorde avec le nom qu'il qualifie, tandis que la comparaison utilise un outil comparatif (comme, pareil à) pour lier le comparé au comparant."
+ },,
+
+ {
+  id: "1ac-dialogue-recit",
+  title: "Le dialogue dans le récit",
+  level: "1AC",
+  category: "Lecture/Genre",
+  description: "Identifier les paroles des personnages, les verbes de parole et la ponctuation du dialogue dans un récit.",
+  defaultPrompt: "Génère un exercice où l'élève repère les paroles de deux personnages dans un conte marocain et identifie les verbes de parole.",
+  keyRule: "Le dialogue rapporte les paroles des personnages ; il utilise souvent des tirets, des guillemets et des verbes comme dire, répondre, demander."
  },
+ {
+  id: "1ac-situation-initiale",
+  title: "La situation initiale",
+  level: "1AC",
+  category: "Lecture/Genre",
+  description: "Reconnaître le début d'un récit : personnages, lieu, temps et situation stable avant l'événement perturbateur.",
+  defaultPrompt: "Génère un exercice où l'élève identifie les éléments de la situation initiale dans un court récit situé dans un village de l'Atlas.",
+  keyRule: "La situation initiale présente le cadre du récit avant le changement : qui, où, quand et dans quelle situation."
+ },
+ {
+  id: "1ac-connecteurs-chronologiques",
+  title: "Les connecteurs chronologiques",
+  level: "1AC",
+  category: "Langue",
+  description: "Organiser les événements d'un récit avec des connecteurs comme d'abord, ensuite, puis, enfin.",
+  defaultPrompt: "Génère un exercice où l'élève remet en ordre un court récit à l'aide de connecteurs chronologiques.",
+  keyRule: "Les connecteurs chronologiques indiquent l'ordre des actions et rendent le récit plus clair pour le lecteur."
+ },
+ {
+  id: "1ac-production-courte-conte",
+  title: "Produire le début d'un conte",
+  level: "1AC",
+  category: "Écrit/Correspondance",
+  description: "Rédiger un court début de conte avec une formule d'ouverture, un lieu, un personnage et une situation initiale.",
+  defaultPrompt: "Génère une consigne de production écrite où l'élève rédige le début d'un conte merveilleux situé au Maroc.",
+  keyRule: "Un bon début de conte contient une formule d'ouverture, un cadre imaginaire, un personnage principal et une situation stable."
+ },
+
 
  // 2AC
  {
@@ -92,7 +130,63 @@ export const LESSONS: LessonTopic[] = [
   description: "Rédiger ou analyser un fait divers en répondant aux questions : Qui ? Quoi ? Où ? Quand ? Comment ? Pourquoi ?",
   defaultPrompt: "Génère un exercice d'analyse sur un court fait divers relatant le sauvetage intrépide d'un chaton bloqué sur un minaret à Meknès.",
   keyRule: "Un fait divers est un événement réel, insolite ou dramatique, rédigé à la troisième personne de façon concise."
+ },,
+
+ {
+  id: "2ac-discours-direct-indirect",
+  title: "Le discours direct et indirect",
+  level: "2AC",
+  category: "Langue",
+  description: "Transformer une parole rapportée directement en discours indirect en respectant les changements de pronoms, de temps et de ponctuation.",
+  defaultPrompt: "Génère un exercice où l'élève transforme des répliques de théâtre en discours indirect dans un contexte de club scolaire à Rabat.",
+  keyRule: "Au discours indirect, les guillemets disparaissent et la parole est introduite par un verbe de parole suivi d'une subordonnée."
  },
+ {
+  id: "2ac-phrase-complexe",
+  title: "La phrase complexe",
+  level: "2AC",
+  category: "Langue",
+  description: "Reconnaître les propositions dans une phrase complexe et distinguer juxtaposition, coordination et subordination.",
+  defaultPrompt: "Génère un exercice d'analyse de phrases complexes autour d'une sortie scolaire à Volubilis.",
+  keyRule: "Une phrase complexe contient plusieurs verbes conjugués et donc plusieurs propositions reliées par juxtaposition, coordination ou subordination."
+ },
+ {
+  id: "2ac-valeurs-temps-recit",
+  title: "Les valeurs des temps du récit",
+  level: "2AC",
+  category: "Langue",
+  description: "Comprendre les valeurs de l'imparfait, du passé simple et du présent dans un récit ou un article.",
+  defaultPrompt: "Génère un exercice où l'élève justifie l'emploi de l'imparfait et du passé simple dans un court récit marocain.",
+  keyRule: "L'imparfait décrit le cadre ou une action durable, tandis que le passé simple marque une action brève et importante."
+ },
+ {
+  id: "2ac-vocabulaire-theatre",
+  title: "Le vocabulaire du théâtre",
+  level: "2AC",
+  category: "Lecture/Genre",
+  description: "Maîtriser les mots essentiels du théâtre : scène, acte, réplique, monologue, dialogue, aparté, décor.",
+  defaultPrompt: "Génère un exercice d'association entre termes théâtraux et définitions pour une troupe de collège à Casablanca.",
+  keyRule: "Le vocabulaire théâtral permet de comprendre l'organisation de la pièce, le jeu des personnages et les indications de mise en scène."
+ },
+ {
+  id: "2ac-article-presse",
+  title: "L'article de presse",
+  level: "2AC",
+  category: "Média/Communication",
+  description: "Identifier le titre, le chapeau, les informations essentielles et l'organisation d'un article de presse.",
+  defaultPrompt: "Génère un exercice d'analyse d'un article de presse scolaire sur une action écologique dans un collège marocain.",
+  keyRule: "Un article de presse informe clairement le lecteur en répondant aux questions essentielles : qui, quoi, où, quand, comment et pourquoi."
+ },
+ {
+  id: "2ac-expression-opinion",
+  title: "Exprimer une opinion argumentée",
+  level: "2AC",
+  category: "Écrit/Correspondance",
+  description: "Formuler une opinion personnelle avec des arguments simples, des exemples et des connecteurs logiques.",
+  defaultPrompt: "Génère un exercice où l'élève donne son avis sur l'usage du téléphone au collège avec deux arguments et un exemple.",
+  keyRule: "Une opinion argumentée doit présenter une idée claire, des arguments organisés et des connecteurs comme d'abord, ensuite, enfin."
+ },
+
 
  // 3AC
  {
@@ -157,5 +251,34 @@ export const LESSONS: LessonTopic[] = [
   description: "Exprimer l'objectif à atteindre positivement ou négativement (pour que, afin que + subjonctif, de peur de).",
   defaultPrompt: "Génère un exercice de grammaire sur l'expression du but dans un projet écologique mené au collège de Casablanca.",
   keyRule: "On utilise 'pour que' ou 'afin que' suivis du subjonctif lorsque les sujets des deux propositions sont différents, et l'infinitif ('pour', 'afin de') si le sujet est le même."
- }
+ },
+
+ {
+  id: "3ac-argumentation-simple",
+  title: "L'argumentation simple",
+  level: "3AC",
+  category: "Écrit/Correspondance",
+  description: "Construire un paragraphe argumentatif avec une thèse, deux arguments et un exemple.",
+  defaultPrompt: "Génère un exercice où l'élève rédige un paragraphe argumentatif sur l'importance de la lecture au collège.",
+  keyRule: "Un paragraphe argumentatif défend une idée à l'aide d'arguments organisés et d'exemples précis."
+ },
+ {
+  id: "3ac-connecteurs-logiques",
+  title: "Les connecteurs logiques",
+  level: "3AC",
+  category: "Langue",
+  description: "Utiliser les connecteurs pour organiser une argumentation : d'abord, en effet, cependant, donc, enfin.",
+  defaultPrompt: "Génère un exercice de classement et d'emploi des connecteurs logiques dans un texte argumentatif.",
+  keyRule: "Les connecteurs logiques indiquent les relations entre les idées : addition, cause, conséquence, opposition ou conclusion."
+ },
+ {
+  id: "3ac-preparation-regional",
+  title: "Préparer l'examen régional",
+  level: "3AC",
+  category: "Lecture/Genre",
+  description: "S'entraîner à lire un texte, répondre avec précision, justifier ses réponses et préparer une production écrite.",
+  defaultPrompt: "Génère un entraînement court de type examen régional avec lecture, langue et production écrite.",
+  keyRule: "Pour réussir l'examen régional, il faut lire attentivement, justifier ses réponses et respecter la consigne de production écrite."
+ },
+
 ];
