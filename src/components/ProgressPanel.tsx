@@ -71,8 +71,8 @@ export default function ProgressPanel({ stats, onResetStats }: ProgressPanelProp
       <Trophy className="w-5 h-5" />
      </div>
      <div>
-      <h2 className="text-base font-serif font-black text-[#1A1A1A]">Mon Palmarès National</h2>
-      <p className="text-[11px] text-[#7A7468] font-bold">Pistes scolaires & exploits débloqués</p>
+      <h2 className="text-base font-serif font-black text-[#1A1A1A]">Mon parcours de réussite</h2>
+      <p className="text-[11px] text-[#7A7468] font-bold">Progression, assiduité et réussites débloquées</p>
      </div>
     </div>
 
