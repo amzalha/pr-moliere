@@ -435,7 +435,7 @@ export default function App() {
    // Just show default reminder and chat prompt
    setReminderText(topic.keyRule);
    setFeedback(null);
-   setExerciseText(`### Fiche de révision : ${topic.title} 📖\n\n**Niveau scolaire :** ${topic.level} • **Catégorie :** ${topic.category}\n\n**Explication rapide :**\n${topic.description}\n\n> **Règle capitale :** ${topic.keyRule}\n\n*Cliquez sur le bouton "Créer un Défi " ci-dessous pour vous exercer !*`);
+   setExerciseText(`### Fiche de révision : ${topic.title} 📖\n\n**Niveau scolaire :** ${topic.level} • **Catégorie :** ${topic.category}\n\n**Explication rapide :**\n${topic.description}\n\n> **Règle capitale :** ${topic.keyRule}\n\n*Cliquez sur le bouton "Créer un défi" ci-dessous pour vous exercer !*`);
   }
  };
 
@@ -1096,7 +1096,7 @@ const submitAnswer = async () => {
         </div>
         <div>
          <h4 className="text-sm font-black text-[#1A1A1A] tracking-tight">Discussion interactive avec le tuteur</h4>
-         <p className="text-xs text-[#A39E93] font-bold">Pose vos questions libres, demande des exemples ou de l'aide</p>
+         <p className="text-xs text-[#A39E93] font-bold">Posez vos questions, demandez des exemples ou une aide ciblée</p>
         </div>
        </div>
       </div>
@@ -1281,7 +1281,7 @@ const submitAnswer = async () => {
    {/* Footer */}
    <footer className="bg-white border-t border-[#E5E1D8] py-8 mt-12 text-center text-xs text-[#A39E93] font-medium">
     <div className="max-w-7xl mx-auto px-4 space-y-2">
-     <p className="font-serif font-extrabold text-[#006233] text-sm">Pr. MOLIÈRE, Tuteur Virtuel du Collège Marocain</p>
+     <p className="font-serif font-extrabold text-[#006233] text-sm">Pr. MOLIÈRE, Tuteur virtuel du collège marocain</p>
      <p></p>
      <p className="opacity-80">© {new Date().getFullYear()} • Fait avec passion pour la réussite des élèves.</p>
     </div>
