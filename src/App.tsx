@@ -30,6 +30,7 @@ import SuccessLexicon from "./components/SuccessLexicon";
 import BrevetTracker from "./components/BrevetTracker";
 import StudentHistoryPanel from "./components/StudentHistoryPanel";
 import ExamCorpusPanel from "./components/ExamCorpusPanel";
+import MvpPremiumHero from "./components/MvpPremiumHero";
 import type { ExamCorpusItem } from "./data/examCorpus";
 import { 
  auth, 
@@ -1084,6 +1085,13 @@ const submitAnswer = async () => {
       </div>
 
      </div>
+
+     <MvpPremiumHero
+      totalCorrect={stats.totalCorrect}
+      streak={stats.streak}
+      onOpenExams={() => setActiveRightTab("EXAMS")}
+      onOpenProgress={() => setActiveRightTab("BADGES")}
+     />
 
      {/* Box 3: Ask PR_Molière / Sandbox Chat (col-span-12 lg:col-span-7) */}
      <div 
