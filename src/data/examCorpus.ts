@@ -37,6 +37,13 @@ export type ExamCorpusItem = {
   }[];
   objectifsPedagogiques: string[];
   tags: string[];
+  difficulte?: 'facile' | 'intermediaire' | 'avance';
+  competenceDetaillee?: string;
+  prerequis?: string[];
+  erreursFrequentes?: string[];
+  rappelCours?: string;
+  conseilProgression?: string;
+  criteresReussite?: string[];
 };
 
 export const examCorpus: ExamCorpusItem[] = [
