@@ -37,9 +37,147 @@ export type ExamCorpusItem = {
   }[];
   objectifsPedagogiques: string[];
   tags: string[];
+  difficulte?: 'facile' | 'intermediaire' | 'avance';
+  competenceDetaillee?: string;
+  prerequis?: string[];
+  erreursFrequentes?: string[];
+  rappelCours?: string;
+  conseilProgression?: string;
+  criteresReussite?: string[];
 };
 
-export const examCorpus: ExamCorpusItem[] = [
+
+function getDefaultDifficulte(
+  item: Pick<ExamCorpusItem, 'niveau' | 'typeEvaluation'>
+): NonNullable<ExamCorpusItem['difficulte']> {
+  if (item.typeEvaluation === 'examen_regional') return 'avance';
+  if (item.niveau === '3AC' || item.typeEvaluation === 'examen_local') return 'intermediaire';
+  return 'facile';
+}
+
+function getDefaultCompetenceDetaillee(item: ExamCorpusItem): string {
+  if (item.competence === 'lecture') {
+    return `Comprendre un support de ${item.niveau}, relever les informations essentielles et justifier les réponses à partir du texte.`;
+  }
+
+  if (item.competence === 'langue') {
+    return `Identifier une notion de langue de niveau ${item.niveau}, l’expliquer simplement et l’employer dans une phrase correcte.`;
+  }
+
+  return `Produire une réponse écrite organisée, cohérente et adaptée au niveau ${item.niveau}.`;
+}
+
+function getDefaultPrerequis(item: ExamCorpusItem): string[] {
+  if (item.competence === 'lecture') {
+    return [
+      'Lire attentivement le support.',
+      'Repérer le thème du texte.',
+      'Répondre avec des phrases complètes.'
+    ];
+  }
+
+  if (item.competence === 'langue') {
+    return [
+      'Connaître la notion étudiée.',
+      'Repérer les indices dans une phrase.',
+      'Employer une formulation grammaticale correcte.'
+    ];
+  }
+
+  return [
+    'Comprendre la situation d’écriture.',
+    'Organiser les idées avant de rédiger.',
+    'Respecter la consigne et le nombre de lignes demandé.'
+  ];
+}
+
+function getDefaultErreursFrequentes(item: ExamCorpusItem): string[] {
+  if (item.competence === 'lecture') {
+    return [
+      'Répondre sans citer d’indice du texte.',
+      'Confondre l’idée principale avec un détail secondaire.',
+      'Rédiger une réponse trop courte ou incomplète.'
+    ];
+  }
+
+  if (item.competence === 'langue') {
+    return [
+      'Confondre la nature et la fonction des mots.',
+      'Relever un exemple qui ne correspond pas à la notion.',
+      'Oublier l’accord ou la ponctuation.'
+    ];
+  }
+
+  return [
+    'S’éloigner du sujet demandé.',
+    'Présenter des idées sans organisation claire.',
+    'Négliger la ponctuation, les accords et les connecteurs.'
+  ];
+}
+
+function getDefaultRappelCours(item: ExamCorpusItem): string {
+  if (item.competence === 'lecture') {
+    return 'En lecture, une réponse réussie s’appuie sur le texte, reprend les mots importants de la question et justifie l’idée exprimée.';
+  }
+
+  if (item.competence === 'langue') {
+    return 'En langue, il faut identifier la notion, relever un exemple exact et expliquer son rôle dans la phrase ou dans le texte.';
+  }
+
+  return 'En production écrite, il faut respecter le sujet, organiser les idées, utiliser des connecteurs et relire la langue avant de terminer.';
+}
+
+function getDefaultConseilProgression(item: ExamCorpusItem): string {
+  if (item.competence === 'lecture') {
+    return 'Commencez par souligner les mots clés de la question, puis cherchez dans le support l’indice qui permet de répondre.';
+  }
+
+  if (item.competence === 'langue') {
+    return 'Commencez par repérer le verbe, le nom ou le groupe demandé, puis vérifiez que l’exemple correspond exactement à la notion.';
+  }
+
+  return 'Préparez un petit plan avant de rédiger : introduction de l’idée, développement organisé, puis phrase finale claire.';
+}
+
+function getDefaultCriteresReussite(item: ExamCorpusItem): string[] {
+  if (item.competence === 'lecture') {
+    return [
+      'La réponse correspond exactement à la question.',
+      'Un indice du texte est utilisé.',
+      'La phrase est claire et complète.'
+    ];
+  }
+
+  if (item.competence === 'langue') {
+    return [
+      'La notion demandée est correctement identifiée.',
+      'L’exemple relevé est exact.',
+      'L’explication est simple et correcte.'
+    ];
+  }
+
+  return [
+    'La production respecte le sujet.',
+    'Les idées sont organisées.',
+    'La langue est correcte et le vocabulaire est précis.'
+  ];
+}
+
+function enrichExamCorpusItem(item: ExamCorpusItem): ExamCorpusItem {
+  return {
+    ...item,
+    difficulte: item.difficulte ?? getDefaultDifficulte(item),
+    competenceDetaillee: item.competenceDetaillee ?? getDefaultCompetenceDetaillee(item),
+    prerequis: item.prerequis ?? getDefaultPrerequis(item),
+    erreursFrequentes: item.erreursFrequentes ?? getDefaultErreursFrequentes(item),
+    rappelCours: item.rappelCours ?? getDefaultRappelCours(item),
+    conseilProgression: item.conseilProgression ?? getDefaultConseilProgression(item),
+    criteresReussite: item.criteresReussite ?? getDefaultCriteresReussite(item)
+  };
+}
+
+
+const rawExamCorpus: ExamCorpusItem[] = [
   {
     id: 'modele-1ac-controle-s1-conte-ouverture',
     niveau: '1AC',
@@ -4143,6 +4281,8 @@ export const examCorpus: ExamCorpusItem[] = [
     tags: ['3AC', 'examen régional', 'production_ecrite', 'v095']
   }
 ];
+
+export const examCorpus: ExamCorpusItem[] = rawExamCorpus.map(enrichExamCorpusItem);
 
 export function getExamCorpusByLevel(niveau: ExamLevel): ExamCorpusItem[] {
   return examCorpus.filter((item) => item.niveau === niveau);

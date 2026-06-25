@@ -38,6 +38,12 @@ const typeLabels: Record<TypeFilter, string> = {
   examen_regional: "Régional"
 };
 
+const difficultyLabels: Record<NonNullable<ExamCorpusItem["difficulte"]>, string> = {
+  facile: "Facile",
+  intermediaire: "Intermédiaire",
+  avance: "Avancé"
+};
+
 export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProps) {
   const [levelFilter, setLevelFilter] = useState<LevelFilter>("TOUS");
   const [typeFilter, setTypeFilter] = useState<TypeFilter>("TOUS");
@@ -156,6 +162,9 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
                   <span className="bg-[#F8FAFC] text-[#111111] border border-[#D9E2EC] px-2 py-1 rounded-lg text-xs">
                     {item.competence}
                   </span>
+                  <span className="bg-[#ECFDF5] text-[#166534] border border-[#BBF7D0] px-2 py-1 rounded-lg text-xs">
+                    Difficulté : {item.difficulte ? difficultyLabels[item.difficulte] : "Non classée"}
+                  </span>
                 </div>
 
                 <h4 className="text-base font-bold text-[#111111]">
@@ -185,6 +194,64 @@ export default function ExamCorpusPanel({ onStartTraining }: ExamCorpusPanelProp
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-[#1D4ED8]" />
                   <span>Région : {item.region}</span>
+                </div>
+              ) : null}
+            </div>
+
+            <div className="mt-3 rounded-2xl border border-[#D9E2EC] bg-[#F8FAFC] p-3 space-y-3">
+              {item.competenceDetaillee ? (
+                <div>
+                  <p className="text-xs font-bold text-[#111111] mb-1">Compétence ciblée</p>
+                  <p className="text-xs text-[#333333]">{item.competenceDetaillee}</p>
+                </div>
+              ) : null}
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {item.prerequis?.length ? (
+                  <div>
+                    <p className="text-xs font-bold text-[#111111] mb-1">Prérequis</p>
+                    <ul className="space-y-1 text-xs text-[#333333]">
+                      {item.prerequis.slice(0, 3).map((prerequis) => (
+                        <li key={prerequis}>• {prerequis}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+
+                {item.criteresReussite?.length ? (
+                  <div>
+                    <p className="text-xs font-bold text-[#111111] mb-1">Critères de réussite</p>
+                    <ul className="space-y-1 text-xs text-[#333333]">
+                      {item.criteresReussite.slice(0, 3).map((critere) => (
+                        <li key={critere}>• {critere}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+              </div>
+
+              {item.erreursFrequentes?.length ? (
+                <div>
+                  <p className="text-xs font-bold text-[#111111] mb-1">Erreurs fréquentes à éviter</p>
+                  <ul className="space-y-1 text-xs text-[#333333]">
+                    {item.erreursFrequentes.slice(0, 3).map((erreur) => (
+                      <li key={erreur}>• {erreur}</li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+
+              {item.rappelCours ? (
+                <div>
+                  <p className="text-xs font-bold text-[#111111] mb-1">Rappel de cours</p>
+                  <p className="text-xs text-[#333333]">{item.rappelCours}</p>
+                </div>
+              ) : null}
+
+              {item.conseilProgression ? (
+                <div className="bg-white border border-[#D9E2EC] rounded-xl p-2">
+                  <p className="text-xs font-bold text-[#111111] mb-1">Conseil de progression</p>
+                  <p className="text-xs text-[#333333]">{item.conseilProgression}</p>
                 </div>
               ) : null}
             </div>
