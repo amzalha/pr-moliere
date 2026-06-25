@@ -32,6 +32,7 @@ import StudentHistoryPanel from "./components/StudentHistoryPanel";
 import ExamCorpusPanel from "./components/ExamCorpusPanel";
 import MvpPremiumHero from "./components/MvpPremiumHero";
 import MvpQuickAccessCards from "./components/MvpQuickAccessCards";
+import MvpAudienceProof from "./components/MvpAudienceProof";
 import type { ExamCorpusItem } from "./data/examCorpus";
 import { 
  auth, 
@@ -1098,6 +1099,8 @@ const submitAnswer = async () => {
       onOpenExams={() => setActiveRightTab("EXAMS")}
       onOpenProgress={() => setActiveRightTab("BADGES")}
      />
+
+     <MvpAudienceProof />
 
      {/* Box 3: Ask PR_Molière / Sandbox Chat (col-span-12 lg:col-span-7) */}
      <div 
