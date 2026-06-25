@@ -31,6 +31,7 @@ import BrevetTracker from "./components/BrevetTracker";
 import StudentHistoryPanel from "./components/StudentHistoryPanel";
 import ExamCorpusPanel from "./components/ExamCorpusPanel";
 import MvpPremiumHero from "./components/MvpPremiumHero";
+import MvpQuickAccessCards from "./components/MvpQuickAccessCards";
 import type { ExamCorpusItem } from "./data/examCorpus";
 import { 
  auth, 
@@ -1089,6 +1090,11 @@ const submitAnswer = async () => {
      <MvpPremiumHero
       totalCorrect={stats.totalCorrect}
       streak={stats.streak}
+      onOpenExams={() => setActiveRightTab("EXAMS")}
+      onOpenProgress={() => setActiveRightTab("BADGES")}
+     />
+
+     <MvpQuickAccessCards
       onOpenExams={() => setActiveRightTab("EXAMS")}
       onOpenProgress={() => setActiveRightTab("BADGES")}
      />
