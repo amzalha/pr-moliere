@@ -2377,6 +2377,886 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Rédiger un portrait.', 'Employer des groupes nominaux.', 'Comprendre le rôle d’un personnage.'],
     tags: ['1AC', 'evaluation-integree', 'portrait', 'description']
+  },
+  {
+    id: 'modele-v095-2ac-lecture-portrait-physique-moral',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 2AC — Portrait physique et moral',
+    theme: 'portrait',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le professeur entra calmement dans la salle. Son visage sérieux inspirait le respect, mais son sourire discret montrait une grande bienveillance envers les élèves.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'portrait', 'lecture', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-lecture-description-lieu-atmosphere',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 2AC — Description d’un lieu et atmosphère',
+    theme: 'description',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'La vieille maison se dressait au bout d’un chemin étroit. Les fenêtres fermées, les murs fissurés et le silence profond donnaient au lieu une atmosphère inquiétante.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'description', 'lecture', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-lecture-narrateur-point-vue',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 2AC — Narrateur et point de vue',
+    theme: 'récit',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Je marchais seul dans la rue quand j’aperçus une lettre posée devant la porte. Mon cœur battait vite, car je ne savais pas qui l’avait déposée.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'récit', 'lecture', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-lecture-these-arguments',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 2AC — Thèse et arguments',
+    theme: 'argumentation',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'La lecture régulière est essentielle pour les élèves. Elle enrichit le vocabulaire, développe l’imagination et aide à mieux comprendre les textes étudiés en classe.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'argumentation', 'lecture', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-langue-expansions-nom',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Les expansions du nom',
+    theme: 'groupe nominal',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le vieux livre de contes, posé sur la table, attirait tous les regards. Sa couverture rouge brillait sous la lumière.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'groupe nominal', 'langue', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-langue-complement-objet',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Le complément d’objet',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le gardien ouvre la porte. Les élèves lisent un texte. Le professeur explique la consigne avec patience.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'grammaire', 'langue', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-langue-complement-circonstanciel',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Les compléments circonstanciels',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le matin, les élèves se réunissent dans la cour. Avec attention, ils écoutent les consignes avant d’entrer en classe.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'grammaire', 'langue', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-langue-pronoms-personnels',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Les pronoms personnels',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Leila lit un conte. Elle le résume à ses camarades. Ils l’écoutent avec attention et lui posent des questions.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'grammaire', 'langue', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-langue-imparfait-passe-simple',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Imparfait et passé simple',
+    theme: 'conjugaison',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'La pluie tombait doucement lorsque la porte s’ouvrit brusquement. Le vieil homme entra et posa une lettre sur la table.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'conjugaison', 'langue', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-langue-discours-direct',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Le discours direct',
+    theme: 'dialogue',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Mariam demanda : « Avez-vous terminé la lecture du conte ? » Son amie répondit : « Oui, j’ai préparé un court résumé. »',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'dialogue', 'langue', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-vocabulaire-ville',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — Le champ lexical de la ville',
+    theme: 'vocabulaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans la grande ville, les rues animées, les bâtiments modernes, les places publiques et les transports rapides facilitaient la vie quotidienne.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'vocabulaire', 'langue', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-vocabulaire-comparaison',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 2AC — La comparaison',
+    theme: 'figures de style',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le lac brillait comme un miroir. Le vent passait entre les arbres tel un souffle léger. La nuit semblait aussi calme qu’un sommeil profond.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'figures de style', 'langue', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-production-portrait-detaille',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 2AC — Rédiger un portrait détaillé',
+    theme: 'portrait',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Présentez un personnage qui joue un rôle important dans une histoire : apparence, qualités, défauts et actions.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'portrait', 'production_ecrite', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-production-description-ville',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 2AC — Décrire une ville',
+    theme: 'description',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Décrivez une ville que vous connaissez ou imaginez, en présentant ses lieux, son ambiance et les activités de ses habitants.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'description', 'production_ecrite', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-production-dialogue-avis',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 2AC — Dialogue pour exprimer un avis',
+    theme: 'dialogue argumentatif',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Deux élèves discutent de l’importance de la lecture. Rédigez un dialogue dans lequel chacun exprime un avis avec respect.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'dialogue argumentatif', 'production_ecrite', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-production-paragraphe-argumentatif',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 2AC — Paragraphe argumentatif simple',
+    theme: 'argumentation',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Expliquez pourquoi la lecture aide les élèves à progresser en français.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'argumentation', 'production_ecrite', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-production-compte-rendu-lecture',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 2AC — Compte rendu de lecture',
+    theme: 'lecture suivie',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Après la lecture d’un court récit, présentez le titre, les personnages, l’événement principal et votre avis.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'lecture suivie', 'production_ecrite', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-evaluation-description-langue',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Évaluation intégrée 2AC — Description et langue',
+    theme: 'description',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le marché ancien s’ouvrait sur une grande place lumineuse. Les marchands souriants présentaient des tissus colorés, des épices parfumées et des objets en cuivre.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'description', 'lecture', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-evaluation-argumentation',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Évaluation intégrée 2AC — Lecture et argumentation',
+    theme: 'argumentation',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Participer aux activités culturelles du collège est utile. Ces activités développent la confiance, encouragent la coopération et permettent aux élèves de découvrir leurs talents.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'argumentation', 'lecture', 'v095']
+  },
+  {
+    id: 'modele-v095-2ac-evaluation-recit-passe',
+    niveau: '2AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Évaluation intégrée 2AC — Récit au passé',
+    theme: 'récit',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Racontez une visite scolaire marquante en utilisant l’imparfait pour le cadre et le passé simple pour les actions principales.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Identifiez l’idée principale ou l’élément demandé dans le support.',
+        bareme: 4,
+        reponseModele: 'La réponse doit identifier clairement l’élément central du support.',
+        criteresCorrection: ['Comprendre la consigne.', 'S’appuyer sur le support.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez un indice de langue ou de vocabulaire utile pour comprendre le support.',
+        bareme: 6,
+        reponseModele: 'La réponse doit relever un indice pertinent et expliquer brièvement son rôle.',
+        criteresCorrection: ['Relever un indice exact.', 'Expliquer son rôle.', 'Employer une formulation précise.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une réponse organisée de huit à dix lignes en respectant le thème du sujet.',
+        bareme: 10,
+        reponseModele: 'La production doit respecter le thème, organiser les idées et employer une langue correcte.',
+        criteresCorrection: ['Respecter le thème.', 'Organiser les idées.', 'Employer un vocabulaire précis.', 'Soigner la langue.']
+      }
+    ],
+    objectifsPedagogiques: ['Comprendre un support de niveau 2AC.', 'Mobiliser une notion de langue.', 'Produire une réponse organisée.'],
+    tags: ['2AC', 'récit', 'production_ecrite', 'v095']
   }
 ];
 
