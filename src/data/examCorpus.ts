@@ -1477,6 +1477,906 @@ export const examCorpus: ExamCorpusItem[] = [
     ],
     objectifsPedagogiques: ['Comprendre un texte narratif.', 'Identifier les temps du récit.', 'Produire une suite narrative cohérente.'],
     tags: ['3AC', 'examen-regional', 'narration', 'temps-du-recit']
+  },
+  {
+    id: 'modele-v095-1ac-lecture-conte-objet-magique',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 1AC — L’objet magique dans le conte',
+    theme: 'conte merveilleux',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans une petite maison au bord de la forêt, un garçon découvrit une lampe ancienne. Lorsqu’il la frotta doucement, une lumière bleue éclaira la pièce et une voix mystérieuse lui proposa son aide.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel objet magique apparaît dans le texte ?',
+        bareme: 4,
+        reponseModele: 'L’objet magique est une lampe ancienne.',
+        criteresCorrection: ['Identifier l’objet merveilleux.', 'Répondre par une phrase claire.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Quel effet produit cet objet dans l’histoire ?',
+        bareme: 6,
+        reponseModele: 'La lampe produit une lumière bleue et fait apparaître une voix mystérieuse.',
+        criteresCorrection: ['Repérer l’effet de l’objet.', 'S’appuyer sur le texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Imaginez en six lignes un autre objet magique et son pouvoir.',
+        bareme: 10,
+        reponseModele: 'La réponse doit présenter un objet merveilleux, son pouvoir et son rôle dans une courte situation.',
+        criteresCorrection: ['Présenter un objet clair.', 'Décrire son pouvoir.', 'Respecter le registre merveilleux.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Identifier un objet magique.', 'Comprendre son rôle dans un conte.', 'Imaginer un élément merveilleux.'],
+    tags: ['1AC', 'conte', 'objet-magique', 'lecture']
+  },
+  {
+    id: 'modele-v095-1ac-lecture-conte-adjuvant-opposant',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 1AC — Adjuvant et opposant',
+    theme: 'conte merveilleux',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Pour retrouver la bague perdue du roi, Salma reçut l’aide d’un cheval blanc. Mais un sorcier jaloux plaça des pierres sur son chemin pour l’empêcher d’avancer.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel personnage aide Salma ?',
+        bareme: 4,
+        reponseModele: 'Le cheval blanc aide Salma.',
+        criteresCorrection: ['Identifier l’adjuvant.', 'Répondre avec précision.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Quel personnage s’oppose à Salma ?',
+        bareme: 6,
+        reponseModele: 'Le sorcier jaloux s’oppose à Salma.',
+        criteresCorrection: ['Identifier l’opposant.', 'Justifier avec un élément du texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Présentez en six lignes un adjuvant et un opposant dans un conte.',
+        bareme: 10,
+        reponseModele: 'La réponse doit présenter un personnage qui aide et un personnage qui s’oppose au héros.',
+        criteresCorrection: ['Présenter deux rôles distincts.', 'Respecter le genre du conte.', 'Organiser les idées.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Reconnaître un adjuvant.', 'Reconnaître un opposant.', 'Comprendre les rôles des personnages.'],
+    tags: ['1AC', 'conte', 'adjuvant', 'opposant']
+  },
+  {
+    id: 'modele-v095-1ac-lecture-ordre-evenements',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 1AC — L’ordre des événements',
+    theme: 'récit',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'D’abord, Youssef entra dans la grotte. Ensuite, il trouva une carte cachée sous une pierre. Enfin, il décida de suivre le chemin indiqué vers la vallée.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel événement se produit en premier ?',
+        bareme: 4,
+        reponseModele: 'Le premier événement est l’entrée de Youssef dans la grotte.',
+        criteresCorrection: ['Repérer le premier événement.', 'Utiliser l’indice D’abord.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Relevez deux connecteurs temporels dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux connecteurs temporels sont : D’abord et Ensuite.',
+        criteresCorrection: ['Identifier des connecteurs temporels.', 'Recopier deux exemples exacts.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez cinq lignes en utilisant D’abord, Ensuite et Enfin.',
+        bareme: 10,
+        reponseModele: 'La réponse doit organiser trois actions dans un ordre clair avec les connecteurs demandés.',
+        criteresCorrection: ['Employer trois connecteurs.', 'Respecter l’ordre chronologique.', 'Produire un court récit cohérent.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Comprendre l’ordre chronologique.', 'Repérer des connecteurs temporels.', 'Organiser un court récit.'],
+    tags: ['1AC', 'recit', 'ordre', 'connecteurs']
+  },
+  {
+    id: 'modele-v095-1ac-lecture-portrait-personnage',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Contrôle continu 1AC — Comprendre un portrait',
+    theme: 'portrait',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Amine était un garçon calme et généreux. Il portait souvent une veste bleue et gardait toujours un petit carnet dans sa poche pour noter ses idées.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Relevez deux qualités morales du personnage.',
+        bareme: 4,
+        reponseModele: 'Deux qualités morales sont : calme et généreux.',
+        criteresCorrection: ['Identifier des qualités morales.', 'Ne pas confondre qualité et vêtement.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Quel détail physique ou vestimentaire est donné dans le texte ?',
+        bareme: 6,
+        reponseModele: 'Le texte indique qu’Amine porte souvent une veste bleue.',
+        criteresCorrection: ['Repérer un détail concret.', 'Répondre par une phrase complète.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez le portrait d’un personnage en huit lignes.',
+        bareme: 10,
+        reponseModele: 'La réponse doit présenter l’apparence, les qualités et un détail caractéristique du personnage.',
+        criteresCorrection: ['Décrire l’apparence.', 'Présenter des qualités morales.', 'Organiser le portrait.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Distinguer portrait physique et moral.', 'Comprendre une description.', 'Rédiger un portrait simple.'],
+    tags: ['1AC', 'portrait', 'lecture', 'description']
+  },
+  {
+    id: 'modele-v095-1ac-langue-sujet-verbe',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Sujet et verbe',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le jardinier arrose les fleurs. Les oiseaux chantent dans l’arbre. Une petite fille observe le ciel.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Dans la première phrase, relevez le sujet.',
+        bareme: 4,
+        reponseModele: 'Le sujet est : Le jardinier.',
+        criteresCorrection: ['Identifier le groupe sujet.', 'Ne pas relever le verbe.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Dans la deuxième phrase, relevez le verbe conjugué.',
+        bareme: 6,
+        reponseModele: 'Le verbe conjugué est : chantent.',
+        criteresCorrection: ['Identifier le verbe conjugué.', 'Respecter la forme du texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez quatre phrases simples en soulignant mentalement le sujet et le verbe.',
+        bareme: 10,
+        reponseModele: 'La réponse doit contenir quatre phrases simples avec un sujet et un verbe clairement identifiables.',
+        criteresCorrection: ['Produire quatre phrases.', 'Respecter l’accord sujet-verbe.', 'Employer des verbes conjugués.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Identifier le sujet.', 'Identifier le verbe.', 'Comprendre l’accord sujet-verbe.'],
+    tags: ['1AC', 'grammaire', 'sujet', 'verbe']
+  },
+  {
+    id: 'modele-v095-1ac-langue-accord-sujet-verbe',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — L’accord sujet-verbe',
+    theme: 'grammaire',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Le voyageur avance lentement. Les voyageurs avancent lentement. La porte s’ouvre. Les portes s’ouvrent.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Expliquez la différence entre avance et avancent.',
+        bareme: 4,
+        reponseModele: 'Avance est au singulier, tandis que avancent est au pluriel.',
+        criteresCorrection: ['Observer la terminaison.', 'Relier le verbe au sujet.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez une phrase avec un sujet pluriel.',
+        bareme: 6,
+        reponseModele: 'Une phrase avec un sujet pluriel est : Les voyageurs avancent lentement.',
+        criteresCorrection: ['Identifier un sujet pluriel.', 'Recopier la phrase correctement.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez cinq phrases avec des sujets au singulier et au pluriel.',
+        bareme: 10,
+        reponseModele: 'La réponse doit montrer des accords corrects entre sujets et verbes.',
+        criteresCorrection: ['Varier singulier et pluriel.', 'Accorder les verbes.', 'Écrire des phrases claires.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Comprendre l’accord sujet-verbe.', 'Distinguer singulier et pluriel.', 'Produire des phrases correctement accordées.'],
+    tags: ['1AC', 'accord', 'sujet-verbe', 'langue']
+  },
+  {
+    id: 'modele-v095-1ac-langue-determinants',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Les déterminants',
+    theme: 'groupe nominal',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Un garçon ouvrit la porte. Cette lumière étrange venait du vieux grenier. Des livres étaient posés sur une table.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Relevez deux déterminants dans le texte.',
+        bareme: 4,
+        reponseModele: 'Deux déterminants sont : un et la.',
+        criteresCorrection: ['Identifier deux déterminants.', 'Ne pas confondre déterminant et nom.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Dans le groupe nominal cette lumière étrange, quel est le déterminant ?',
+        bareme: 6,
+        reponseModele: 'Le déterminant est : cette.',
+        criteresCorrection: ['Repérer le mot placé avant le nom.', 'Identifier le déterminant démonstratif.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez cinq groupes nominaux avec des déterminants variés.',
+        bareme: 10,
+        reponseModele: 'La réponse doit contenir cinq groupes nominaux avec des déterminants différents.',
+        criteresCorrection: ['Produire cinq groupes nominaux.', 'Varier les déterminants.', 'Respecter les accords.', 'Soigner l’orthographe.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Identifier un déterminant.', 'Comprendre le groupe nominal.', 'Employer des déterminants variés.'],
+    tags: ['1AC', 'determinants', 'groupe-nominal', 'langue']
+  },
+  {
+    id: 'modele-v095-1ac-langue-complement-nom',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Le complément du nom',
+    theme: 'groupe nominal',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'La porte du château était fermée. Un sac de voyage attendait près du mur. Les clés en argent brillaient sur la table.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Relevez un complément du nom dans le texte.',
+        bareme: 4,
+        reponseModele: 'Un complément du nom est : du château.',
+        criteresCorrection: ['Identifier un complément du nom.', 'Le relier au nom complété.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Quel nom est complété par de voyage ?',
+        bareme: 6,
+        reponseModele: 'Le complément de voyage complète le nom sac.',
+        criteresCorrection: ['Identifier le nom complété.', 'Comprendre le rôle du complément.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez cinq groupes nominaux contenant un complément du nom.',
+        bareme: 10,
+        reponseModele: 'La réponse doit contenir cinq groupes nominaux enrichis par un complément du nom.',
+        criteresCorrection: ['Produire cinq groupes nominaux.', 'Employer des compléments du nom.', 'Respecter la construction.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Identifier un complément du nom.', 'Enrichir un groupe nominal.', 'Comprendre la précision apportée au nom.'],
+    tags: ['1AC', 'complement-du-nom', 'groupe-nominal', 'langue']
+  },
+  {
+    id: 'modele-v095-1ac-langue-present-indicatif',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Le présent de l’indicatif',
+    theme: 'conjugaison',
+    semestre: 'S1',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Je marche vers la rivière. Vous observez les oiseaux. Les enfants jouent près du jardin.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Relevez un verbe conjugué au présent.',
+        bareme: 4,
+        reponseModele: 'Un verbe conjugué au présent est : marche.',
+        criteresCorrection: ['Identifier un verbe au présent.', 'Recopier la forme exacte.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Conjuguez le verbe observer avec vous au présent.',
+        bareme: 6,
+        reponseModele: 'La forme correcte est : vous observez.',
+        criteresCorrection: ['Employer la terminaison correcte.', 'Respecter le pronom demandé.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez cinq phrases au présent sur une activité scolaire.',
+        bareme: 10,
+        reponseModele: 'La réponse doit contenir cinq phrases avec des verbes correctement conjugués au présent.',
+        criteresCorrection: ['Employer le présent.', 'Varier les verbes.', 'Respecter le thème scolaire.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Identifier le présent.', 'Conjuguer un verbe courant.', 'Employer le présent dans des phrases.'],
+    tags: ['1AC', 'present', 'conjugaison', 'langue']
+  },
+  {
+    id: 'modele-v095-1ac-langue-futur-simple',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Le futur simple',
+    theme: 'conjugaison',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Demain, la classe visitera la bibliothèque. Vous choisirez un livre et vous rédigerez une courte fiche de lecture.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Relevez deux verbes au futur simple.',
+        bareme: 4,
+        reponseModele: 'Deux verbes au futur simple sont : visitera et choisirez.',
+        criteresCorrection: ['Identifier deux verbes au futur.', 'Recopier les formes exactes.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Conjuguez le verbe rédiger avec vous au futur simple.',
+        bareme: 6,
+        reponseModele: 'La forme correcte est : vous rédigerez.',
+        criteresCorrection: ['Employer le futur simple.', 'Respecter le pronom vous.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez cinq phrases au futur simple sur vos projets de lecture.',
+        bareme: 10,
+        reponseModele: 'La réponse doit contenir cinq phrases au futur simple autour de la lecture.',
+        criteresCorrection: ['Employer le futur simple.', 'Respecter le thème.', 'Varier les phrases.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Identifier le futur simple.', 'Conjuguer avec vous.', 'Exprimer une action à venir.'],
+    tags: ['1AC', 'futur-simple', 'conjugaison', 'langue']
+  },
+  {
+    id: 'modele-v095-1ac-vocabulaire-politesse',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Le vocabulaire de la politesse',
+    theme: 'vocabulaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Dans la bibliothèque, Sara demanda calmement : « Pourriez-vous m’aider à trouver ce livre, s’il vous plaît ? » Le responsable répondit avec le sourire.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'langue',
+        enonce: 'Relevez une formule de politesse dans le texte.',
+        bareme: 4,
+        reponseModele: 'Une formule de politesse est : s’il vous plaît.',
+        criteresCorrection: ['Identifier une formule polie.', 'Recopier correctement.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Pourquoi cette formule convient-elle à la situation ?',
+        bareme: 6,
+        reponseModele: 'Elle convient car Sara s’adresse respectueusement au responsable de la bibliothèque.',
+        criteresCorrection: ['Comprendre la situation.', 'Relier la formule au respect.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez quatre phrases utilisant des formules de politesse.',
+        bareme: 10,
+        reponseModele: 'La réponse doit employer des formules comme s’il vous plaît, merci, je vous remercie ou pourriez-vous.',
+        criteresCorrection: ['Employer quatre formules polies.', 'Respecter le vouvoiement.', 'Produire des phrases claires.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Identifier la politesse dans un échange.', 'Employer le vouvoiement.', 'Adapter le registre à la situation.'],
+    tags: ['1AC', 'vocabulaire', 'politesse', 'communication']
+  },
+  {
+    id: 'modele-v095-1ac-vocabulaire-sentiments',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'langue',
+    titre: 'Contrôle continu 1AC — Le vocabulaire des sentiments',
+    theme: 'vocabulaire',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Nadia ressentait de la joie en entrant dans la salle décorée. Son frère, lui, gardait une légère inquiétude avant de prendre la parole.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Relevez deux sentiments dans le texte.',
+        bareme: 4,
+        reponseModele: 'Deux sentiments sont : la joie et l’inquiétude.',
+        criteresCorrection: ['Identifier deux sentiments.', 'Ne pas confondre sentiment et action.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Associez chaque sentiment au personnage concerné.',
+        bareme: 6,
+        reponseModele: 'Nadia ressent de la joie et son frère ressent de l’inquiétude.',
+        criteresCorrection: ['Relier le sentiment au personnage.', 'Répondre clairement.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Écrivez cinq lignes en exprimant deux sentiments différents.',
+        bareme: 10,
+        reponseModele: 'La réponse doit employer deux mots de sentiments dans un court paragraphe cohérent.',
+        criteresCorrection: ['Employer deux sentiments.', 'Expliquer la situation.', 'Organiser les phrases.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Identifier les sentiments.', 'Relier un sentiment à un personnage.', 'Employer un vocabulaire précis.'],
+    tags: ['1AC', 'vocabulaire', 'sentiments', 'lecture']
+  },
+  {
+    id: 'modele-v095-1ac-production-carte-postale',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 1AC — Rédiger une carte postale',
+    theme: 'communication écrite',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Vous êtes en sortie scolaire dans une ville historique. Rédigez une carte postale courte adressée à votre famille.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez une carte postale de huit lignes.',
+        bareme: 12,
+        reponseModele: 'La carte doit présenter le lieu, une activité réalisée, une impression personnelle et une formule finale.',
+        criteresCorrection: ['Respecter la forme de la carte.', 'Présenter le lieu.', 'Exprimer une impression.', 'Soigner la langue.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez dans votre carte une phrase exclamative.',
+        bareme: 4,
+        reponseModele: 'La réponse doit relever une phrase exclamative correctement ponctuée.',
+        criteresCorrection: ['Identifier une phrase exclamative.', 'Respecter la ponctuation.']
+      },
+      {
+        id: 'q3',
+        competence: 'lecture',
+        enonce: 'Quel est le destinataire de la carte postale ?',
+        bareme: 4,
+        reponseModele: 'Le destinataire est la famille.',
+        criteresCorrection: ['Comprendre la situation d’écriture.', 'Répondre précisément.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Rédiger une carte postale.', 'Exprimer une impression.', 'Respecter une situation de communication.'],
+    tags: ['1AC', 'carte-postale', 'production-ecrite', 'communication']
+  },
+  {
+    id: 'modele-v095-1ac-production-message-court',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 1AC — Rédiger un message court',
+    theme: 'communication écrite',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Vous voulez informer vos camarades du changement d’horaire d’une activité de lecture. Rédigez un message clair et poli.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un message informatif de cinq lignes.',
+        bareme: 12,
+        reponseModele: 'Le message doit indiquer l’activité, le nouvel horaire, le lieu et une formule polie.',
+        criteresCorrection: ['Donner les informations essentielles.', 'Rester clair.', 'Employer une formule polie.', 'Soigner la langue.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Quelles informations doivent apparaître dans le message ?',
+        bareme: 4,
+        reponseModele: 'Les informations importantes sont l’activité, l’horaire et le lieu.',
+        criteresCorrection: ['Identifier les informations utiles.', 'Répondre clairement.']
+      },
+      {
+        id: 'q3',
+        competence: 'langue',
+        enonce: 'Transformez une phrase du message en phrase interrogative.',
+        bareme: 4,
+        reponseModele: 'La transformation doit produire une question correcte.',
+        criteresCorrection: ['Transformer correctement.', 'Employer le point d’interrogation.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Rédiger un message clair.', 'Organiser des informations pratiques.', 'Adapter le registre.'],
+    tags: ['1AC', 'message', 'communication', 'production-ecrite']
+  },
+  {
+    id: 'modele-v095-1ac-production-recit-court',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 1AC — Rédiger un récit court',
+    theme: 'récit',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Racontez en dix lignes une découverte surprenante faite dans la cour de votre établissement.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un récit court organisé.',
+        bareme: 12,
+        reponseModele: 'Le récit doit présenter le lieu, les personnages, l’événement surprenant et une fin claire.',
+        criteresCorrection: ['Présenter le cadre.', 'Raconter un événement.', 'Organiser les actions.', 'Soigner la langue.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux verbes d’action dans votre récit.',
+        bareme: 4,
+        reponseModele: 'La réponse doit relever deux verbes qui expriment une action.',
+        criteresCorrection: ['Identifier deux verbes d’action.', 'Les recopier correctement.']
+      },
+      {
+        id: 'q3',
+        competence: 'lecture',
+        enonce: 'Quel est l’événement principal de votre récit ?',
+        bareme: 4,
+        reponseModele: 'La réponse doit résumer l’événement surprenant raconté.',
+        criteresCorrection: ['Repérer l’événement central.', 'Répondre clairement.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Rédiger un récit court.', 'Organiser les actions.', 'Employer des verbes d’action.'],
+    tags: ['1AC', 'recit', 'production-ecrite', 'evenement']
+  },
+  {
+    id: 'modele-v095-1ac-production-description-objet',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Contrôle continu 1AC — Décrire un objet',
+    theme: 'description',
+    semestre: 'S2',
+    dureeMinutes: 45,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Choisissez un objet important pour un personnage de conte et décrivez-le avec précision.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'production_ecrite',
+        enonce: 'Décrivez l’objet en huit lignes.',
+        bareme: 12,
+        reponseModele: 'La description doit présenter la forme, la couleur, la matière et l’utilité de l’objet.',
+        criteresCorrection: ['Présenter des détails précis.', 'Employer des adjectifs.', 'Organiser la description.', 'Soigner la langue.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez trois adjectifs utilisés dans votre description.',
+        bareme: 4,
+        reponseModele: 'La réponse doit relever trois adjectifs qualificatifs correctement employés.',
+        criteresCorrection: ['Identifier des adjectifs.', 'Respecter les accords.']
+      },
+      {
+        id: 'q3',
+        competence: 'lecture',
+        enonce: 'Pourquoi cet objet est-il important dans le conte ?',
+        bareme: 4,
+        reponseModele: 'L’objet est important parce qu’il aide le personnage ou déclenche une action.',
+        criteresCorrection: ['Expliquer le rôle de l’objet.', 'Répondre avec cohérence.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Décrire un objet.', 'Employer des adjectifs.', 'Comprendre le rôle d’un objet dans un récit.'],
+    tags: ['1AC', 'description', 'objet', 'production-ecrite']
+  },
+  {
+    id: 'modele-v095-1ac-evaluation-integrée-conte',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Évaluation intégrée 1AC — Conte et langue',
+    theme: 'conte merveilleux',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'Il était une fois un enfant curieux qui entra dans une bibliothèque abandonnée. Sur une table poussiéreuse, il trouva un livre ouvert qui brillait doucement.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Relevez la formule d’ouverture et le lieu de l’action.',
+        bareme: 4,
+        reponseModele: 'La formule d’ouverture est Il était une fois et le lieu est une bibliothèque abandonnée.',
+        criteresCorrection: ['Identifier la formule.', 'Repérer le lieu.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux adjectifs qualificatifs dans le texte.',
+        bareme: 6,
+        reponseModele: 'Deux adjectifs qualificatifs sont : curieux et abandonnée.',
+        criteresCorrection: ['Identifier deux adjectifs.', 'Les recopier correctement.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Imaginez la suite du conte en huit lignes.',
+        bareme: 10,
+        reponseModele: 'La suite doit respecter le début, garder une atmosphère merveilleuse et présenter une action cohérente.',
+        criteresCorrection: ['Respecter le début.', 'Créer une suite cohérente.', 'Employer le merveilleux.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Réviser le conte.', 'Identifier des adjectifs.', 'Produire une suite narrative.'],
+    tags: ['1AC', 'evaluation-integree', 'conte', 'langue']
+  },
+  {
+    id: 'modele-v095-1ac-evaluation-integrée-bibliotheque',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'lecture',
+    titre: 'Évaluation intégrée 1AC — Bibliothèque et lecture',
+    theme: 'texte informatif',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez le texte puis répondez aux questions.',
+    texteSupport:
+      'La bibliothèque du collège accueille les élèves pendant les pauses. Elle propose des contes, des romans courts, des dictionnaires et des revues pour aider chacun à progresser.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'lecture',
+        enonce: 'Quel est le thème principal du texte ?',
+        bareme: 4,
+        reponseModele: 'Le thème principal est la bibliothèque du collège.',
+        criteresCorrection: ['Identifier le thème.', 'Répondre brièvement.']
+      },
+      {
+        id: 'q2',
+        competence: 'lecture',
+        enonce: 'Citez deux documents proposés par la bibliothèque.',
+        bareme: 6,
+        reponseModele: 'Deux documents proposés sont les contes et les dictionnaires.',
+        criteresCorrection: ['Relever deux informations.', 'S’appuyer sur le texte.']
+      },
+      {
+        id: 'q3',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez six lignes pour expliquer l’utilité d’une bibliothèque scolaire.',
+        bareme: 10,
+        reponseModele: 'La réponse doit expliquer que la bibliothèque aide à lire, chercher, apprendre et enrichir le vocabulaire.',
+        criteresCorrection: ['Respecter le thème.', 'Présenter des idées claires.', 'Organiser les phrases.', 'Soigner la langue.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Comprendre un texte informatif.', 'Relever des informations.', 'Expliquer une utilité.'],
+    tags: ['1AC', 'evaluation-integree', 'bibliotheque', 'lecture']
+  },
+  {
+    id: 'modele-v095-1ac-evaluation-integrée-dialogue',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Évaluation intégrée 1AC — Dialogue et courtoisie',
+    theme: 'dialogue',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Dans la cour du collège, un élève demande poliment à un camarade de lui prêter un livre de contes.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un dialogue de six répliques.',
+        bareme: 12,
+        reponseModele: 'Le dialogue doit présenter une demande polie, une réponse claire et une ponctuation correcte.',
+        criteresCorrection: ['Écrire six répliques.', 'Employer une demande polie.', 'Respecter la ponctuation du dialogue.', 'Soigner la langue.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez une formule de politesse dans votre dialogue.',
+        bareme: 4,
+        reponseModele: 'La réponse doit relever une formule comme s’il vous plaît ou je vous remercie.',
+        criteresCorrection: ['Identifier une formule polie.', 'Respecter le vouvoiement si la situation l’exige.']
+      },
+      {
+        id: 'q3',
+        competence: 'lecture',
+        enonce: 'Quel est l’objet demandé dans la situation ?',
+        bareme: 4,
+        reponseModele: 'L’objet demandé est un livre de contes.',
+        criteresCorrection: ['Comprendre la situation.', 'Répondre précisément.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Rédiger un dialogue.', 'Employer la courtoisie.', 'Respecter une situation de communication.'],
+    tags: ['1AC', 'evaluation-integree', 'dialogue', 'courtoisie']
+  },
+  {
+    id: 'modele-v095-1ac-evaluation-integrée-portrait',
+    niveau: '1AC',
+    typeEvaluation: 'controle_continu',
+    competence: 'production_ecrite',
+    titre: 'Évaluation intégrée 1AC — Portrait et description',
+    theme: 'portrait',
+    semestre: 'S2',
+    dureeMinutes: 60,
+    baremeTotal: 20,
+    sourceType: 'modele_original',
+    sourceNom: 'PR_Molière — sujet modèle original',
+    consigne: 'Lisez la situation puis rédigez une réponse organisée.',
+    texteSupport:
+      'Votre classe prépare un recueil de contes. Vous devez présenter le héros ou l’héroïne d’un récit merveilleux.',
+    questions: [
+      {
+        id: 'q1',
+        competence: 'production_ecrite',
+        enonce: 'Rédigez un portrait organisé en dix lignes.',
+        bareme: 12,
+        reponseModele: 'Le portrait doit présenter l’apparence, les qualités, les actions possibles et le rôle du personnage.',
+        criteresCorrection: ['Présenter l’apparence.', 'Présenter les qualités.', 'Organiser le portrait.', 'Soigner la langue.']
+      },
+      {
+        id: 'q2',
+        competence: 'langue',
+        enonce: 'Relevez deux groupes nominaux dans votre portrait.',
+        bareme: 4,
+        reponseModele: 'La réponse doit relever deux groupes nominaux correctement formés.',
+        criteresCorrection: ['Identifier deux groupes nominaux.', 'Éviter les phrases complètes.']
+      },
+      {
+        id: 'q3',
+        competence: 'lecture',
+        enonce: 'Quel rôle ce personnage joue-t-il dans le conte ?',
+        bareme: 4,
+        reponseModele: 'Le personnage peut être héros, aide, opposant ou personnage merveilleux.',
+        criteresCorrection: ['Nommer un rôle clair.', 'Relier le rôle au récit.']
+      }
+
+    ],
+    objectifsPedagogiques: ['Rédiger un portrait.', 'Employer des groupes nominaux.', 'Comprendre le rôle d’un personnage.'],
+    tags: ['1AC', 'evaluation-integree', 'portrait', 'description']
   }
 ];
 
